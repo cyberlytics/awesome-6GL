@@ -5,7 +5,7 @@
 [//]: # (Kurztitel: 6GL)
 [//]: # (Lemma: 6GL)
 
-# Awesome 6GL
+# Awesome Sixth-Generation Programming Language
 
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) [![Made With Love](https://img.shields.io/badge/Made%20With-Love-pink.svg)](https://github.com/chetanraj/awesome-github-badges) [![Donate via PayPal](https://img.shields.io/badge/Donate-PayPal-blue?logo=paypal)](https://www.paypal.com/donate/?hosted_button_id=QTDJ2JA58ZM9L) [![Support on Ko-fi](https://img.shields.io/badge/Donate-ko--fi-%23FF5E5B?logo=ko-fi&logoColor=white)](https://ko-fi.com/cyberlytics) [![Buy Me A Coffee!](https://img.shields.io/badge/Donate-buymeacoffee-%23FFDD00?logo=buymeacoffee)](https://www.buymeacoffee.com/cyberpetaneuron)
 
@@ -17,20 +17,20 @@ Es gibt von mir weitere Schwesterseiten im Kontext Informatik/KI: [Digitaler Res
 
 <!-- toc -->
 
-  - [Agentic Engineering Manifest](#agentic-engineering-manifest)
-  - [Vibe Coding Einstiegshinweise](#vibe-coding-einstiegshinweise)
+- [Agentic Engineering Manifest](#agentic-engineering-manifest)
+- [Vibe Coding Einstiegshinweise](#vibe-coding-einstiegshinweise)
 - [Agentic Education Manifest](#agentic-education-manifest)
-  - [Lernmaterialien](#lernmaterialien)
-  - [Vibe Coding](#vibe-coding)
-  - [Agent Context File](#agent-context-file)
-  - [MCP](#mcp)
-  - [Agent Skills](#agent-skills)
-  - [Vibe Testing](#vibe-testing)
-  - [Vibe Hacking](#vibe-hacking)
-  - [Vibe Science](#vibe-science)
-  - [Generative KI](#generative-ki)
-  - [Bildmaterialien](#bildmaterialien)
-  - [Footer](#footer)
+- [Lernmaterialien](#lernmaterialien)
+- [Vibe Coding](#vibe-coding)
+- [Agent Context File](#agent-context-file)
+- [MCP](#mcp)
+- [Agent Skills](#agent-skills)
+- [Vibe Testing](#vibe-testing)
+- [Vibe Hacking](#vibe-hacking)
+- [Vibe Science](#vibe-science)
+- [Generative KI](#generative-ki)
+- [Bildmaterialien](#bildmaterialien)
+- [Footer](#footer)
 
 <!-- tocstop -->
 
@@ -213,7 +213,7 @@ agy models |
     }
 ```
 
-# Agentic Education Manifest
+## Agentic Education Manifest
 
 0. **Sei der Agent deines eigenen Lernens.**
    * **Agentic Education** bedeutet, dass Lernende die aktive Rolle des Agenten übernehmen: Sie setzen Ziele, stellen Fragen, nutzen Werkzeuge (inklusive KI), überprüfen Ergebnisse und steuern ihren eigenen Lernprozess.
@@ -272,8 +272,6 @@ agy models |
 ## Lernmaterialien
 
 - Vor Eintritt in ein Bachelorstudium
-	- Nützliche Glaubenssätze:
-
 	- Prompting-Werkzeuge:
 		- **[KI-Campus](https://ki-campus.org/overview/course)** inkl. [Chatbot-Sandbox](https://chat.ki-campus.org/) und [Prompt-Katalog](https://coda.io/@ki-campus/prompt-katalog)
 - Generative AI / LLMs:
