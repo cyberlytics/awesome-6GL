@@ -117,12 +117,12 @@ Es gibt von mir weitere Schwesterseiten im Kontext Informatik/KI: [Digitaler Res
 * Dann die [richtige Echokammer](https://simonwillison.net/).
 * Dann 6GL aka [Natural Language Programming](https://www.cs.utexas.edu/~EWD/transcriptions/EWD06xx/EWD667.html) (Programmier-Ebene)
 	- Andrej Karpathy betonte „agentic programming as a tool“, bei der Vibe-Coding-Begriffsbildung
-* Dann Spec-Driven Development (SDD) aka Agentic Engineering (SW-Technik-Ebene)
+* Dann Spec-Driven Development (SDD) aka Agentic Engineering ⭐ (SW-Technik-Ebene)
 	- Further Reading: [spec-kit](https://github.com/github/spec-kit), [SpecDD](https://specdd.ai/) (sowie exemplarisch [kiro](https://kiro.dev/) und [tessl](https://tessl.io/))
 
 Vibe Coding Referenzprojekt für Einsteiger mit kleinen Projekten (ca. 1-wöchige SW-Prototypen)?
 
-* Mein Modul Webanwendungsentwicklung, studentisches Team DeadLock: [CLAUDE.md](https://github.com/CycleByte/WAE-2026SS-TeamBlau-DeadLock/blob/main/CLAUDE.md)
+* Mein Modul Webanwendungsentwicklung, studentisches Team DeadLock: [CLAUDE.md](https://github.com/CycleByte/WAE-2026SS-TeamBlau-DeadLock/blob/main/CLAUDE.md) ⭐
 
 ### Weitere Hinweise
 
@@ -215,9 +215,11 @@ agy models |
 
 ## Agentic Education Manifest
 
+\[ aka: 10 nützliche Glaubenssätze nach Neumann \]
+
 0. **Sei der Agent deines eigenen Lernens.**
    * **Agentic Education** bedeutet, dass Lernende die aktive Rolle des Agenten übernehmen: Sie setzen Ziele, stellen Fragen, nutzen Werkzeuge (inklusive KI), überprüfen Ergebnisse und steuern ihren eigenen Lernprozess.
-   * (Eine Definition, daher als 0. Eintrag vorangestellt. Informatikerhumor: Beginne den Index bei 0 und bringe „heimlich“ ein 11. Gebot unter.)
+   * (Dient der Definition der Überschrift, daher als 0. Eintrag vorangestellt. Und Informatikerhumor: Beginne den Index bei 0.)
 
 1. **„Vertraue nicht auf Talent, vertraue auf Fleiß.“**
    * Erfolg im Studium entsteht meist durch Ausdauer, Disziplin und Kontinuität – nicht durch angeborene Genialität.
