@@ -218,12 +218,6 @@ agy models |
 0. **Sei der Agent deines eigenen Lernens.**
    * **Agentic Education** bedeutet, dass Lernende die aktive Rolle des Agenten übernehmen: Sie setzen Ziele, stellen Fragen, nutzen Werkzeuge (inklusive KI), überprüfen Ergebnisse und steuern ihren eigenen Lernprozess.
    * (Eine Definition, daher als 0. Eintrag vorangestellt. Informatikerhumor: Beginne den Index bei 0 und bringe „heimlich“ ein 11. Gebot unter.)
-   * Lernphilosophie:
-       * Talentmythos → Growth Mindset
-       * Prüfungsorientierung → echtes Lernen
-       * Fragen → aktive Wissenskonstruktion
-       * Gewohnheiten → langfristige Entwicklung
-       * Gemeinschaft → soziale Dimension
 
 1. **„Vertraue nicht auf Talent, vertraue auf Fleiß.“**
    * Erfolg im Studium entsteht meist durch Ausdauer, Disziplin und Kontinuität – nicht durch angeborene Genialität.
@@ -268,6 +262,15 @@ agy models |
     * Wissen entfaltet seinen Wert erst durch Anwendung und kritisches Denken.
     * Wichtig: Gute Bildung beantwortet nicht nur Fragen – sie erzeugt bessere Fragen.
     * Nebengesetz: „Der größte Lernerfolg ist geistige Selbstständigkeit.“
+
+
+### Lernphilosophie
+
+* Talentmythos → Growth Mindset
+* Prüfungsorientierung → echtes Lernen
+* Fragen → aktive Wissenskonstruktion
+* Gewohnheiten → langfristige Entwicklung
+* Gemeinschaft → soziale Dimension
 
 ## Lernmaterialien
 
@@ -556,7 +559,7 @@ Die Verwendung von generativer KI zur Text-Erstellung Ihrer Abschlussarbeit ist 
 
 ## Bildmaterialien
 
-- Kostenlose bzw. lizenzfreundliche Bildmaterialien: vgl. Schwesterseite [awesome-thesis-tools » Bildmaterialien](https://github.com/cyberlytics/awesome-thesis-tools#bildmaterialien]
+- Kostenlose bzw. lizenzfreundliche Bildmaterialien: vgl. Schwesterseite [awesome-thesis-tools » Bildmaterialien](https://github.com/cyberlytics/awesome-thesis-tools#bildmaterialien)
 - AI-rendered Illustrations/Art:
 	- Prompt Galleries (Prompts und deren AI-generierten Bilder): **[PromptHero](https://prompthero.com/)**, **[Playground AI](https://playgroundai.com/)**
 	- Unterstützung bei der Prompt Generation: **[NightCafe](https://nightcafe.studio/)**, **[promptoMANIA](https://promptomania.com/prompt-builder/)**
