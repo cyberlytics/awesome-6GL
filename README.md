@@ -564,7 +564,6 @@ Die Verwendung von generativer KI zur Text-Erstellung Ihrer Abschlussarbeit ist 
 	- Prompt Galleries (Prompts und deren AI-generierten Bilder): **[PromptHero](https://prompthero.com/)**, **[Playground AI](https://playgroundai.com/)**
 	- Unterstützung bei der Prompt Generation: **[NightCafe](https://nightcafe.studio/)**, **[promptoMANIA](https://promptomania.com/prompt-builder/)**
 	- Von Unternehmen mit Marktführerschaften: [**Adobe** Firefly](https://firefly.adobe.com/), [**Microsoft** Designer](https://designer.microsoft.com/), ([**Google** Imagen](https://imagen.research.google/) in Vorbereitung)
-	- (vgl. auch die Lernmaterialien zu [Prompt Engineering](https://github.com/cyberlytics/awesome-basics#ai))
 	- Open Source: **[OpenArt](https://openart.ai/create)** ⭐ ([github](https://github.com/OpenArt-AI)), **[Stable Diffusion](https://huggingface.co/spaces/stabilityai/stable-diffusion)** als free cloud UI via Huggingface Space (eigentliches [KI-Modell](https://github.com/CompVis/stable-diffusion) auf GitHub) by [stability.ai](https://stability.ai/) + [runway](https://runwayml.com/) sowie darauf basierend **[Lexica](https://lexica.art/)**
 		- Kommandozeilenwerkzeug: **[imaginAIry](https://github.com/brycedrennan/imaginAIry)**
 	- Closed Source: **[craiyon](https://www.craiyon.com/)** (früher: „DALL·E mini“), per Warteliste: [OpenAI DALL·E 2](https://labs.openai.com/waitlist)
