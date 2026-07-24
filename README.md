@@ -132,13 +132,13 @@ Vibe Coding Referenzprojekt für Einsteiger mit kleinen Projekten (ca. 1-wöchig
 * **„DeepSeek als Alternative zu Claude Code oder GitHub Copilot?“ ist die falsche Fragestellung.**
   Die eigentliche Einordnung ist:
 
-  * **Frontier-Modelle**: 1T+ Parameter, typischerweise Cloud-Modelle der Big-Tech-Anbieter
-  * **Mid-Tier-Modelle**: lokal nutzbar mit sehr viel Speicher (z. B. 128+ GB RAM, etwa auf Geräten wie NVIDIA DGX Spark oder Ryzen AI 395-Systemen)
+  * **Frontier-Modelle**: 3T+ Parameter, typischerweise Cloud-Modelle der Big-Tech-Anbieter
+  * **Mid-Tier-Modelle**: lokal nutzbar mit sehr viel Speicher (z. B. 128+ GB RAM, etwa auf Geräten wie [NVIDIA DGX Spark](https://www.nvidia.com/de-de/products/workstations/dgx-spark/) oder [Ryzen AI 395-Systemen](https://frame.work/de/de/desktop))
   * **Edge-Modelle**: abhängig von verfügbarer Hardware – von Desktop-GPUs bis Smartphones
 
-  NVIDIA DGX Spark könnte man entsprechend auch als **Premium-AI-Edge** bezeichnen.
+  NVIDIA DGX Spark bzw. Ryzen AI 395-Systemen könnte man entsprechend auch als **Premium-AI-Edge** bezeichnen.
 
-  DeepSeek R1 (Release Januar 2025) war ein **671B-Modell** mit **37B aktiven Parametern durch Mixture-of-Experts (MoE)**. Die lokal auf Laptops und PCs genutzten DeepSeek-Varianten sind dagegen typischerweise **3B/7B/9B-Modelle**. Das große 671B(37B)-Modell ist Open Source, läuft aber nicht auf gewöhnlicher Edge-Hardware.
+  DeepSeek R1 (Release Januar 2025) war ein **671B-Modell** mit **37B aktiven Parametern durch Mixture-of-Experts (MoE)**. Die lokal auf Laptops und PCs genutzten DeepSeek-Varianten sind dagegen typischerweise **3B/7B/9B-Modelle**. Das große 671B(37B)-DeepSeek ist Open Source, läuft aber nicht auf gewöhnlicher Edge-Hardware ([DeepSeek V4 pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro): 1.6T / [Kimi K3](https://platform.kimi.ai/docs/guide/kimi-k3-quickstart): 2.8T)
 
 * **Modelmaxxing als Kostenoptimierung**
 
@@ -217,62 +217,43 @@ agy models |
 
 \[ aka: 10 nützliche Glaubenssätze nach Neumann \]
 
-0. **Sei der Agent deines eigenen Lernens.**
-   * **Agentic Education** bedeutet, dass Lernende die aktive Rolle des Agenten übernehmen: Sie setzen Ziele, stellen Fragen, nutzen Werkzeuge (inklusive KI), überprüfen Ergebnisse und steuern ihren eigenen Lernprozess.
-   * (Dient der Definition der Überschrift, daher als 0. Eintrag vorangestellt. Und Informatikerhumor: Beginne den Index bei 0.)
+**Agentic Education** bedeutet, dass Lernende die aktive Rolle des Agenten übernehmen: Sie setzen Ziele, stellen Fragen, nutzen Werkzeuge (inklusive KI), überprüfen Ergebnisse und steuern ihren eigenen Lernprozess. Dies ist in weiten Teilen nichts neues. So disruptiv sind Sprachmodelle nicht gegenüber der Herausforderung Human Intelligence zu trainieren. Das Manifest mischt traditionelle Glaubenssätze mit modernen Erweiterungen.
 
-1. **„Vertraue nicht auf Talent, vertraue auf Fleiß.“**
-   * Erfolg im Studium entsteht meist durch Ausdauer, Disziplin und Kontinuität – nicht durch angeborene Genialität.
-
-2. **„Ich lerne für mich, nicht für die Prüfungen.“**
-   * Fokus auf nachhaltiges Wissen statt kurzfristiges Bulimie-Lernen
-
-3. **„Fragen zu stellen ist ein Zeichen von Stärke, nicht von Schwäche.“**
-   * Neugier ist der Treibstoff echter Bildung.
-   * Wer Fragen stellt, macht unsichtbare Wissenslücken sichtbar.
-   * Nebengesetz: „Die Qualität deiner Fragen bestimmt die Qualität deines Lernens.“
-
-4. **„Kleine Schritte führen weiter als große Vorsätze.“**
-   * Tägliche Lerngewohnheiten schlagen seltene Kraftakte.
-   * 30 Minuten pro Tag sind oft wirksamer als zehn Stunden einmal im Monat.
-
-5. **„Ich bin nicht allein – viele kämpfen mit denselben Herausforderungen.“**
-   * Austausch und Gemeinschaft helfen mehr als Einzelkämpfertum (Lerngruppen!)
-
+1. **„Vertraue nicht auf Talent, vertraue auf Fleiß.“**  → Erfolg im Studium basiert meist auf Ausdauer, Disziplin und Kontinuität  – nicht Genialität.
+2. **„Ich lerne für mich, nicht für die Prüfungen.“**  → Nachhaltiges Verstehen schlägt kurzfristiges Bulimie-Lernen.
+3. **„Die Qualität deiner Fragen bestimmt die Qualität deines Lernens.“** ⭐ → Neugier ist der Motor echter Bildung. Fragen sind ein Zeichen von Stärke, nicht von Schwäche.
+4. **„Kleine Schritte führen weiter als große Vorsätze.“** → Täglich 30 Minuten sind mehr wert als einmal im Monat zehn Stunden..
+5. **„Lerne nicht allein – viele kämpfen mit denselben Herausforderungen.“** → Austausch und Gemeinschaft helfen mehr als Einzelkämpfertum (Lerngruppen!)
 6. **„Suchmaschinen sind kein Ersatz für Verstehen – aber ein guter Anfang.“**
-   * Recherchieren ist eine Kompetenz, kein Trick.
-   * Wichtig: Quellen müssen bewertet, verglichen und kritisch hinterfragt werden.
-   * Obacht: Das Internet ist teils eine digitale Müllhalde.
-
-7. **„Ein Chatbot als KI-Lerntutor ist kein Ersatz für Verstehen – aber ein guter Anfang.“**
-   * Prompting ist eine Kompetenz, kein Trick.
-   * Obacht: LLMs teils mit Halluzinationen und Bias (Recherche für Faktencheck weiterhin benötigt)
-   * Nebengesetz: „KI liefert Antworten – Verantwortung bleibt beim Menschen.“
-
-8. **„LLMs sind Musterlösungsgeneratoren.“**
-   * Zur Erinnerung: Musterlösungen gab es schon immer – in Lehrbüchern, Vorlesungsskripten und Lösungssammlungen.
-   * Sprachmodelle erzeugen Musterlösungen lediglich schneller, individueller und dialogfähig.
-   * Das bloße Lesen einer Musterlösung ist passives Lernen, ohne substanzielle Retention Rate.
-   * Wichtig: Ein LLM kann dir den Lösungsweg zeigen, aber nicht den Lernprozess abnehmen.
-
-9. **„Verstehe zuerst – erkläre danach.“**
-   * Wer etwas wirklich verstanden hat, kann es in eigenen Worten erklären. ([Feynman-Methode](https://karrierebibel.de/feynman-methode/))
-   * Nebengesetz: „Wer anderen beim Lernen hilft, lernt selbst am tiefsten.“
-
-10. **„Bildung bedeutet, selbstständig denken zu können.“**
+    * Recherchieren ist eine Kompetenz, kein Trick!
+    * Obacht: Das Internet ist teils eine digitale Müllhalde. Und es ist sogar teils monströs.
+    * Wichtig: Quellen müssen bewertet, verglichen und kritisch hinterfragt werden.
+7. **„Ein Chatbot als KI-Lerntutor ist kein Ersatz für Verstehen – aber ein guter Anfang.“** ⭐
+    * Prompting ist eine Kompetenz, kein Trick!
+    * Obacht: LLMs teils mit Halluzinationen und Bias / Recherche für Faktencheck weiterhin benötigt.
+8. **„LLMs sind (auch) Musterlösungsgeneratoren.“** ⭐
+    * Das bloße Lesen einer Musterlösung ist passives Lernen, ohne substanzielle Retention Rate.
+    * Zur Erinnerung: Musterlösungen gab es schon immer – in Lehrbüchern, Vorlesungsskripten und Lösungssammlungen.
+    * Sprachmodelle erzeugen Musterlösungen schneller, individueller und dialogfähig.
+    * Wichtig: Ein LLM kann dir den Lösungsweg zeigen, aber nicht den Lernprozess abnehmen.
+9. **„Wer anderen beim Lernen hilft, lernt selbst am tiefsten.“** → Wer etwas wirklich verstanden hat, kann es in eigenen Worten erklären.
+    * Referenz: [Feynman-Methode](https://karrierebibel.de/feynman-methode/)
+10. **„Bildung bedeutet, selbstständig denken zu können.“** ⭐
     * Ziel des Lernens ist nicht das Sammeln von Fakten, sondern Urteilsfähigkeit.
     * Wissen entfaltet seinen Wert erst durch Anwendung und kritisches Denken.
     * Wichtig: Gute Bildung beantwortet nicht nur Fragen – sie erzeugt bessere Fragen.
     * Nebengesetz: „Der größte Lernerfolg ist geistige Selbstständigkeit.“
 
-
 ### Lernphilosophie
 
 * Talentmythos → Growth Mindset
-* Prüfungsorientierung → echtes Lernen
+* Prüfungsorientierung → nachhaltiges Lernen
 * Fragen → aktive Wissenskonstruktion
 * Gewohnheiten → langfristige Entwicklung
 * Gemeinschaft → soziale Dimension
+* Informationskompetenz  → Recherche & Quellenkritik
+* KI-Kompetenz → Die Kunst Fragen zu stellen & kritischer KI-Einsatz
+* Lernkompetenz → Urteilsfähigkeit & Kritisches Denken
 
 ## Lernmaterialien
 
@@ -574,6 +555,8 @@ Die Verwendung von generativer KI zur Text-Erstellung Ihrer Abschlussarbeit ist 
 	- Stark limitierte kostenlose Angebote: [stockimg.ai](https://stockimg.ai/), [runway](https://runwayml.com/)
 	- Disclaimer: [Rule 34](https://en.wikipedia.org/wiki/Rule_34) zzgl. Kürzelkunde [NSFW](https://en.wikipedia.org/wiki/Not_safe_for_work)
 	- Weiterführende Quellen: [TopAi.tools](https://topai.tools/) | [Prompt-Werkzeug-Liste auf reddit](https://www.reddit.com/r/StableDiffusion/comments/xcrm4d/useful_prompt_engineering_tools_and_resources/)
+- AI-rendered Infographics (mit Texten!):
+	- [Ideogram](https://ideogram.ai/)
 - AI Image Upscaler
 	- **[upscayl](https://upscayl.org/)** ⭐ ([github](https://github.com/upscayl/upscayla)) basierend auf ESRGAN/Real-ESRGAN
 
