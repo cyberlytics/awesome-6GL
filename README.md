@@ -5,23 +5,22 @@
 [//]: # (Kurztitel: 6GL)
 [//]: # (Lemma: 6GL)
 
-# Awesome Sixth-Generation Programming Language
+# Awesome Sixth-Generation Programming
 
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) [![Made With Love](https://img.shields.io/badge/Made%20With-Love-pink.svg)](https://github.com/chetanraj/awesome-github-badges) [![Donate via PayPal](https://img.shields.io/badge/Donate-PayPal-blue?logo=paypal)](https://www.paypal.com/donate/?hosted_button_id=QTDJ2JA58ZM9L) [![Support on Ko-fi](https://img.shields.io/badge/Donate-ko--fi-%23FF5E5B?logo=ko-fi&logoColor=white)](https://ko-fi.com/cyberlytics) [![Buy Me A Coffee!](https://img.shields.io/badge/Donate-buymeacoffee-%23FFDD00?logo=buymeacoffee)](https://www.buymeacoffee.com/cyberpetaneuron)
 
-Dies ist sowohl eine Tool-Sammlung als auch ein digitaler Ressourcen-Pool für 6GL (Natural Language Programming) und Agentic Engineering (AI-native SDLC / Spec-Driven Development). Entstanden an der [OTH Amberg-Weiden](https://www.oth-aw.de/cpn), welche für ein paar Einträge entsprechend den Kontext bildet.
-
-Es gibt von mir weitere Schwesterseiten im Kontext Informatik/KI: [Digitaler Ressourcen-Pool](https://github.com/cyberlytics/awesome-basics), [Werkzeuge » Abschlussarbeiten](https://github.com/cyberlytics/awesome-thesis-tools), [Werkzeuge » Software-Engineering](https://github.com/cyberlytics/awesome-software-engineering-tools) und [Werkzeuge » BDCC/AI](https://github.com/cyberlytics/awesome-bdccai-tools).
+Dies ist sowohl eine Tool-Sammlung als auch ein digitaler Ressourcen-Pool mit kostenlosen Lernmaterialien für **6GL** (Natural Language Programming) und Agentic Engineering (AI-native SDLC / Spec-Driven Development). Entstanden an der [OTH Amberg-Weiden](https://www.oth-aw.de/cpn), welche für ein paar Einträge entsprechend den Kontext bildet.
 
 **Table of Contents**
 
 <!-- toc -->
 
+- [Prelude](#prelude)
 - [Agentic Engineering Manifest](#agentic-engineering-manifest)
-- [Vibe Coding Einstiegshinweise](#vibe-coding-einstiegshinweise)
 - [Agentic Education Manifest](#agentic-education-manifest)
 - [Lernmaterialien](#lernmaterialien)
 - [Vibe Coding](#vibe-coding)
+- [Prompting Recipies](#prompting-recipies)
 - [Agent Context File](#agent-context-file)
 - [MCP](#mcp)
 - [Agent Skills](#agent-skills)
@@ -30,9 +29,38 @@ Es gibt von mir weitere Schwesterseiten im Kontext Informatik/KI: [Digitaler Res
 - [Vibe Science](#vibe-science)
 - [Generative KI](#generative-ki)
 - [Bildmaterialien](#bildmaterialien)
+- [Schwesterseiten](#schwesterseiten)
 - [Footer](#footer)
 
 <!-- tocstop -->
+
+## Prelude
+
+* **Vibe-Coding-Anpassungsstörungen?**
+
+  Die [aktuelle Zerrissenheit](https://writer.com/blog/enterprise-ai-adoption-survey-results-press-release/) erinnert an frühere Paradigmenwechsel:
+
+  * Dijkstra wurde nicht nur für „[GOTO considered harmful](https://www.perplexity.ai/search/new?q=Wurde+Dijkstra+nicht+nur+gefeiert+für+%22Goto+considered+harmful%22+sondern+auch+angefeindet%3F+Wie+kontrovers+war+die+Modernisierung+zu+seiner+Zeit%3F)“ gefeiert, sondern auch kontrovers diskutiert.
+  * GOTO war nicht „falsch“, sondern Teil des 2GL-Programmierstils. Structured Programming und 3GL haben es lediglich im Mainstream verdrängt.
+  * Ähnlich dürfte es mit 6GL-Techniken laufen.
+
+  Nebenbemerkung: GOTO wird beispielsweise im Linux-Kernel weiterhin intensiv für Cleanup- und Error-Handling-Muster verwendet; ein Grund könnte allerdings sein, dass sich bessere Alternativen wie ein [defer-Konstrukt](https://www.open-std.org/JTC1/SC22/WG14/www/docs/n3734.pdf) noch im C-Standardisierungsprozess befinden.
+
+* **Programmiersprachengenerationen**
+
+  Kennt ihr die Entwicklung von **[1GL bis 5GL](https://en.wikipedia.org/wiki/Programming_language_generations)**? ⭐
+
+  * 4GL (deklarativ) und 5GL (logikbasiert) wurden nie ein Massenphänomen und haben 3GL-Hochsprachen nicht verdrängt.
+  * Uncle Bobs Vortrag **„[The Future of Programming](https://www.youtube.com/watch?v=ecIWPzGEbFc)“** ⭐ ist hierzu weiterhin relevant!
+  * Interessanterweise hatte bereits [Dijkstra über Natural Language Programming](https://www.cs.utexas.edu/~EWD/transcriptions/EWD06xx/EWD667.html) ⭐ nachgedacht, aber ausnahmsweise irrte er sich hierzu. Allerdings hatte die breite Öffentlichkeit die Fähigkeiten von großen Sprachmodellen vor November 2022 nicht für möglich gehalten.
+
+* **Vibe Coding als 6GL**
+
+  Vibe Coding kann als **6GL (Sixth-Generation Programming Language)** i.S.v. **Natural Language Programming** bzw. **Spec-Driven Development** verstanden werden.
+  * 3GL-Programmierer beherrschen heute meist weder 2GL (Assembly) noch 1GL (Maschinensprache) im Alltag.
+  * Jede neue Abstraktion erzeugt eine neue Generation von Entwicklern.
+  * **Die 6GL wird die 3GL nicht einfach „ersetzen“, sondern die nächste dominante Abstraktionsebene bilden.** ⭐
+
 
 ## Agentic Engineering Manifest
 
@@ -124,7 +152,7 @@ Vibe Coding Referenzprojekt für Einsteiger mit kleinen Projekten (ca. 1-wöchig
 
 * Mein Modul Webanwendungsentwicklung, studentisches Team DeadLock: [CLAUDE.md](https://github.com/CycleByte/WAE-2026SS-TeamBlau-DeadLock/blob/main/CLAUDE.md) ⭐
 
-### Weitere Hinweise
+### Weitere Anmerkungen
 
 * **Welches Modell passt in meine Grafikkarte?** → Nutzt den **[VRAM Calculator](https://apxml.com/tools/vram-calculator)** ⭐
   * (Wer die zugrunde liegenden Infos ebenfalls gelesen hat? Natürlich das freundliche Freibier-Frontier-Modell deiner Wahl. Der Bot berät dazu ebenfalls.)*
@@ -149,33 +177,8 @@ Vibe Coding Referenzprojekt für Einsteiger mit kleinen Projekten (ca. 1-wöchig
 
   Gerade Studierende profitieren davon, weil Kosten eine zentrale Rolle spielen.
 
-* **Vibe-Coding-Anpassungsstörungen?**
 
-  Die [aktuelle Zerrissenheit](https://writer.com/blog/enterprise-ai-adoption-survey-results-press-release/) erinnert an frühere Paradigmenwechsel:
-
-  * Dijkstra wurde nicht nur für „[GOTO considered harmful](https://www.perplexity.ai/search/new?q=Wurde+Dijkstra+nicht+nur+gefeiert+für+%22Goto+considered+harmful%22+sondern+auch+angefeindet%3F+Wie+kontrovers+war+die+Modernisierung+zu+seiner+Zeit%3F)“ gefeiert, sondern auch kontrovers diskutiert.
-  * GOTO war nicht „falsch“, sondern Teil des 2GL-Programmierstils. Structured Programming und 3GL haben es lediglich im Mainstream verdrängt.
-  * Ähnlich dürfte es mit 6GL-Techniken laufen.
-
-  Nebenbemerkung: GOTO wird beispielsweise im Linux-Kernel weiterhin intensiv für Cleanup- und Error-Handling-Muster verwendet; ein Grund könnte allerdings sein, dass sich bessere Alternativen wie ein [`defer`-Konstrukt](https://www.open-std.org/JTC1/SC22/WG14/www/docs/n3734.pdf) noch im C-Standardisierungsprozess befinden.
-
-* **Programmiersprachengenerationen**
-
-  Kennt ihr die Entwicklung von **[1GL bis 5GL](https://en.wikipedia.org/wiki/Programming_language_generations)**?
-
-  * 4GL (deklarativ) und 5GL (logikbasiert) wurden nie ein Massenphänomen und haben 3GL-Hochsprachen nicht verdrängt.
-  * Uncle Bobs Vortrag **„[The Future of Programming](https://www.youtube.com/watch?v=ecIWPzGEbFc)“** ist hierzu weiterhin relevant.
-
-* **Vibe Coding als 6GL**
-
-  Vibe Coding kann als **6GL: Natural Language Programming bzw. Spec-Driven Development** verstanden werden.
-
-  * 3GL-Programmierer beherrschen heute meist weder 2GL (Assembly) noch 1GL (Maschinensprache) im Alltag.
-  * Jede neue Abstraktion erzeugt eine neue Generation von Entwicklern.
-  * Die 6GL wird die 3GL nicht einfach „ersetzen“, sondern die nächste dominante Abstraktionsebene bilden.
-
-
-## Vibe Coding Einstiegshinweise
+### Vibe Coding Einstiegshinweise
 
 Gutes Preis/Leistungsverhältnis:
 
@@ -244,6 +247,11 @@ agy models |
     * Wichtig: Gute Bildung beantwortet nicht nur Fragen – sie erzeugt bessere Fragen.
     * Nebengesetz: „Der größte Lernerfolg ist geistige Selbstständigkeit.“
 
+### Lernpfad
+
+- Erst: [Effektives Prompting in der Pädagogik](https://promptkatalog.eldshort.de/prompten.html)
+- Dann: Agentic Skill [mattpocock teach](https://www.skills.sh/mattpocock/skills/teach)
+
 ### Lernphilosophie
 
 * Talentmythos → Growth Mindset
@@ -288,7 +296,7 @@ agy models |
 		- Text-to-Code: [Top Open Source (Free) Text to Code Generator models on the market](https://www.edenai.co/post/top-free-code-generation-tools-apis-and-open-source-models)
 		- Weiterführende Referenz: [Awesome OpenAI](https://github.com/Jaykef/awesome-openAI)
 	- Image Generator: [Awesome Text-to-Image](https://github.com/Yutong-Zhou-cv/Awesome-Text-to-Image)
-	- Tools für Text-to-X: auf meiner [Werkzeuge-Schwesterseite](https://github.com/cyberlytics/awesome-thesis-tools#generative-ki) (Text-zu-Bild, Text-zu-Video, Text-zu-Präsentation, Text-zu-Quiz, Text-zu-Sprache, Text-zu-Sound)
+	- Tools für Text-to-X: Im unteren [Werkzeuge-Unterabschnitt](#generative-ki) (Text-zu-Bild, Text-zu-Video, Text-zu-Präsentation, Text-zu-Quiz, Text-zu-Sprache, Text-zu-Sound)
 	- Europäische Ebene: **[LEAM](https://leam.ai/)**
 	- Datensets: vgl. [Tools-Seite BDCC, Abschnitt Data Science](https://github.com/cyberlytics/awesome-bdccai-tools#data-science)
 	- Weiterführende Quellen: [Awesome Generative AI](https://github.com/steven2358/awesome-generative-ai) | [Awesome Generative Deep Art](https://github.com/filipecalegario/awesome-generative-deep-art), [Awesome MVS](https://github.com/walsvid/Awesome-MVS)
@@ -310,18 +318,6 @@ agy models |
 			- Technik: "[Cursor](https://www.cursor.com/) [Composer](https://cursor101.com/article/cursor-composer) (i.e., multi-file editing), backed with Claude [Sonnet](https://www.anthropic.com/claude/sonnet)" (insb. wegen Claude Sonnets großem Kontextfenster von 200K+)
 		- Video [The End of Software Engineering (as we know it)](https://www.youtube.com/watch?v=j0XukGlEUTc) von Jan Bosch (zzgl. [blog article](https://janbosch.com/blog/index.php/2017/10/06/the-end-of-system-architects/))
 		- State-of-the-Art: [AI Unified Process](https://unifiedprocess.ai/) (Einstieg: [software-architektur.tv](https://software-architektur.tv/2026/01/16/folge298.html), [Video](https://tube.tchncs.de/w/mUmkL5mEFzYXD8dY4ixrTY)) mit Querbezug zu [Self-contained Systems](https://scs-architecture.org/) (SCS) von Innoq
-	- Prompting Recipies / Prompt-Katalog / Prompts Directory:
-		- Cheat Sheets: [20 ChatGPT Prompts](https://images.app.goo.gl/7LqXi96XaQABWpRY6), [All-in-one AI Cheat Sheet](https://images.app.goo.gl/uvfr5XsuUdHD2gRYA), [Prompt Engineering Mistakes](https://images.app.goo.gl/ANUTJHrRc6QzM1ak6)
-			- Edu: Ulrich Ivens [Effektives Prompting in der Pädagogik](https://promptkatalog.eldshort.de/prompten.html)
-		- ChatBot/Text-to-Text Kataloge:
-			- Free/Open: [prompts.chat](https://prompts.chat/), [Agentic Workers](https://www.agenticworkers.com/library), GPTBot [Prompts Library](https://gptbot.io/chatgpt-prompts), Alexandria [Propmt Library](https://aiexandria.com/), Temaniaga [Prompt Hub for Business](https://www.temaniaga.com/apps/ai-prompt-hub/), [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts)
-			- Commercial (€): [GodOfPrompt](https://www.godofprompt.ai/prompt-library), [Business Prompts](https://businessaiprompts.com/PromptLibrary)
-			- Vendors: OpenAI [Cookbook](https://cookbook.openai.com/), Microsoft [Copilot Promptkatalog](https://m365.cloud.microsoft/copilot-prompts)
-			- Edu: [KI-Campus Prompt-Katalog](https://coda.io/@kic/prompt-katalog), [Josh Cavalier](https://joshcavalier.notion.site/), [Microsoft Prompts for Edu](https://github.com/microsoft/prompts-for-edu)
-		- Text-to-Image Kataloge: [PromptHero](https://prompthero.com/ai-prompts), [chatgptprompt.in](https://chatgptprompt.in/)
-		- Text-to-Video Kataloge: [PromptHero](https://prompthero.com/video), [chatgptprompt.in](https://chatgptprompt.in/prompts?category=video)
-		- Vibe Coding Kataloge: [loveable](https://docs.lovable.dev/prompting/prompting-library), [cursor.directory](https://cursor.directory/rules), Examples by [VibeCodex](https://vibecodex.io/#prompts)
-	- System Prompts: [System Prompts Leaks](https://github.com/asgeirtj/system_prompts_leaks)
 	- Weiterführende Quellen: [Awesome Prompt Engineering](https://github.com/promptslab/Awesome-Prompt-Engineering) | reddit-Liste [Useful Prompt Engineering tools and resources](https://www.reddit.com/r/StableDiffusion/comments/xcrm4d/useful_prompt_engineering_tools_and_resources/) | lablab [AI Tutorials](https://lablab.ai/t) | [Awesome Text-to-Image](https://github.com/Yutong-Zhou-cv/Awesome-Text-to-Image)
 
 ## Vibe Coding
@@ -331,11 +327,6 @@ agy models |
 - RAD: vgl. Schwesterseite [awesome-software-engineering-tools » Rapid Application Development](https://github.com/cyberlytics/awesome-software-engineering-tools#rapid-application-development)
 - Low Code: vgl. Schwesterseite [awesome-bdccai-tools » Low-Code / No-Code](https://github.com/cyberlytics/awesome-bdccai-tools#low-code--no-code)
 - Übersicht/Einstieg: indiehackers [Vibe Coding Tools](https://www.indiehackers.com/vibe-coding-tools) ([free ones](https://www.indiehackers.com/vibe-coding-tools?tags=Free))
-- Wegbereiter:
-	- Begriff: [Andrej Karpathy](https://x.com/karpathy/status/1886192184808149383) in February 2025
-	- Technik: "[Cursor](https://www.cursor.com/) [Composer](https://cursor101.com/article/cursor-composer) (i.e., multi-file editing), backed with Claude [Sonnet](https://www.anthropic.com/claude/sonnet) (i.a., due to its large context window of 200K+), talked to via [SuperWhisper](https://superwhisper.com/)"
-- Methodisches State-of-the-Art:
-	- [AI Unified Process](https://unifiedprocess.ai/) (Einstieg: [software-architektur.tv](https://software-architektur.tv/2026/01/16/folge298.html), [Video](https://tube.tchncs.de/w/mUmkL5mEFzYXD8dY4ixrTY)) mit Querbezug zu [Self-contained Systems](https://scs-architecture.org/) (SCS) von Innoq
 - Vibe Coding via Agentic AI (Full-Stack-Engineering Assistants)
 	- Marktführer CLIs: 
 		- Anthropic **[Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code/overview)** \[**npm install -g @anthropic-ai/claude-code**\]
@@ -382,11 +373,26 @@ agy models |
 	- Kostenpflichtig (€): **[Cogram](https://www.cogram.com/)**
 - Vibe Coding via Prompting
 	- Tutorials: [loveable](https://docs.lovable.dev/tips-tricks/prompting-one), [VibeCoding](https://github.com/cpjet64/vibecoding/tree/main), [bolters.io Knowledge Base](https://bolters.io/)
-	- Prompting Recipies: Prompting Library by [loveable](https://docs.lovable.dev/prompting/prompting-library), [cursor.directory](https://cursor.directory/rules), Examples by [VibeCodex](https://vibecodex.io/#prompts), OpenAI Academy [Prompt Packs](https://academy.openai.com/public/tags/prompt-packs-6849a0f98c613939acef841c)
 	- Prompt Generators: [TinyToolStack](https://tinytoolstack.com/app/vibecodingpromptgenerator?ref=producthunt), PromptHub [Prompt Iterator](https://www.prompthub.us/prompt-enhancers/prompt-iterator), [Bolt Prompter](https://chatgpt.com/g/g-tozliiBeO-bolt-prompter)
 - Supporting Tools
 	- Pack your codebase into AI-friendly formats: [Repomix](https://repomix.com)
 - Weiterführende Referenzen: [Awesome Vibe Coding](https://github.com/filipecalegario/awesome-vibe-coding), [Awesome Vibe Coding Tools](https://github.com/furudo-erika/awesome-vibe-coding-tools?tab=readme-ov-file) 
+
+## Prompting Recipies
+
+\[ aka Prompt-Katalog / Prompts Directory \]
+
+- Prompting Cheat Sheets: [20 ChatGPT Prompts](https://images.app.goo.gl/7LqXi96XaQABWpRY6), [All-in-one AI Cheat Sheet](https://images.app.goo.gl/uvfr5XsuUdHD2gRYA), [Prompt Engineering Mistakes](https://images.app.goo.gl/ANUTJHrRc6QzM1ak6)
+	- Edu: Ulrich Ivens [Effektives Prompting in der Pädagogik](https://promptkatalog.eldshort.de/prompten.html)
+- ChatBot/Text-to-Text Kataloge:
+	- Free/Open: [prompts.chat](https://prompts.chat/), [Agentic Workers](https://www.agenticworkers.com/library), GPTBot [Prompts Library](https://gptbot.io/chatgpt-prompts), Alexandria [Prompt Library](https://aiexandria.com/), Temaniaga [Prompt Hub for Business](https://www.temaniaga.com/apps/ai-prompt-hub/), [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts)
+	- Commercial (€): [GodOfPrompt](https://www.godofprompt.ai/prompt-library), [Business Prompts](https://businessaiprompts.com/PromptLibrary)
+	- Vendors: OpenAI [Cookbook](https://cookbook.openai.com/), Microsoft [Copilot Promptkatalog](https://m365.cloud.microsoft/copilot-prompts)
+	- Edu: [KI-Campus Prompt-Katalog](https://coda.io/@kic/prompt-katalog), [Josh Cavalier](https://joshcavalier.notion.site/), [Microsoft Prompts for Edu](https://github.com/microsoft/prompts-for-edu)
+- Text-to-Image Kataloge: [PromptHero](https://prompthero.com/ai-prompts), [chatgptprompt.in](https://chatgptprompt.in/)
+- Text-to-Video Kataloge: [PromptHero](https://prompthero.com/video), [chatgptprompt.in](https://chatgptprompt.in/prompts?category=video)
+- Vibe Coding Kataloge: [loveable](https://docs.lovable.dev/prompting/prompting-library), [cursor.directory](https://cursor.directory/rules), Examples by [VibeCodex](https://vibecodex.io/#prompts)
+- System Prompts: [System Prompts Leaks](https://github.com/asgeirtj/system_prompts_leaks)
 
 ## Agent Context File
 
@@ -412,7 +418,7 @@ agy models |
 	- [Antigravity Awesome Skills](https://github.com/sickn33/antigravity-awesome-skills) (funkioniert auch mit anderen AI coding assistants)
 	- [Superpowers](https://github.com/obra/superpowers)
 	- Repos: [Open Agent Skills Ecosystem](https://www.skills.sh/), [SkillsLLM](https://skillsllm.com/), [Awesome Skills](https://awesome-skills.com/)
-	- Further Reading: [Awesome Claude Skills #1](https://github.com/travisvn/awesome-claude-skills), [Awesome Claude Skills #1](https://github.com/ComposioHQ/awesome-claude-skills), [Awesome Claude Code Subagents](https://github.com/VoltAgent/awesome-claude-code-subagents), [Official Claude Plugins Marketplace](https://claude.com/plugins)
+	- Further Reading: [Awesome Claude Skills #1](https://github.com/travisvn/awesome-claude-skills), [Awesome Claude Skills #2](https://github.com/ComposioHQ/awesome-claude-skills), [Awesome Claude Code Subagents](https://github.com/VoltAgent/awesome-claude-code-subagents), [Official Claude Plugins Marketplace](https://claude.com/plugins)
 - MS Office
 	- Anthropic: [pdf](https://www.skills.sh/anthropics/skills/pdf), [pptx](https://www.skills.sh/anthropics/skills/pptx), [docx](https://www.skills.sh/anthropics/skills/docx), [xslx](https://www.skills.sh/anthropics/skills/xlsx)
 	- [ppt-master](https://www.skills.sh/hugohe3/ppt-master/ppt-master)
@@ -445,12 +451,17 @@ agy models |
 	- Cloud/GUI: [Vibe Coding Penetration Tester](https://github.com/firetix/vibe-coding-penetration-tester) (cf. [vibehack.io](http://vibehack.io/)), [ZeroThreat](https://zerothreat.ai/)
 
 ## Vibe Science
-	- [K-Dense BYOK](https://github.com/K-Dense-AI/k-dense-byok)
+- [K-Dense BYOK](https://github.com/K-Dense-AI/k-dense-byok)
 
 ## Generative KI
 
-Die Verwendung von generativer KI zur Text-Erstellung Ihrer Abschlussarbeit ist Ihnen ggf. untersagt. Dennoch können Sie sich die diversen Werkzeuge zu Nutzen machen, bspw. als persönlicher KI Tutor.
+Selbst wenn de Verwendung von generativer KI zur Text-Erstellung Ihrer Abschlussarbeit Ihnen ggf. untersagt sein sollte: Dennoch können Sie sich die diversen Werkzeuge zu Nutzen machen, bspw. als persönlicher KI Tutor.
 
+- Chatbots (aka Answer-Engines, in Ggbst. zu Search-Engines):
+	- Empfohlen: [**perplexity**.ai](https://www.perplexity.ai/) ⭐ (mit „Focus: Academic“)
+	- Weitere Nennenswerte: Anthropic **[Claude](https://www.anthropic.com)**, Google [Gemini](https://gemini.google.com/), OpenAI [ChatGPT](https://openai.com/blog/chatgpt/), Meta [Llama](https://llama.meta.com/), [HuggingChat](https://huggingface.co/chat/), Opera [Aria](https://www.opera.com/features/aria), [character.ai](https://beta.character.ai/), …
+	- KI-Suche (Hybirdform von LLMs und Search-Engines)
+		- [**you**.com](https://you.com/), [Andi](https://andisearch.com), Microsoft [Bing](https://bing.com/new), OpenAI [SearchGPT](https://openai.com/index/searchgpt-prototype/), …
 - AI-enabled Browser: Perplexity [Comet](https://comet.perplexity.ai/), [Sigma](https://www.sigmabrowser.com/), [Fellou](https://fellou.ai/), Arc [Max](https://arc.net/max), Opera [Aria](https://www.opera.com/de/features/aria), Microsoft Edge+Copilot
 	- Mac-only: [Dia](https://www.diabrowser.com/)
 	- Disbling AI features in Browsers: [Just the Browser](https://justthebrowser.com/)
@@ -479,10 +490,6 @@ Die Verwendung von generativer KI zur Text-Erstellung Ihrer Abschlussarbeit ist 
 	- Desktop/Cloud-only/Online: **[Noi](https://github.com/lencx/Noi)**
 	  - Single Vendor: Unofficial **[ChatGPT Desktop](https://github.com/lencx/ChatGPT)** \[**choco install chatgpt**\], Official **[Claude Desktop](https://claude.ai/download)** \[**choco install claude**\], Official **[Perplexity Windows App](https://apps.microsoft.com/detail/xp8jnqfbqh6pvf)** (sowie Unofficial Inulute [Perplexity AI Desktop](https://pplx.inulute.com/download/))
 	- more: [basran](https://github.com/hyperonym/basaran), [LocalAI](https://github.com/mudler/LocalAI), [Xorbits Inference](https://github.com/xorbitsai/inference) 
-	- Search-Chatbots: [**perplexity**.ai](https://www.perplexity.ai/) ⭐ (mit „Focus: Academic“)
-		- Weitere Nennenswerte: Anthropic **[Claude](https://www.anthropic.com)**, Google [Gemini](https://gemini.google.com/), OpenAI [ChatGPT](https://openai.com/blog/chatgpt/), Meta [Llama](https://llama.meta.com/), [HuggingChat](https://huggingface.co/chat/), Opera [Aria](https://www.opera.com/features/aria), [character.ai](https://beta.character.ai/), …
-	- KI-Suche
-		- [**you**.com](https://you.com/), [Andi](https://andisearch.com), Microsoft [Bing](https://bing.com/new), OpenAI [SearchGPT](https://openai.com/index/searchgpt-prototype/), …
 	- Data Science
 		- [**WolframAlpha** Chat Notebooks in der Wolfram Cloud](https://www.wolframcloud.com/) ⭐ ([Anleitung](https://writings.stephenwolfram.com/2023/06/introducing-chat-notebooks-integrating-llms-into-the-notebook-paradigm/))
 	- Summarizer
@@ -496,8 +503,8 @@ Die Verwendung von generativer KI zur Text-Erstellung Ihrer Abschlussarbeit ist 
 		- Dev/FOSS-Models: Facebook [Llama](https://www.llama.com/llama-downloads/), OpenAI [gpt-oss](https://openai.com/index/introducing-gpt-oss/), Google [gemma](https://huggingface.co/google), [DeepSeek](https://huggingface.co/deepseek-ai), xAI [grok](https://huggingface.co/xai-org), [Qwen](https://huggingface.co/Qwen), [Mistral](https://huggingface.co/mistralai) (Mistral [Commercial vs. OSS](https://docs.mistral.ai/getting-started/models)), TII [Falcon](https://huggingface.co/tiiuae), BigScience [BLOOM](https://huggingface.co/bigscience/bloom)
 			- AI-Coder Model-Benchmark: [Eval Plus](https://evalplus.github.io/leaderboard.html)
 		- Desktop/Local/Offline: **[Msty](https://msty.app/)** ⭐, **[LM Studio](https://lmstudio.ai/)** ⭐
-		- WebUI/Local/Offline: [bolt.diy](https://pinokio.co/item.html?uri=https%3A%2F%2Fgithub.com%2Fpinokiofactory%2Fbolt), [autogpt](https://pinokio.co/item.html?uri=https%3A%2F%2Fgithub.com%2Fpinokiofactory%2Fautogpt) (via [pinokio](https://pinokio.co/))
-		- Cloud/freemium: [DeepSeek Chat](https://chat.deepseek.com/) ,Online [Eden AI](https://www.edenai.co/), [uvm.](https://codesubmit.io/blog/ai-code-tools/)
+		- WebUI/Local/Offline: via [pinokio](https://pinokio.co/) → [bolt.diy](https://github.com/stackblitz-labs/bolt.diy), [autogpt](https://agpt.co/)
+		- Cloud/freemium: [DeepSeek Chat](https://chat.deepseek.com/), Online [Eden AI](https://www.edenai.co/), [uvm.](https://codesubmit.io/blog/ai-code-tools/)
 		- Nennenswerte andere Dev-Tools: [dir-assistant](https://github.com/curvedinf/dir-assistant)
 		- Weiterführende Referenzen: [Awesome AI-Powered Developer Tools](https://github.com/jamesmurdza/awesome-ai-devtools) | [Awesome Code-AI](https://github.com/sourcegraph/awesome-code-ai)
 	- Text-to-SQL:
@@ -559,6 +566,11 @@ Die Verwendung von generativer KI zur Text-Erstellung Ihrer Abschlussarbeit ist 
 	- [Ideogram](https://ideogram.ai/)
 - AI Image Upscaler
 	- **[upscayl](https://upscayl.org/)** ⭐ ([github](https://github.com/upscayl/upscayla)) basierend auf ESRGAN/Real-ESRGAN
+
+## Schwesterseiten
+
+Es gibt von mir weitere Schwesterseiten im Kontext Informatik/KI: [Digitaler Ressourcen-Pool](https://github.com/cyberlytics/awesome-basics), [Werkzeuge » Abschlussarbeiten](https://github.com/cyberlytics/awesome-thesis-tools), [Werkzeuge » Software-Engineering](https://github.com/cyberlytics/awesome-software-engineering-tools) und [Werkzeuge » Big Data und Cloud Computing für AI](https://github.com/cyberlytics/awesome-bdccai-tools).
+
 
 ## Footer
 
