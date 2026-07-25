@@ -251,6 +251,7 @@ agy models |
 
 - Erst: [Effektives Prompting in der Pädagogik](https://promptkatalog.eldshort.de/prompten.html)
 - Dann: Agentic Skill [mattpocock teach](https://www.skills.sh/mattpocock/skills/teach)
+- Dann: **[The Diamond Age](https://www.amazon.de/dp/0241953197/)** von Neal Stephenson (AI Learning Tutor: „Young Lady's Illustrated Primer: a Propædeutic Enchiridion“)
 
 ### Lernphilosophie
 
