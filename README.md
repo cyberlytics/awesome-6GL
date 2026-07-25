@@ -59,7 +59,7 @@ Dies ist sowohl eine Tool-Sammlung als auch ein digitaler Ressourcen-Pool mit ko
   Vibe Coding kann als **6GL (Sixth-Generation Programming Language)** i.S.v. **Natural Language Programming** bzw. **Spec-Driven Development** verstanden werden.
   * 3GL-Programmierer beherrschen heute meist weder 2GL (Assembly) noch 1GL (Maschinensprache) im Alltag.
   * Jede neue Abstraktion erzeugt eine neue Generation von Entwicklern.
-  * **Die 6GL wird die 3GL nicht einfach „ersetzen“, sondern die nächste dominante Abstraktionsebene bilden.** ⭐
+  * **6GL wird die 3GL nicht „ersetzen“, sondern die nächste dominante Abstraktionsebene bilden.** ⭐
 
 
 ## Agentic Engineering Manifest
