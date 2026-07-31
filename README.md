@@ -445,6 +445,8 @@ agy models |
 - Java-centric: [diffblue](https://www.diffblue.com/)
 - Webartikel: Vibe Testing [with Playwright](https://timdeschryver.dev/blog/vibe-testing-with-playwright)
 
+- Vibe Pentesting
+	- Self-hosted/Agentic: **[DarkMoon](https://github.com/ASCIT31/Dark-Moon)** (GPL-3.0) – quelloffene Plattform für **autonomes KI-Pentesting** mit **MCP-Server**; deckt Web, API, Active Directory und Kubernetes ab; die lokale **Privacy-Gateway** hält sensible Werte vom LLM fern
 ## Vibe Hacking
 
 - Vibe Pentesting
