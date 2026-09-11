@@ -344,6 +344,7 @@ agy models |
 		- [LocalAGI](https://github.com/mudler/LocalAGI)
 		- [aider](https://aider.chat/): AI pair programming \[**pip install aider-install && aider-install\]
 		- [tgpt](https://github.com/aandrew-me/tgpt) (= Terminal GPT) \[**choco install tgpt**\]
+		- [3code](https://3code.capocasa.dev/) ([github](https://github.com/capocasa/3code)): token-effizienter Open-Source-Coding-Agent aus München; BYOK mit EU-Anbietern (TensorX, Mistral) für sensible Arbeit sowie günstigen Anbietern (Z.ai, DeepSeek, OpenRouter) für unkritische Arbeit; spart im Benchmark 1,5–5× Tokens bei gleicher oder besserer Completion-Rate \[**curl -fsSL https://3code.capocasa.dev/install | sh**\] (MIT)
 	- Desktop (u.a. VS Code Extensions):
 		- **[Cursor](https://www.cursor.com/)** \[**choco install cursoride**\]
 		- **[Windsurf](https://windsurf.com/)** (formerly Codeium) \[**choco install windsurf**\]
