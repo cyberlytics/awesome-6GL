@@ -19,22 +19,30 @@ Dies ist sowohl eine Tool-Sammlung als auch ein digitaler Ressourcen-Pool mit ko
 - [Agentic Engineering Manifest](#agentic-engineering-manifest)
 - [Agentic Education Manifest](#agentic-education-manifest)
 - [Lernmaterialien](#lernmaterialien)
-- [Vibe Coding](#vibe-coding)
+- [Vibe Coding Werkzeuge](#vibe-coding-werkzeuge)
 - [Prompting Recipies](#prompting-recipies)
 - [Agent Context File](#agent-context-file)
 - [MCP](#mcp)
 - [Agent Skills](#agent-skills)
-- [Vibe Testing](#vibe-testing)
-- [Vibe Hacking](#vibe-hacking)
-- [Vibe Science](#vibe-science)
-- [Generative KI](#generative-ki)
-- [Bildmaterialien](#bildmaterialien)
+- [Vibe Testing Werkzeuge](#vibe-testing-werkzeuge)
+- [Vibe Hacking Werkzeuge](#vibe-hacking-werkzeuge)
+- [Vibe Science Werkzeuge](#vibe-science-werkzeuge)
+- [Generative KI Werkzeuge](#generative-ki-werkzeuge)
+- [Bildmaterialien Werkzeuge](#bildmaterialien-werkzeuge)
 - [Schwesterseiten](#schwesterseiten)
 - [Footer](#footer)
 
 <!-- tocstop -->
 
 ## Prelude
+
+* **Programmiersprachengenerationen**
+
+  Kennt ihr die Entwicklung von **[1GL bis 5GL](https://en.wikipedia.org/wiki/Programming_language_generations)**? ⭐
+
+  * 4GL (deklarativ) und 5GL (logikbasiert) wurden nie ein Massenphänomen und haben 3GL-Hochsprachen nicht verdrängt.
+  * Uncle Bobs Vortrag **„[The Future of Programming](https://www.youtube.com/watch?v=ecIWPzGEbFc)“** ⭐ ist hierzu weiterhin relevant!
+  * Interessanterweise hatte bereits [Dijkstra über Natural Language Programming](https://www.cs.utexas.edu/~EWD/transcriptions/EWD06xx/EWD667.html) ⭐ nachgedacht, aber ausnahmsweise irrte er sich hierzu. Allerdings hatte die breite Öffentlichkeit die Fähigkeiten von großen Sprachmodellen vor November 2022 nicht für möglich gehalten.
 
 * **Vibe-Coding-Anpassungsstörungen?**
 
@@ -45,14 +53,6 @@ Dies ist sowohl eine Tool-Sammlung als auch ein digitaler Ressourcen-Pool mit ko
   * Ähnlich dürfte es mit 6GL-Techniken laufen.
 
   Nebenbemerkung: GOTO wird beispielsweise im Linux-Kernel weiterhin intensiv für Cleanup- und Error-Handling-Muster verwendet; ein Grund könnte allerdings sein, dass sich bessere Alternativen wie ein [defer-Konstrukt](https://www.open-std.org/JTC1/SC22/WG14/www/docs/n3734.pdf) noch im C-Standardisierungsprozess befinden.
-
-* **Programmiersprachengenerationen**
-
-  Kennt ihr die Entwicklung von **[1GL bis 5GL](https://en.wikipedia.org/wiki/Programming_language_generations)**? ⭐
-
-  * 4GL (deklarativ) und 5GL (logikbasiert) wurden nie ein Massenphänomen und haben 3GL-Hochsprachen nicht verdrängt.
-  * Uncle Bobs Vortrag **„[The Future of Programming](https://www.youtube.com/watch?v=ecIWPzGEbFc)“** ⭐ ist hierzu weiterhin relevant!
-  * Interessanterweise hatte bereits [Dijkstra über Natural Language Programming](https://www.cs.utexas.edu/~EWD/transcriptions/EWD06xx/EWD667.html) ⭐ nachgedacht, aber ausnahmsweise irrte er sich hierzu. Allerdings hatte die breite Öffentlichkeit die Fähigkeiten von großen Sprachmodellen vor November 2022 nicht für möglich gehalten.
 
 * **Vibe Coding als 6GL**
 
@@ -150,12 +150,12 @@ Dies ist sowohl eine Tool-Sammlung als auch ein digitaler Ressourcen-Pool mit ko
 
 Vibe Coding Referenzprojekt für Einsteiger mit kleinen Projekten (ca. 1-wöchige SW-Prototypen)?
 
-* Mein Modul Webanwendungsentwicklung, studentisches Team DeadLock: [CLAUDE.md](https://github.com/CycleByte/WAE-2026SS-TeamBlau-DeadLock/blob/main/CLAUDE.md) ⭐
+* bspw. mein Modul Webanwendungsentwicklung, studentisches Team DeadLock: [CLAUDE.md](https://github.com/CycleByte/WAE-2026SS-TeamBlau-DeadLock/blob/main/CLAUDE.md) ⭐
 
 ### Weitere Anmerkungen
 
 * **Welches Modell passt in meine Grafikkarte?** → Nutzt den **[VRAM Calculator](https://apxml.com/tools/vram-calculator)** ⭐
-  * (Wer die zugrunde liegenden Infos ebenfalls gelesen hat? Natürlich das freundliche Freibier-Frontier-Modell deiner Wahl. Der Bot berät dazu ebenfalls.)*
+  * (Wer die zugrunde liegenden Infos ebenfalls gelesen hat? Natürlich das freundliche Freibier-Frontier-Modell deiner Wahl, d.h. der Bot berät hierzu ebenfalls zuverlässig.)*
 
 * **„DeepSeek als Alternative zu Claude Code oder GitHub Copilot?“ ist die falsche Fragestellung.**
   Die eigentliche Einordnung ist:
@@ -166,7 +166,11 @@ Vibe Coding Referenzprojekt für Einsteiger mit kleinen Projekten (ca. 1-wöchig
 
   NVIDIA DGX Spark bzw. Ryzen AI 395-Systemen könnte man entsprechend auch als **Premium-AI-Edge** bezeichnen.
 
-  DeepSeek R1 (Release Januar 2025) war ein **671B-Modell** mit **37B aktiven Parametern durch Mixture-of-Experts (MoE)**. Die lokal auf Laptops und PCs genutzten DeepSeek-Varianten sind dagegen typischerweise **3B/7B/9B-Modelle**. Das große 671B(37B)-DeepSeek ist Open Source, läuft aber nicht auf gewöhnlicher Edge-Hardware ([DeepSeek V4 pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro): 1.6T / [Kimi K3](https://platform.kimi.ai/docs/guide/kimi-k3-quickstart): 2.8T)
+  [GPT-3](https://arxiv.org/pdf/2005.14165.pdf) war (beschrieben 2020, kommerzieller Durchbruch November 2022) ein **175B-Modell** (deutsche 175 Milliarden). **DeepSeek R1** (Release Januar 2025) war ein **671B-Modell** mit **37B aktiven Parametern durch Mixture-of-Experts (MoE)**. Das große 671B(37B)-DeepSeek R1 ist zwar FOSS Open Weight, läuft aber nicht auf gewöhnlicher Consumer-Hardware. Kleinere Varianten von DeepSeek sind "distilled versions" und basieren faktisch auf Qwen- oder Llama-Architekturen - hinsichtlich Edge-Hardware hier wird es hier also technisch kompliziert. Das französische **Mistral Large 3** (ab Dezember 2025) ist ein FOSS Open Weight 675B-Modell (41B aktiv durch MoE) und ist u.a. auch als 8B oder 14B Edge-Modell verfügbar.
+  
+  Ein ab Sommer 2025 (zweieinhalb Jahre nach Beginn des ChatGPT-Zeitalters) verfügbares FOSS Open Weight Mid-Tier-Modell für die Premium-AI-Edge (PCs mit 128GB unified RAM oder im Unternehmen per 80GB NVIDIA H100) ist **gpt-oss-120b**, ein 117B-Modell mit 5B aktiven Parametern durch MoE, welches im Vergleich zum urpsrünglichen GPT-3 (zur Erinnerung: 175B) und auch zum legacy GPT-3.5-Turbo deutliche Überlegenheit und damit Massentauglichkeit für FOSS-basierte Local-AI demonstrierte.
+  
+  Weitere nennenswerte FOSS Open Weight Frontier-Modelle sind **[DeepSeek V4 pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro)** mit 1.6T und **[Kimi K3](https://platform.kimi.ai/docs/guide/kimi-k3-quickstart)** mit 2.8T (also deutsche Billionen). Kimi K3 belegt im nativen MXFP4-Format ca. 1½ TB an Speicherplatz und benötigt ein GPU-Cluster mit mindestens 1680GB VRAM. (Ab OpenAI GPT-3.5 sowie für alle Anthropic Claude-Modelle wurden keine offiziellen Anzahlen an Parametern mehr für die Cloud-Modelle der amerikanischen Big-Tech-Anbieter veröffentlicht.)
 
 * **Modelmaxxing als Kostenoptimierung**
 
@@ -297,7 +301,7 @@ agy models |
 		- Text-to-Code: [Top Open Source (Free) Text to Code Generator models on the market](https://www.edenai.co/post/top-free-code-generation-tools-apis-and-open-source-models)
 		- Weiterführende Referenz: [Awesome OpenAI](https://github.com/Jaykef/awesome-openAI)
 	- Image Generator: [Awesome Text-to-Image](https://github.com/Yutong-Zhou-cv/Awesome-Text-to-Image)
-	- Tools für Text-to-X: Im unteren [Werkzeuge-Unterabschnitt](#generative-ki) (Text-zu-Bild, Text-zu-Video, Text-zu-Präsentation, Text-zu-Quiz, Text-zu-Sprache, Text-zu-Sound)
+	- Tools für Text-to-X: Im unteren [Werkzeuge-Unterabschnitt](#generative-ki-werkzeuge) (Text-zu-Bild, Text-zu-Video, Text-zu-Präsentation, Text-zu-Quiz, Text-zu-Sprache, Text-zu-Sound)
 	- Europäische Ebene: **[LEAM](https://leam.ai/)**
 	- Datensets: vgl. [Tools-Seite BDCC, Abschnitt Data Science](https://github.com/cyberlytics/awesome-bdccai-tools#data-science)
 	- Weiterführende Quellen: [Awesome Generative AI](https://github.com/steven2358/awesome-generative-ai) | [Awesome Generative Deep Art](https://github.com/filipecalegario/awesome-generative-deep-art), [Awesome MVS](https://github.com/walsvid/Awesome-MVS)
@@ -313,15 +317,19 @@ agy models |
 		- OpenAI [Chain of Command](https://model-spec.openai.com/)
 			- Levels of authority: Root » System Prompt » Developer Prompt » User Prompt » Guideline Prompt » Message Prompt
 			- AI Agent Levels of Authority: Instruction Prompt » Message Prompt (however: agent instructions are also known as agent system prompt!)
-	- Vibe Coding:
-		- Wegbereiter:
-			- Begriff: [Andrej Karpathy](https://x.com/karpathy/status/1886192184808149383) (Feb. 2025)
-			- Technik: "[Cursor](https://www.cursor.com/) [Composer](https://cursor101.com/article/cursor-composer) (i.e., multi-file editing), backed with Claude [Sonnet](https://www.anthropic.com/claude/sonnet)" (insb. wegen Claude Sonnets großem Kontextfenster von 200K+)
-		- Video [The End of Software Engineering (as we know it)](https://www.youtube.com/watch?v=j0XukGlEUTc) von Jan Bosch (zzgl. [blog article](https://janbosch.com/blog/index.php/2017/10/06/the-end-of-system-architects/))
-		- State-of-the-Art: [AI Unified Process](https://unifiedprocess.ai/) (Einstieg: [software-architektur.tv](https://software-architektur.tv/2026/01/16/folge298.html), [Video](https://tube.tchncs.de/w/mUmkL5mEFzYXD8dY4ixrTY)) mit Querbezug zu [Self-contained Systems](https://scs-architecture.org/) (SCS) von Innoq
-	- Weiterführende Quellen: [Awesome Prompt Engineering](https://github.com/promptslab/Awesome-Prompt-Engineering) | reddit-Liste [Useful Prompt Engineering tools and resources](https://www.reddit.com/r/StableDiffusion/comments/xcrm4d/useful_prompt_engineering_tools_and_resources/) | lablab [AI Tutorials](https://lablab.ai/t) | [Awesome Text-to-Image](https://github.com/Yutong-Zhou-cv/Awesome-Text-to-Image)
+	- Weiterführende Quellen: roadmap.sh [Prompt Engineering](https://roadmap.sh/prompt-engineering), [Awesome Prompt Engineering](https://github.com/promptslab/Awesome-Prompt-Engineering) | reddit-Liste [Useful Prompt Engineering tools and resources](https://www.reddit.com/r/StableDiffusion/comments/xcrm4d/useful_prompt_engineering_tools_and_resources/) | lablab [AI Tutorials](https://lablab.ai/t) | [Awesome Text-to-Image](https://github.com/Yutong-Zhou-cv/Awesome-Text-to-Image)
+- Vibe Coding:
+	- Wegbereiter:
+		- Begriff: [Andrej Karpathy](https://x.com/karpathy/status/1886192184808149383) (Feb. 2025)
+		- Technik: "[Cursor](https://www.cursor.com/) [Composer](https://cursor101.com/article/cursor-composer) (i.e., multi-file editing), backed with Claude [Sonnet](https://www.anthropic.com/claude/sonnet)" (insb. wegen Claude Sonnets großem Kontextfenster von 200K+)
+	- Video [The End of Software Engineering (as we know it)](https://www.youtube.com/watch?v=j0XukGlEUTc) von Jan Bosch (zzgl. [blog article](https://janbosch.com/blog/index.php/2017/10/06/the-end-of-system-architects/))
+	- State-of-the-Art: [AI Unified Process](https://unifiedprocess.ai/) (Einstieg: [software-architektur.tv](https://software-architektur.tv/2026/01/16/folge298.html), [Video](https://tube.tchncs.de/w/mUmkL5mEFzYXD8dY4ixrTY)) mit Querbezug zu [Self-contained Systems](https://scs-architecture.org/) (SCS) von Innoq
+	- Weiterführende Quellen: roadmap.sh [Vibe Coding](https://roadmap.sh/vibe-coding) sowie [AI Product Builder](https://roadmap.sh/ai-product-builder) (und allg. [Product Design](https://roadmap.sh/product-design))
+- AI Engineering
+	- vgl. Schwesterseite [awesome-basics](https://github.com/cyberlytics/awesome-basics) zu Machine Learning und Generative AI / LLMs
+	- Weiterführende Quellen: roadmap.sh [AI Agents](https://roadmap.sh/ai-agents) sowie [AI Engineering](https://roadmap.sh/ai-engineer)
 
-## Vibe Coding
+## Vibe Coding Werkzeuge
 
 \[ OBACHT: Gilt für eine akademische Abschlussarbeit ggf. als Unterschleif i.S.v. High-Tech-Plagiarism. Hochschulrecht ist anders als reines Urheberrecht. \]
 
@@ -436,7 +444,7 @@ agy models |
 	- [Graphify](https://graphify.net/)
 
 
-## Vibe Testing
+## Vibe Testing Werkzeuge
 
 - [RobotFramework](https://robotframework.org/) als Testökosystem, da dessen Testbeschreibungen sehr natürlichsprachlich sind
 - [Harness AI Test Automation](https://www.harness.io/products/ai-test-automation)
@@ -445,16 +453,17 @@ agy models |
 - Java-centric: [diffblue](https://www.diffblue.com/)
 - Webartikel: Vibe Testing [with Playwright](https://timdeschryver.dev/blog/vibe-testing-with-playwright)
 
-## Vibe Hacking
+## Vibe Hacking Werkzeuge
 
 - Vibe Pentesting
 	- Local/CLI: [vulnhuntr](https://github.com/protectai/vulnhuntr)
 	- Cloud/GUI: [Vibe Coding Penetration Tester](https://github.com/firetix/vibe-coding-penetration-tester) (cf. [vibehack.io](http://vibehack.io/)), [ZeroThreat](https://zerothreat.ai/)
 
-## Vibe Science
+## Vibe Science Werkzeuge
+
 - [K-Dense BYOK](https://github.com/K-Dense-AI/k-dense-byok)
 
-## Generative KI
+## Generative KI Werkzeuge
 
 Selbst wenn de Verwendung von generativer KI zur Text-Erstellung Ihrer Abschlussarbeit Ihnen ggf. untersagt sein sollte: Dennoch können Sie sich die diversen Werkzeuge zu Nutzen machen, bspw. als persönlicher KI Tutor.
 
@@ -474,7 +483,7 @@ Selbst wenn de Verwendung von generativer KI zur Text-Erstellung Ihrer Abschluss
 	- in Thunderbird:
 		- [ThunderAI](https://addons.thunderbird.net/en-US/thunderbird/addon/thunderai/)
 - Desktop-Apps / AI Tool Installer:
-	- Universell: **[pinokio](https://pinokio.computer/)**, [SEAIT](https://github.com/diStyApps/seait/)
+	- Universell: **[pinokio](https://pinokio.computer/)** ⭐, [SEAIT](https://github.com/diStyApps/seait/)
 - Text-to-Text:
 	- LLM Model-Benchmark: [What LLM Provider](https://whatllm.vercel.app/) | [Open LLM Leaderboard](https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard) ([Method](https://huggingface.co/docs/leaderboards/open_llm_leaderboard/about)) sowie [MTEB Leaderboard](https://huggingface.co/spaces/mteb/leaderboard)
 		- LLM Modelle mit DE-Unterstützung: [Webartikel](https://medium.com/@oledawidzinski/deutschsprachige-open-source-llms-als-alternative-zu-chatgpt-und-co-8ecbcf6ab96d) (u.a. Mistral-Nemo-Instruct-2407, DiscoLM_German_7b_v1, SauerkrautLM, …, Qwen2-7B-Instruct, Llama3-DiscoLeo-Instruct-8B, …)
@@ -484,9 +493,9 @@ Selbst wenn de Verwendung von generativer KI zur Text-Erstellung Ihrer Abschluss
 		- Local [OpenAI-compatible API](https://platform.openai.com/docs/api-reference/chat) Server: [LM Studio OpenAI-compatible API server](https://lmstudio.ai/docs/api/openai-api), [vLLM OpenAI-compatible API Server](https://docs.vllm.ai/en/latest/serving/openai_compatible_server.html), [Msty Local AI Service](https://docs.msty.app/how-to-guides/make-local-ai-service-available-on-the-network), [gpt4all API Server](https://docs.gpt4all.io/gpt4all_api_server/home.html), [Jan.ai Cortex Local API Server](https://cortex.so/docs/quickstart/) ([API](https://cortex.so/api-reference/))
 			- Docker: [LocalAI](https://localai.io/): Local family AI, full-stack = All-in-One: LLMs, Text to Speech, Speech to Text, Function calling, Image generation, Embedding server
 		- Let LLMs run code locally: [Open Interpreter](https://github.com/OpenInterpreter/open-interpreter)
-	- WebUI/Local/Offline: [pinokio](https://pinokio.co/)
+	- WebUI/Local/Offline:
 		- **[Open WebUI](https://openwebui.com/)** ⭐
-		- [Text Generation WebUI](https://pinokio.co/item.html?uri=https%3A%2F%2Fgithub.com%2Fcocktailpeanut%2Foobabooga.pinokio) (both best installed via )
+		- [Text Generation WebUI](https://github.com/hermannklie/text-generation-webui)
 	- Embedded/Local/Offline: [vLLM](https://github.com/vllm-project/vllm)
 	- Desktop/Cloud-only/Online: **[Noi](https://github.com/lencx/Noi)**
 	  - Single Vendor: Unofficial **[ChatGPT Desktop](https://github.com/lencx/ChatGPT)** \[**choco install chatgpt**\], Official **[Claude Desktop](https://claude.ai/download)** \[**choco install claude**\], Official **[Perplexity Windows App](https://apps.microsoft.com/detail/xp8jnqfbqh6pvf)** (sowie Unofficial Inulute [Perplexity AI Desktop](https://pplx.inulute.com/download/))
@@ -504,7 +513,7 @@ Selbst wenn de Verwendung von generativer KI zur Text-Erstellung Ihrer Abschluss
 		- Dev/FOSS-Models: Facebook [Llama](https://www.llama.com/llama-downloads/), OpenAI [gpt-oss](https://openai.com/index/introducing-gpt-oss/), Google [gemma](https://huggingface.co/google), [DeepSeek](https://huggingface.co/deepseek-ai), xAI [grok](https://huggingface.co/xai-org), [Qwen](https://huggingface.co/Qwen), [Mistral](https://huggingface.co/mistralai) (Mistral [Commercial vs. OSS](https://docs.mistral.ai/getting-started/models)), TII [Falcon](https://huggingface.co/tiiuae), BigScience [BLOOM](https://huggingface.co/bigscience/bloom)
 			- AI-Coder Model-Benchmark: [Eval Plus](https://evalplus.github.io/leaderboard.html)
 		- Desktop/Local/Offline: **[Msty](https://msty.app/)** ⭐, **[LM Studio](https://lmstudio.ai/)** ⭐
-		- WebUI/Local/Offline: via [pinokio](https://pinokio.co/) → [bolt.diy](https://github.com/stackblitz-labs/bolt.diy), [autogpt](https://agpt.co/)
+		- WebUI/Local/Offline: [bolt.diy](https://github.com/stackblitz-labs/bolt.diy), [autogpt](https://agpt.co/)
 		- Cloud/freemium: [DeepSeek Chat](https://chat.deepseek.com/), Online [Eden AI](https://www.edenai.co/), [uvm.](https://codesubmit.io/blog/ai-code-tools/)
 		- Nennenswerte andere Dev-Tools: [dir-assistant](https://github.com/curvedinf/dir-assistant)
 		- Weiterführende Referenzen: [Awesome AI-Powered Developer Tools](https://github.com/jamesmurdza/awesome-ai-devtools) | [Awesome Code-AI](https://github.com/sourcegraph/awesome-code-ai)
@@ -520,20 +529,21 @@ Selbst wenn de Verwendung von generativer KI zur Text-Erstellung Ihrer Abschluss
 			- Bonus-Hinweis: Für Stable Diffusion WebUI, und dessen Derivate, kann man dessen REST-API (aka **sdapi**) mit dessen Kommandozeilenparameter `--api` aktivieren
 				- Diesen `--api` Parameter kann man auch in Stability Matrix (unter dessen `Launch Options` für Stable Diffusion WebUI) leicht ergänzen (per `Extra Launch Arguments`)
 				- Die aktivierte **sdapi** läuft dann bspw. unter http://127.0.0.1:7860/sdapi/v1/txt2img
-		- WebUI/Local/Offline: [MFLUX-WWebUI](https://pinokio.co/item.html?uri=https%3A%2F%2Fgithub.com%2Fpinokiofactory%2FMFLUX-WEBUI) (via [pinokio](https://pinokio.co/))
+		- WebUI/Local/Offline: [MFLUX-WWebUI](https://github.com/CharafChnioune/MFLUX-WEBUI)
 		- Cloud/freemium-with-API: [Playground](https://playground.com/design/pricing), [PicoGen](https://picogen.io/), [Pollinations AI](https://pollinations.ai/)
 		- Cloud/freemium: [Deep Dream Generator](https://deepdreamgenerator.com/) ([old version](https://deepdreamgenerator.com/generator?old-tools=1)), [Dezgo](https://dezgo.com/text2image/sdxl), [Stable Diffusion Online](https://stablediffusionweb.com/) (10img/d; mit Wasserzeichen), [NightCafe](https://creator.nightcafe.studio/), [WPimages](https://www.wpimagines.com/), [AI Image Generator](https://www.aiimagegenerator.org/), [uvm.](https://easywithai.com/best-free-ai-image-generators/)
 		- Cloud/€€€/Subscriptions: **[OpenArt](https://openart.ai/create)** ⭐, [fal](https://fal.ai/), [dreamina](https://dreamina.capcut.com/ai-tool/home/?type=image), OpenAI [**DALL·E** 2](https://labs.openai.com/waitlist), **[Midjourney](https://www.midjourney.com/)**, [craiyon](https://www.craiyon.com/) (früher: „DALL·E mini“), Google [Imagen](https://imagen.research.google/), Adobe [Firefly](https://www.adobe.com/products/firefly.html) …
 	- Text-to-Video: [synthesia](https://www.synthesia.io), [dreamina](https://dreamina.capcut.com/ai-tool/home/?type=video), [kaiber.ai](https://kaiber.ai), … , China: [Kling](https://kling.kuaishou.com/en)
-		- WebUI/Local/Offline: [CogStudio](https://pinokio.co/item.html?uri=https%3A%2F%2Fgithub.com%2Fpinokiofactory%2Fcogstudio), [FramePack](https://pinokio.co/item.html?uri=https%3A%2F%2Fgithub.com%2Fpinokiofactory%2FFrame-Pack), [fp-studio](https://pinokio.co/item.html?uri=https%3A%2F%2Fgithub.com%2FFP-Studio%2Ffp-studio), [Wan](https://pinokio.co/item.html?uri=https%3A%2F%2Fgithub.com%2Fpinokiofactory%2Fwan) (via [pinokio](https://pinokio.co/))
+		- WebUI/Local/Offline: [CogStudio](https://github.com/pinokiofactory/cogstudio), [FramePack](https://github.com/lllyasviel/framepack), [FP-Studio](https://docs.framepackstudio.com/), [Wan](https://wan.video/)
 	- Text-to-Slides: **[Gamma](https://gamma.app/)** ⭐, [Felo Slides](https://felo.ai/agents/felo-slides-qP4dLw7kMv9ZuG5FnX8cH1), [SlidesPilot](https://www.slidespilot.com/), [SlideSpeak](https://slidespeak.co/), [ChatBA](https://www.chatba.com/), [Presentation Intelligence](https://www.pi.inc/), [Slidesgo](https://slidesgo.com/), …
 		- Academic: [ChatSlide](https://chatslide.ai/) (formerly: DrLambda)
 		- Local: «tbd» ([AutoPresent](https://github.com/para-lost/AutoPresent))
 	- Text-to-Visuals (for presentations): [Napkin AI](https://app.napkin.ai/)
 	- Text-to-Quiz: [Quizalize](https://app.quizalize.com/pricing), …
 	- Text-to-Speach (TTS): [NaturalReader](https://www.naturalreaders.com/online/), [TTSMaker](https://ttsmaker.com/), [Murf.AI](https://murf.ai/text-to-speech), …
-	- Text-to-Sound: [boomy](https://boomy.com/), [Suno AI](https://app.suno.ai/), [Vocaloid](https://www.vocaloid.com/en/vocaloid6/), Google [Instrument Playground](https://artsandculture.google.com/experiment/instrument-playground/8QFo2oQr2uT3pg?hl=en), …
-		- WebUI/Local/Offline: [YuE](https://pinokio.co/item.html?uri=https%3A%2F%2Fgithub.com%2Fpinokiofactory%2Fyue) (via [pinokio](https://pinokio.co/))
+	- Text-to-Sound:
+		- Cloud: [boomy](https://boomy.com/), [Suno AI](https://app.suno.ai/), [Vocaloid](https://www.vocaloid.com/en/vocaloid6/), Google [Instrument Playground](https://artsandculture.google.com/experiment/instrument-playground/8QFo2oQr2uT3pg?hl=en), …
+		- WebUI/Local/Offline: [ACE-Step](https://github.com/ace-step/ACE-Step), [YuE](https://github.com/multimodal-art-projection/YuE)
 	- Text-to-3D / Image-to-3D: [csm.ai](https://www.csm.ai) (zzgl. €: [3D AI Studio](https://www.3daistudio.com))
 	- AI-Suites/API-centric/Pay-as-you-Go: **[Fireworks AI](https://fireworks.ai/)**, [Replicate](https://replicate.com/)
 	- Weiterführende Referenzen: [There is an AI for that](https://theresanaiforthat.com/most-saved/) | [There's an AI](https://theresanai.com/)
@@ -548,7 +558,7 @@ Selbst wenn de Verwendung von generativer KI zur Text-Erstellung Ihrer Abschluss
 - Weiterführende Quellen
 	- Werkzeugsammlungen: **[FutureTools](https://www.futuretools.io)** | [Awesome AI Tools](https://tools.awesomechatgpt.com) #1 | [Awesome AI Tools](https://github.com/mahseema/awesome-ai-tools) #2 | Altern [Awesome AI Tools](https://github.com/mahseema/awesome-ai-tools) #3 | [Awesome Generative AI](https://github.com/steven2358/awesome-generative-ai) #1 | [Awesome Generative AI](https://github.com/filipecalegario/awesome-generative-ai) #2 | [Awesome AGI](https://github.com/EmbraceAGI/Awesome-AGI) | [Awesome GPT](https://github.com/formulahendry/awesome-gpt) | [Awesome GPT-4](https://gpt4.tools) | [Awesome Bots](https://github.com/DopplerHQ/awesome-bots)
 
-## Bildmaterialien
+## Bildmaterialien Werkzeuge
 
 - Kostenlose bzw. lizenzfreundliche Bildmaterialien: vgl. Schwesterseite [awesome-thesis-tools » Bildmaterialien](https://github.com/cyberlytics/awesome-thesis-tools#bildmaterialien)
 - AI-rendered Illustrations/Art:
