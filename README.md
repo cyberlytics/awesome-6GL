@@ -352,6 +352,7 @@ agy models |
 		- [LocalAGI](https://github.com/mudler/LocalAGI)
 		- [aider](https://aider.chat/): AI pair programming \[**pip install aider-install && aider-install\]
 		- [tgpt](https://github.com/aandrew-me/tgpt) (= Terminal GPT) \[**choco install tgpt**\]
+		- [3code](https://3code.capocasa.dev/) ([github](https://github.com/capocasa/3code)): freies Open-Source-Kommandozeilen-Tool für KI-unterstützte Programmierung, von Grund auf effizient genug für Dritt-KI-Provider ohne Flatrate; einfache Oberfläche, sofortiger Start, läuft auf Windows/OSX/Linux/Termux; sehr grosse Provider-Auswahl, auch EU-Provider wie Mistral und TensorX \[**curl -fsSL https://3code.capocasa.dev/install | sh**\] (MIT)
 	- Desktop (u.a. VS Code Extensions):
 		- **[Cursor](https://www.cursor.com/)** \[**choco install cursoride**\]
 		- **[Windsurf](https://windsurf.com/)** (formerly Codeium) \[**choco install windsurf**\]
