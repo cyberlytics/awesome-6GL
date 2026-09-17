@@ -61,6 +61,7 @@ Dies ist sowohl eine Tool-Sammlung als auch ein digitaler Ressourcen-Pool mit ko
   * Jede neue Abstraktion erzeugt eine neue Generation von Entwicklern.
   * **6GL wird die 3GL nicht „ersetzen“, sondern die nächste dominante Abstraktionsebene bilden.** ⭐
 
+* **[AI Exposure](https://www.aiexposure.org/)** misst (Messgrößen u.a. per [OECD](https://www.oecd.org/en/publications/2026/05/the-oecd-ai-exposure-measure_489cfd42.html)), inwieweit künstliche Intelligenz Aufgaben innerhalb eines bestimmten Berufsbereichs unterstützen oder automatisieren kann. (Glauben Sie aber nicht, dass Informatiker durch GenAI überflüssig werden!)
 
 ## Agentic Engineering Manifest
 
@@ -116,7 +117,7 @@ Dies ist sowohl eine Tool-Sammlung als auch ein digitaler Ressourcen-Pool mit ko
 	* **Nebengesetz:** „Modelle denken, Werkzeuge handeln.“
 
 8.	**„Spezifikation ist die neue Implementierung.“**
-	* In der Agenten-Ära wird fachliche und technische Expertise generativ zu Software.
+	* In der Agenten-Ära wird fachliche und technische Expertise per generativ per GenAI zu Software.
 	* Entscheidend ist die **zusätzliche** Kompetenz, KI-Systeme zielgerichtet zu orchestrieren.
 	* Auf Software-Technik-Ebene verschiebt sich der Schwerpunkt: weniger direkte Syntaxarbeit, mehr Spezifikation, Architektur, Verständnis und Kontrolle.
 	* Disclaimer: Auch Hochsprachen-Code ist letztlich „nur“ eine Spezifikation! Erst Compiler, Laufzeitumgebung, Bibliotheken und die Zielplattform formen daraus ein ausführbares System.
@@ -132,7 +133,7 @@ Dies ist sowohl eine Tool-Sammlung als auch ein digitaler Ressourcen-Pool mit ko
 10.	**„Agentic Engineering ist anspruchsvolle Informatik.“**
 	* Benötigt werden methodische und technische Full-Stack-Kompetenzen.
 	* Disclaimer: Der Definition nach handelt es sich bei einem **Informationssystem** schon immer um ein **Mensch-/Aufgabe-/Technik-System**.
-	* Dies widerspricht der häufigen Fehlannahme „Jetzt kann jeder Software bauen.“
+	* Dies widerspricht der häufigen Fehlannahme „Jetzt kann jeder Software bauen.“ (= "[AI Exposure](https://www.aiexposure.org/)"-Frage)
 	* Für einfache Anwendungen genügen Low-Code-Ansätze, komplexe Software-Anwendungen bleiben eine Engineering-Disziplin.
 
 
