@@ -117,7 +117,7 @@ Dies ist sowohl eine Tool-Sammlung als auch ein digitaler Ressourcen-Pool mit ko
 	* **Nebengesetz:** „Modelle denken, Werkzeuge handeln.“
 
 8.	**„Spezifikation ist die neue Implementierung.“**
-	* In der Agenten-Ära wird fachliche und technische Expertise per generativ per GenAI zu Software.
+	* In der Agenten-Ära wird fachliche und technische Expertise per GenAI zu Software.
 	* Entscheidend ist die **zusätzliche** Kompetenz, KI-Systeme zielgerichtet zu orchestrieren.
 	* Auf Software-Technik-Ebene verschiebt sich der Schwerpunkt: weniger direkte Syntaxarbeit, mehr Spezifikation, Architektur, Verständnis und Kontrolle.
 	* Disclaimer: Auch Hochsprachen-Code ist letztlich „nur“ eine Spezifikation! Erst Compiler, Laufzeitumgebung, Bibliotheken und die Zielplattform formen daraus ein ausführbares System.
@@ -169,7 +169,7 @@ Vibe Coding Referenzprojekt für Einsteiger mit kleinen Projekten (ca. 1-wöchig
 
   [GPT-3](https://arxiv.org/pdf/2005.14165.pdf) war (beschrieben 2020, kommerzieller Durchbruch November 2022) ein **175B-Modell** (deutsche 175 Milliarden). **DeepSeek R1** (Release Januar 2025) war ein **671B-Modell** mit **37B aktiven Parametern durch Mixture-of-Experts (MoE)**. Das große 671B(37B)-DeepSeek R1 ist zwar FOSS Open Weight, läuft aber nicht auf gewöhnlicher Consumer-Hardware. Kleinere Varianten von DeepSeek sind "distilled versions" und basieren faktisch auf Qwen- oder Llama-Architekturen - hinsichtlich Edge-Hardware hier wird es hier also technisch kompliziert. Das französische **Mistral Large 3** (ab Dezember 2025) ist ein FOSS Open Weight 675B-Modell (41B aktiv durch MoE) und ist u.a. auch als 8B oder 14B Edge-Modell verfügbar.
   
-  Ein ab Sommer 2025 (zweieinhalb Jahre nach Beginn des ChatGPT-Zeitalters) verfügbares FOSS Open Weight Mid-Tier-Modell für die Premium-AI-Edge (PCs mit 128GB unified RAM oder im Unternehmen per 80GB NVIDIA H100) ist **gpt-oss-120b**, ein 117B-Modell mit 5B aktiven Parametern durch MoE, welches im Vergleich zum urpsrünglichen GPT-3 (zur Erinnerung: 175B) und auch zum legacy GPT-3.5-Turbo deutliche Überlegenheit und damit Massentauglichkeit für FOSS-basierte Local-AI demonstrierte.
+  Ein von OpenAI ab Sommer 2025 (zweieinhalb Jahre nach Beginn des ChatGPT-Zeitalters) verfügbares FOSS Open Weight Mid-Tier-Modell für die Premium-AI-Edge (damals 80GB NVIDIA H100) ist **gpt-oss-120b**, ein 117B-Modell mit 5B aktiven Parametern durch MoE, welches im Vergleich zum urpsrünglichen GPT-3 (zur Erinnerung: 175B) und auch zum legacy GPT-3.5-Turbo deutliche Überlegenheit und damit Massentauglichkeit für FOSS-basierte Local-AI demonstrierte.
   
   Weitere nennenswerte FOSS Open Weight Frontier-Modelle sind **[DeepSeek V4 pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro)** mit 1.6T und **[Kimi K3](https://platform.kimi.ai/docs/guide/kimi-k3-quickstart)** mit 2.8T (also deutsche Billionen). Kimi K3 belegt im nativen MXFP4-Format ca. 1½ TB an Speicherplatz und benötigt ein GPU-Cluster mit mindestens 1680GB VRAM. (Ab OpenAI GPT-3.5 sowie für alle Anthropic Claude-Modelle wurden keine offiziellen Anzahlen an Parametern mehr für die Cloud-Modelle der amerikanischen Big-Tech-Anbieter veröffentlicht.)
 
@@ -372,6 +372,17 @@ agy models |
 		- Next.js: [v0](https://v0.dev/chat) (UI-centric)
 		- GitHub **[Copilot](https://github.com/copilot/)**
 		- Weiterführende Liste: [AI Tools Club](https://aitoolsclub.com/top-50-ai-vibe-coding-tools-for-everyone-in-2025/)
+	- Game Engineering:
+		- Unity ⭐ (C#): mit In-Editor AI Assistant, MCP Server, Agent Plugin, Skills
+		- Unreal Engine 😲 (C/C++): erst experimentell / eher nur MCP-basiert
+		- Godot ⭐ (v.a. GDScript): AI Agent [ziva](https://ziva.sh/) sowie [Godot-MCP](https://github.com/IvanMurzak/Godot-MCP) mit Skills oder [godot-agent](https://github.com/aigengame/godot-agent)
+		- Und dabei nicht übersehen: Web-basierte Spiele! Sehr gutes Vibe Coding!
+	- AR/VR:
+		- Cross-Plattform AR/VR: WebXR, bspw. mittels Three.js! Sehr gutes Vibe Coding!
+		- AR per Smartphone, bpsw. Unity wegen dessen Cross-Plattform/Mobile-Stärken und Vibe-Coding-Stärken! ([Beispiel](https://ilearn.ar-action.com/))
+		- VR per Unity (C#) + OpenXR + PICO OpenXR SDK  + PICO 4 Ultra
+			- Bestes AR/VR-Headset für Eigenentwicklungen/Einstieg? Das chinesiche [PICO](https://www.picoxr.com/de) Headset ⭐, wegen der niedrigen Nebenkosten bei der App-Entwicklung. Insbesondere für das Enterprise-Umfeld!
+		- Educational Technology als AV/VR-Trainings? Per No-Code! Deutsches [3spin Learning](https://www.3spin-learning.com/de/) sowie niederländisches [Warp VR](https://www.warpvr.com/) (mit [kostenloser Edu-Lizenzoption](https://www.warpvr.com/pricing))
 	- Nennenswerte weitere Ansätze:
 		- [MetaGPT](https://github.com/FoundationAgents/MetaGPT): Multi-Agent Framework that assigns different roles to GPTs to form a collaborative entity for complex tasks ([Docs](https://docs.deepwisdom.ai/main/en/guide/get_started/introduction.html))
 			- MetaGPT X (= Spin-off product by MetaGPT inventors): [MGX](https://mgx.dev/)
