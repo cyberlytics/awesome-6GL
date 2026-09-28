@@ -63,6 +63,10 @@ Dies ist sowohl eine Tool-Sammlung als auch ein digitaler Ressourcen-Pool mit ko
 
 * **[AI Exposure](https://www.aiexposure.org/)** misst (Messgrößen u.a. per [OECD](https://www.oecd.org/en/publications/2026/05/the-oecd-ai-exposure-measure_489cfd42.html)), inwieweit künstliche Intelligenz Aufgaben innerhalb eines bestimmten Berufsbereichs unterstützen oder automatisieren kann. (Glauben Sie aber nicht, dass Informatiker durch GenAI überflüssig werden!)
 
+* [Doomer/Gloomer/Bloomer/Zoomer](https://www.daveduarte.net/blog/doomers-gloomers-bloomers-and-zoomers)
+  * Begriffsherkunft: [Reid Hoffman](https://www.amazon.com/Superagency-Could-Possibly-Right-Future-ebook/dp/B0D886ZQHY)
+  * Reflektierte Doomer am Beispiel Geoffrey Hinton: [in eigenen Worten](https://www.theatlantic.com/podcasts/2026/09/what-the-godfather-of-ai-thinks-we-should-do/688748/)
+
 ## Agentic Engineering Manifest
 
 \[ aka: Die (merkfähigen) 10 Gebote nach Neumann \]
@@ -615,6 +619,8 @@ Contributions are most welcome, please adhere to the contribution guidelines and
 - New categories or improvements to the existing categorization are welcome.
 
 Thank you for your suggestions!
+
+BEWARE: Only contribute best-in-class software! Do NOT contribute fresh projects for promotion! (e.g., vibe coded ones) 
 
 ### Backers
 
