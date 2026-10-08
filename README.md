@@ -36,6 +36,11 @@ Dies ist sowohl eine Tool-Sammlung als auch ein digitaler Ressourcen-Pool mit ko
 
 ## Prelude
 
+* Eingangsqualifikation: Was ist Vibe Coding?
+  * Einstieg für Nicht-Informatiker: Webartikel [Vibe Coding: Der größte Durchbruch für nicht-technische Gründer](https://blink.new/de/blog/vibe-coding-for-non-technical-founders) von Blink (Disclosure: Blink verkauft einen GenAI-App-Builder)
+  * Einstieg für Informatiker: Video [Software Is Changing (Again)](https://www.youtube.com/watch?v=LCEmiRjPEtQ) (Juni 2025) von Andrey Karpathy
+  * [Begriffsbildung](https://x.com/karpathy/status/1886192184808149383) durch Andrey Karpathy im Februar 2025
+
 * **Programmiersprachengenerationen**
 
   Kennt ihr die Entwicklung von **[1GL bis 5GL](https://en.wikipedia.org/wiki/Programming_language_generations)**? ⭐
@@ -137,8 +142,22 @@ Dies ist sowohl eine Tool-Sammlung als auch ein digitaler Ressourcen-Pool mit ko
 10.	**„Agentic Engineering ist anspruchsvolle Informatik.“**
 	* Benötigt werden methodische und technische Full-Stack-Kompetenzen.
 	* Disclaimer: Der Definition nach handelt es sich bei einem **Informationssystem** schon immer um ein **Mensch-/Aufgabe-/Technik-System**.
-	* Dies widerspricht der häufigen Fehlannahme „Jetzt kann jeder Software bauen.“ (= "[AI Exposure](https://www.aiexposure.org/)"-Frage)
+	* Dies widerspricht der häufigen Fehlannahme „Jetzt kann jeder Software bauen.“ (Was allerdings jetzt jeder kann ist „Prompt-and-Pray“)
 	* Für einfache Anwendungen genügen Low-Code-Ansätze, komplexe Software-Anwendungen bleiben eine Engineering-Disziplin.
+
+### Prompt-and-Pray Disclaimer
+
+* Deutungshoheit von „Vibe Coding“ umstritten:
+  1) Ursprünglich: Einsatz von LLMs zur KI-gestützten Programmierung durch gelernte Informatiker
+  2) Meme-Verselbstständigung: AI-Code-Generierung durch Personen ohne technischen Hintergrund, also Informatik-Laien
+
+* „Prompt-and-Pray“ meint (leicht überspitzt) das naive Vibe Coding (entweder durch Laien oder durch naive Programmierer ohne Agentic-Engineering-Kompetenz)
+  * Das metaphorische Gebet wird i.d.R. problemlos „erhöhrt“ bei SW-Prototypen mit (1) geringem fachlichen Umfang, (2) wenigen externen Abhängigkeiten und (3) konventioneller und homogener Technik
+  * Viele Vibe Coding Live-Demos bewegen sich in einem solchen Sweet-Spot und erhaschen mit erfolgreichem Prompt-and-Pray bei unkritischem Publikum leicht einen Wow-Effekt
+  * Viele Live-Demos sind hochgradig orchestriert und technisches Marketing
+    * vgl. [Technologie-Evangelismus](https://de.wikipedia.org/wiki/Technology_Evangelist) der 2010er in moderner, subtilerer Form
+    * [Survivorship Bias](https://thedecisionlab.com/biases/survivorship-bias): successful subgroup is mistaken as the entire group, due to the invisibility of the failure subgroup
+    * Glaube keiner Live-Demo, die du nicht selbst nachstellen konntest, mit leichter Derivation.
 
 
 ### Lernpfad
@@ -173,7 +192,7 @@ Vibe Coding Referenzprojekt für Einsteiger mit kleinen Projekten (ca. 1-wöchig
 
   [GPT-3](https://arxiv.org/pdf/2005.14165.pdf) war (beschrieben 2020, kommerzieller Durchbruch November 2022) ein **175B-Modell** (deutsche 175 Milliarden). **DeepSeek R1** (Release Januar 2025) war ein **671B-Modell** mit **37B aktiven Parametern durch Mixture-of-Experts (MoE)**. Das große 671B(37B)-DeepSeek R1 ist zwar FOSS Open Weight, läuft aber nicht auf gewöhnlicher Consumer-Hardware. Kleinere Varianten von DeepSeek sind "distilled versions" und basieren faktisch auf Qwen- oder Llama-Architekturen - hinsichtlich Edge-Hardware hier wird es hier also technisch kompliziert. Das französische **Mistral Large 3** (ab Dezember 2025) ist ein FOSS Open Weight 675B-Modell (41B aktiv durch MoE) und ist u.a. auch als 8B oder 14B Edge-Modell verfügbar.
   
-  Ein von OpenAI ab Sommer 2025 (zweieinhalb Jahre nach Beginn des ChatGPT-Zeitalters) verfügbares FOSS Open Weight Mid-Tier-Modell für die Premium-AI-Edge (damals 80GB NVIDIA H100) ist **gpt-oss-120b**, ein 117B-Modell mit 5B aktiven Parametern durch MoE, welches im Vergleich zum urpsrünglichen GPT-3 (zur Erinnerung: 175B) und auch zum legacy GPT-3.5-Turbo deutliche Überlegenheit und damit Massentauglichkeit für FOSS-basierte Local-AI demonstrierte.
+  Ein von OpenAI ab Sommer 2025 (zweieinhalb Jahre nach Beginn des ChatGPT-Zeitalters) verfügbares FOSS Open Weight Mid-Tier-Modell für die Premium-AI-Edge (damals 80GB NVIDIA H100) ist **gpt-oss-120b**, ein 117B-Modell mit 5B aktiven Parametern durch MoE, welches im Vergleich zum urpsrünglichen GPT-3 (zur Erinnerung: 175B) und auch zum legacy GPT-3.5-Turbo deutliche Überlegenheit und damit Massentauglichkeit für Local-AI demonstrierte.
   
   Weitere nennenswerte FOSS Open Weight Frontier-Modelle sind **[DeepSeek V4 pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro)** mit 1.6T und **[Kimi K3](https://platform.kimi.ai/docs/guide/kimi-k3-quickstart)** mit 2.8T (also deutsche Billionen). Kimi K3 belegt im nativen MXFP4-Format ca. 1½ TB an Speicherplatz und benötigt ein GPU-Cluster mit mindestens 1680GB VRAM. (Ab OpenAI GPT-3.5 sowie für alle Anthropic Claude-Modelle wurden keine offiziellen Anzahlen an Parametern mehr für die Cloud-Modelle der amerikanischen Big-Tech-Anbieter veröffentlicht.)
 
@@ -327,7 +346,9 @@ agy models |
 	- Wegbereiter:
 		- Begriff: [Andrej Karpathy](https://x.com/karpathy/status/1886192184808149383) (Feb. 2025)
 		- Technik: "[Cursor](https://www.cursor.com/) [Composer](https://cursor101.com/article/cursor-composer) (i.e., multi-file editing), backed with Claude [Sonnet](https://www.anthropic.com/claude/sonnet)" (insb. wegen Claude Sonnets großem Kontextfenster von 200K+)
-	- Video [The End of Software Engineering (as we know it)](https://www.youtube.com/watch?v=j0XukGlEUTc) von Jan Bosch (zzgl. [blog article](https://janbosch.com/blog/index.php/2017/10/06/the-end-of-system-architects/))
+	- Videos:
+		- [Software Is Changing (Again)](https://www.youtube.com/watch?v=LCEmiRjPEtQ) von Andrey Karpathy (2025)
+		- [The End of Software Engineering (as we know it)](https://www.youtube.com/watch?v=j0XukGlEUTc) von Jan Bosch (2025)
 	- State-of-the-Art: [AI Unified Process](https://unifiedprocess.ai/) (Einstieg: [software-architektur.tv](https://software-architektur.tv/2026/01/16/folge298.html), [Video](https://tube.tchncs.de/w/mUmkL5mEFzYXD8dY4ixrTY)) mit Querbezug zu [Self-contained Systems](https://scs-architecture.org/) (SCS) von Innoq
 	- Weiterführende Quellen: roadmap.sh [Vibe Coding](https://roadmap.sh/vibe-coding) sowie [AI Product Builder](https://roadmap.sh/ai-product-builder) (und allg. [Product Design](https://roadmap.sh/product-design))
 - AI Engineering
@@ -479,7 +500,7 @@ agy models |
 
 - [K-Dense BYOK](https://github.com/K-Dense-AI/k-dense-byok)
 
-## Generative KI Werkzeuge
+## Prompting Werkzeuge
 
 Selbst wenn de Verwendung von generativer KI zur Text-Erstellung Ihrer Abschlussarbeit Ihnen ggf. untersagt sein sollte: Dennoch können Sie sich die diversen Werkzeuge zu Nutzen machen, bspw. als persönlicher KI Tutor.
 
@@ -488,6 +509,9 @@ Selbst wenn de Verwendung von generativer KI zur Text-Erstellung Ihrer Abschluss
 	- Weitere Nennenswerte: Anthropic **[Claude](https://www.anthropic.com)**, Google [Gemini](https://gemini.google.com/), OpenAI [ChatGPT](https://openai.com/blog/chatgpt/), Meta [Llama](https://llama.meta.com/), [HuggingChat](https://huggingface.co/chat/), Opera [Aria](https://www.opera.com/features/aria), [character.ai](https://beta.character.ai/), …
 	- KI-Suche (Hybirdform von LLMs und Search-Engines)
 		- [**you**.com](https://you.com/), [Andi](https://andisearch.com), Microsoft [Bing](https://bing.com/new), OpenAI [SearchGPT](https://openai.com/index/searchgpt-prototype/), …
+	- **Drucken** von ganzen Chatbot-Konversationen? Bemerkenswert holprig! Empfehlung: **[GoFullPage](https://www.google.com/search?q=GoFullPage)** ⭐
+		- Details: per PC/Laptop [Webzugriff auf die Konversation](https://chatgpt.com/) + Firefox Addon [GoFullPage](https://addons.mozilla.org/en-US/firefox/addon/gofullpage-screenshot/) bzw. Chrome Extension [GoFullPage](https://chromewebstore.google.com/detail/gofullpage-full-page-scre/fdpohaocaechififmbbbbbknoalclacl)
+	- Prompting-Apps und -**Desktop-Anwendungen**? Fast alle Frontier-Anbieter bieten das! (Das Drucken ist darin aber auch nicht besser.)
 - AI-enabled Browser: Perplexity [Comet](https://comet.perplexity.ai/), [Sigma](https://www.sigmabrowser.com/), [Fellou](https://fellou.ai/), Arc [Max](https://arc.net/max), Opera [Aria](https://www.opera.com/de/features/aria), Microsoft Edge+Copilot
 	- Mac-only: [Dia](https://www.diabrowser.com/)
 	- Disbling AI features in Browsers: [Just the Browser](https://justthebrowser.com/)
@@ -501,10 +525,11 @@ Selbst wenn de Verwendung von generativer KI zur Text-Erstellung Ihrer Abschluss
 - Desktop-Apps / AI Tool Installer:
 	- Universell: **[pinokio](https://pinokio.computer/)** ⭐, [SEAIT](https://github.com/diStyApps/seait/)
 - Text-to-Text:
-	- LLM Model-Benchmark: [What LLM Provider](https://whatllm.vercel.app/) | [Open LLM Leaderboard](https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard) ([Method](https://huggingface.co/docs/leaderboards/open_llm_leaderboard/about)) sowie [MTEB Leaderboard](https://huggingface.co/spaces/mteb/leaderboard)
+	- Open LLM Model-Benchmark: [Open LLM Leaderboard](https://huggingface.co/spaces/open-llm-leaderboard/blog) sowie [MTEB Leaderboard](https://huggingface.co/spaces/mteb/leaderboard)
 		- LLM Modelle mit DE-Unterstützung: [Webartikel](https://medium.com/@oledawidzinski/deutschsprachige-open-source-llms-als-alternative-zu-chatgpt-und-co-8ecbcf6ab96d) (u.a. Mistral-Nemo-Instruct-2407, DiscoLM_German_7b_v1, SauerkrautLM, …, Qwen2-7B-Instruct, Llama3-DiscoLeo-Instruct-8B, …)
 		- Long-Term Context LLM / Personalized AI: [MemGPT](https://memgpt.ai/)
 		- Agent AI: **[Letta](https://github.com/letta-ai/letta)**
+	- Closed LLM Model-Benchmark: [BenchLM](https://benchlm.ai/), [Artificial Analysis](https://artificialanalysis.ai/leaderboards/models), …
 	- Desktop/Local/Offline: **[Msty](https://msty.app/)** ⭐, **[LM Studio](https://lmstudio.ai/)** ⭐ \[**choco install lm-studio**\], **[Witsy](https://witsyai.com/)** ⭐ \[**choco install witsy**\], [AnythingLLM](https://anythingllm.com/), Nomic [gpt4all](https://github.com/nomic-ai/gpt4all) \[**choco install gpt4all**\], [Jan AI](https://jan.ai) \[**choco install jan**\] und andere
 		- Local [OpenAI-compatible API](https://platform.openai.com/docs/api-reference/chat) Server: [LM Studio OpenAI-compatible API server](https://lmstudio.ai/docs/api/openai-api), [vLLM OpenAI-compatible API Server](https://docs.vllm.ai/en/latest/serving/openai_compatible_server.html), [Msty Local AI Service](https://docs.msty.app/how-to-guides/make-local-ai-service-available-on-the-network), [gpt4all API Server](https://docs.gpt4all.io/gpt4all_api_server/home.html), [Jan.ai Cortex Local API Server](https://cortex.so/docs/quickstart/) ([API](https://cortex.so/api-reference/))
 			- Docker: [LocalAI](https://localai.io/): Local family AI, full-stack = All-in-One: LLMs, Text to Speech, Speech to Text, Function calling, Image generation, Embedding server
@@ -594,10 +619,32 @@ Selbst wenn de Verwendung von generativer KI zur Text-Erstellung Ihrer Abschluss
 - AI Image Upscaler
 	- **[upscayl](https://upscayl.org/)** ⭐ ([github](https://github.com/upscayl/upscayla)) basierend auf ESRGAN/Real-ESRGAN
 
+## AI Detectors / High-Tech Plagiarism
+
+- AI **Text** Detektoren
+	- **[Pangram](https://www.pangram.com/dashboard)** ⭐, [ZeroGPT](https://www.zerogpt.com/), [CopyLeaks AI Content Detector](https://copyleaks.com/ai-detector), [Originality.ai](https://originality.ai/), [QuillBot AI Detector](https://quillbot.com/ai-content-detector), [Sapling AI Detector](https://sapling.ai/ai-content-detector), …
+	- (€:) [Turnitin AI Writing Detection](https://www.turnitin.com/solutions/ai-writing), [Writer AI Content Detector](https://writer.com/ai-content-detector/), [Winston AI](https://gowinston.ai/), …
+- AI **Software** Detektoren / Source Code Originality / AI Software Plagiarism
+	- [AICodeDetector.org](https://aicodedetector.org/), [MyDetector Code](https://mydetector.ai/ai-code-detector/)
+	- (€:) [CopyLeaks](https://copyleaks.com/code-governance-and-compliance), [Codequiry](https://codequiry.com/), …
+	- (Klassisch/Similarity-only: [JPlag](https://jplag.github.io/JPlag/), [MOSS (Measure of Software Similarity)](https://theory.stanford.edu/~aiken/moss/), [Dolos](https://dolos.ugent.be/))
+- AI **PowerPoint** Detektoren / Presentation Originality
+	- [OriginalityReport PPT Checker](https://originalityreport.com/powerpoint-ai-checker/), [MyDetector](https://mydetector.ai/), …
+	- (€:) [PPTDetector](https://pptdetector.com/), …
+- AI **Image** Detektoren / Fake Image Debunking / Image Verification
+	- [Illuminarty](https://app.illuminarty.ai/), [Optic AI or Not](https://www.aiornot.com/), [Sightengine AI](https://sightengine.com/detect-ai-generated-images), …
+	- (€:) [Hive Moderation](https://hivemoderation.com/ai-generated-content-detection), [Is It AI?](https://isitai.com/), …
+	- Forschung/Hochschulen: [InVID](https://www.invid-project.eu/), [TrueMedia.org](https://www.truemedia.org/)
+- AI **Video** Detektoren / Fake Video Debunking
+	- [Sightengine AI](https://sightengine.com/detect-ai-generated-videos), [Diopter AI](https://diopter.ai/deepfake-video-detector), [ZeroTrue](https://zerotrue.app/detectors/video-deepfake), [DeepfakeDetection.io](https://deepfakedetection.io/deepfake-video-detection), [Isgen AI Video Detector](https://isgen.ai/ai-video-detector), [BitMind](https://bitmind.ai/detect), …
+	- (€:) [Hive Detect](https://hivedetect.ai/), [Detect Video AI](https://detectvideo.ai/), …
+	- Forschung/Hochschulen: [InVID](https://www.invid-project.eu/), [TrueMedia.org](https://www.truemedia.org/)
+
 ## Schwesterseiten
 
 Es gibt von mir weitere Schwesterseiten im Kontext Informatik/KI: [Digitaler Ressourcen-Pool](https://github.com/cyberlytics/awesome-basics), [Werkzeuge » Abschlussarbeiten](https://github.com/cyberlytics/awesome-thesis-tools), [Werkzeuge » Software-Engineering](https://github.com/cyberlytics/awesome-software-engineering-tools) und [Werkzeuge » Big Data und Cloud Computing für AI](https://github.com/cyberlytics/awesome-bdccai-tools).
 
+Außerdem: [Schulische Vorbildung Informatik/KI](https://github.com/cyberlytics/awesome-cs-kids).
 
 ## Footer
 
