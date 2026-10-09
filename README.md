@@ -495,6 +495,8 @@ agy models |
 - Vibe Pentesting
 	- Local/CLI: [vulnhuntr](https://github.com/protectai/vulnhuntr)
 	- Cloud/GUI: [Vibe Coding Penetration Tester](https://github.com/firetix/vibe-coding-penetration-tester) (cf. [vibehack.io](http://vibehack.io/)), [ZeroThreat](https://zerothreat.ai/)
+- Reverse Engineering mit Coding-Agents
+	- Local/CLI/MCP: [REA](https://github.com/morluto/rea) – Analyse nativer Programme mit nachvollziehbaren Befunden; die native Tiefenanalyse benötigt eine eigene Installation von Hopper, Ghidra oder IDA.
 
 ## Vibe Science Werkzeuge
 
