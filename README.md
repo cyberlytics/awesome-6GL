@@ -170,7 +170,11 @@ Dies ist sowohl eine Tool-Sammlung als auch ein digitaler Ressourcen-Pool mit ko
 * Dann 6GL aka [Natural Language Programming](https://www.cs.utexas.edu/~EWD/transcriptions/EWD06xx/EWD667.html) (Programmier-Ebene)
 	- Andrej Karpathy betonte „agentic programming as a tool“, bei der Vibe-Coding-Begriffsbildung
 * Dann Spec-Driven Development (SDD) aka Agentic Engineering ⭐ (SW-Technik-Ebene)
-	- Further Reading: [spec-kit](https://github.com/github/spec-kit), [SpecDD](https://specdd.ai/) (sowie exemplarisch [kiro](https://kiro.dev/) und [tessl](https://tessl.io/))
+	- Framework:
+		- Lightweight: **[td](https://github.com/marcus/td/)** ⭐ (= Task management for AI-assisted development)
+		- Lean: Amazon **[AWS AI-DLC](https://github.com/awslabs/aidlc-workflows)** ⭐
+		- Heavyweight: [spec-kit](https://github.com/github/spec-kit), [SpecDD](https://specdd.ai/)
+	- Harness: bspw [kiro](https://kiro.dev/) oder [tessl](https://tessl.io/)
 
 Vibe Coding Referenzprojekt für Einsteiger mit kleinen Projekten (ca. 1-wöchige SW-Prototypen)?
 
@@ -530,6 +534,7 @@ Selbst wenn de Verwendung von generativer KI zur Text-Erstellung Ihrer Abschluss
 		- Long-Term Context LLM / Personalized AI: [MemGPT](https://memgpt.ai/)
 		- Agent AI: **[Letta](https://github.com/letta-ai/letta)**
 	- Closed LLM Model-Benchmark: [BenchLM](https://benchlm.ai/), [Artificial Analysis](https://artificialanalysis.ai/leaderboards/models), …
+	- Desktop/Hybrid-Local/BYOK: **[GenOffice](https://genoffice.ai/)** ([github](https://github.com/genspark-ai/genoffice)) ⭐
 	- Desktop/Local/Offline: **[Msty](https://msty.app/)** ⭐, **[LM Studio](https://lmstudio.ai/)** ⭐ \[**choco install lm-studio**\], **[Witsy](https://witsyai.com/)** ⭐ \[**choco install witsy**\], [AnythingLLM](https://anythingllm.com/), Nomic [gpt4all](https://github.com/nomic-ai/gpt4all) \[**choco install gpt4all**\], [Jan AI](https://jan.ai) \[**choco install jan**\] und andere
 		- Local [OpenAI-compatible API](https://platform.openai.com/docs/api-reference/chat) Server: [LM Studio OpenAI-compatible API server](https://lmstudio.ai/docs/api/openai-api), [vLLM OpenAI-compatible API Server](https://docs.vllm.ai/en/latest/serving/openai_compatible_server.html), [Msty Local AI Service](https://docs.msty.app/how-to-guides/make-local-ai-service-available-on-the-network), [gpt4all API Server](https://docs.gpt4all.io/gpt4all_api_server/home.html), [Jan.ai Cortex Local API Server](https://cortex.so/docs/quickstart/) ([API](https://cortex.so/api-reference/))
 			- Docker: [LocalAI](https://localai.io/): Local family AI, full-stack = All-in-One: LLMs, Text to Speech, Speech to Text, Function calling, Image generation, Embedding server
@@ -564,6 +569,7 @@ Selbst wenn de Verwendung von generativer KI zur Text-Erstellung Ihrer Abschluss
 	- Text-to-Image:
 		- AI-Image-Generator Model-Benchmark: Artificial Analysis [Image AI Model & Provider Leaderboard](https://artificialanalysis.ai/text-to-image) | [Benchmarking-Awesome-Diffusion-Models](https://github.com/Schuture/Benchmarking-Awesome-Diffusion-Models)
 		- Dev/FOSS Models: **[Stable Diffusion](https://github.com/CompVis/stable-diffusion)**, **[FLUX.1](https://github.com/black-forest-labs/flux)**
+		- Desktop/Hybrid-Local/BYOK: **[GenOffice](https://genoffice.ai/)** ([github](https://github.com/genspark-ai/genoffice)) ⭐
 		- Desktop/Local/Offline: Lykos **[Stability Matrix](https://lykos.ai/downloads)** ⭐ (Tutorial: [Using FLUX.1 locally](https://www.kdnuggets.com/using-flux-1-locally))
 			- Stability Matrix ist ein 1-Stop-Shop für alle anderen Werkzeuge wie bspw.: Stable Diffusion WebUI [Forge](https://github.com/lllyasviel/stable-diffusion-webui-forge) bzw. [reForge](https://github.com/Panchovix/stable-diffusion-webui-reForge), [ComfyUI](https://github.com/comfyanonymous/ComfyUI)
 			- Disclaimer: Manche Text-to-Image Werkzeuge benötigen (Stand 2025) eine NVidia RTX als Hardware-Voraussetzung
@@ -575,8 +581,11 @@ Selbst wenn de Verwendung von generativer KI zur Text-Erstellung Ihrer Abschluss
 		- Cloud/freemium: [Deep Dream Generator](https://deepdreamgenerator.com/) ([old version](https://deepdreamgenerator.com/generator?old-tools=1)), [Dezgo](https://dezgo.com/text2image/sdxl), [Stable Diffusion Online](https://stablediffusionweb.com/) (10img/d; mit Wasserzeichen), [NightCafe](https://creator.nightcafe.studio/), [WPimages](https://www.wpimagines.com/), [AI Image Generator](https://www.aiimagegenerator.org/), [uvm.](https://easywithai.com/best-free-ai-image-generators/)
 		- Cloud/€€€/Subscriptions: **[OpenArt](https://openart.ai/create)** ⭐, [fal](https://fal.ai/), [dreamina](https://dreamina.capcut.com/ai-tool/home/?type=image), OpenAI [**DALL·E** 2](https://labs.openai.com/waitlist), **[Midjourney](https://www.midjourney.com/)**, [craiyon](https://www.craiyon.com/) (früher: „DALL·E mini“), Google [Imagen](https://imagen.research.google/), Adobe [Firefly](https://www.adobe.com/products/firefly.html) …
 	- Text-to-Video: [synthesia](https://www.synthesia.io), [dreamina](https://dreamina.capcut.com/ai-tool/home/?type=video), [kaiber.ai](https://kaiber.ai), … , China: [Kling](https://kling.kuaishou.com/en)
+		- Desktop/Hybrid-Local/Multi-Cloud: **[AirCraft](https://getartcraft.com/)** ([github](https://github.com/storytold/artcraft))
 		- WebUI/Local/Offline: [CogStudio](https://github.com/pinokiofactory/cogstudio), [FramePack](https://github.com/lllyasviel/framepack), [FP-Studio](https://docs.framepackstudio.com/), [Wan](https://wan.video/)
-	- Text-to-Slides: **[Gamma](https://gamma.app/)** ⭐, [Felo Slides](https://felo.ai/agents/felo-slides-qP4dLw7kMv9ZuG5FnX8cH1), [SlidesPilot](https://www.slidespilot.com/), [SlideSpeak](https://slidespeak.co/), [ChatBA](https://www.chatba.com/), [Presentation Intelligence](https://www.pi.inc/), [Slidesgo](https://slidesgo.com/), …
+	- Text-to-Slides:
+		- Desktop/Hybrid-Local/BYOK: **[GenOffice](https://genoffice.ai/)** ([github](https://github.com/genspark-ai/genoffice)) ⭐
+		- Cloud: **[Gamma](https://gamma.app/)** ⭐, [Felo Slides](https://felo.ai/agents/felo-slides-qP4dLw7kMv9ZuG5FnX8cH1), [SlidesPilot](https://www.slidespilot.com/), [SlideSpeak](https://slidespeak.co/), [ChatBA](https://www.chatba.com/), [Presentation Intelligence](https://www.pi.inc/), [Slidesgo](https://slidesgo.com/), …
 		- Academic: [ChatSlide](https://chatslide.ai/) (formerly: DrLambda)
 		- Local: «tbd» ([AutoPresent](https://github.com/para-lost/AutoPresent))
 	- Text-to-Visuals (for presentations): [Napkin AI](https://app.napkin.ai/)
@@ -632,11 +641,11 @@ Selbst wenn de Verwendung von generativer KI zur Text-Erstellung Ihrer Abschluss
 	- [OriginalityReport PPT Checker](https://originalityreport.com/powerpoint-ai-checker/), [MyDetector](https://mydetector.ai/), …
 	- (€:) [PPTDetector](https://pptdetector.com/), …
 - AI **Image** Detektoren / Fake Image Debunking / Image Verification
-	- [Illuminarty](https://app.illuminarty.ai/), [Optic AI or Not](https://www.aiornot.com/), [Sightengine AI](https://sightengine.com/detect-ai-generated-images), …
+	- **[Google SythID Detector](https://synthid.com/)** ⭐, [Illuminarty](https://app.illuminarty.ai/), [Optic AI or Not](https://www.aiornot.com/), [Sightengine AI](https://sightengine.com/detect-ai-generated-images), …
 	- (€:) [Hive Moderation](https://hivemoderation.com/ai-generated-content-detection), [Is It AI?](https://isitai.com/), …
 	- Forschung/Hochschulen: [InVID](https://www.invid-project.eu/), [TrueMedia.org](https://www.truemedia.org/)
 - AI **Video** Detektoren / Fake Video Debunking
-	- [Sightengine AI](https://sightengine.com/detect-ai-generated-videos), [Diopter AI](https://diopter.ai/deepfake-video-detector), [ZeroTrue](https://zerotrue.app/detectors/video-deepfake), [DeepfakeDetection.io](https://deepfakedetection.io/deepfake-video-detection), [Isgen AI Video Detector](https://isgen.ai/ai-video-detector), [BitMind](https://bitmind.ai/detect), …
+	- **[Google SythID Detector](https://synthid.com/)** ⭐, [Sightengine AI](https://sightengine.com/detect-ai-generated-videos), [Diopter AI](https://diopter.ai/deepfake-video-detector), [ZeroTrue](https://zerotrue.app/detectors/video-deepfake), [DeepfakeDetection.io](https://deepfakedetection.io/deepfake-video-detection), [Isgen AI Video Detector](https://isgen.ai/ai-video-detector), [BitMind](https://bitmind.ai/detect), …
 	- (€:) [Hive Detect](https://hivedetect.ai/), [Detect Video AI](https://detectvideo.ai/), …
 	- Forschung/Hochschulen: [InVID](https://www.invid-project.eu/), [TrueMedia.org](https://www.truemedia.org/)
 
