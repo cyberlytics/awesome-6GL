@@ -67,6 +67,7 @@ Dies ist sowohl eine Tool-Sammlung als auch ein digitaler Ressourcen-Pool mit ko
   * **6GL wird die 3GL nicht „ersetzen“, sondern die nächste dominante Abstraktionsebene bilden.** ⭐
 
 * **[AI Exposure](https://www.aiexposure.org/)** misst (Messgrößen u.a. per [OECD](https://www.oecd.org/en/publications/2026/05/the-oecd-ai-exposure-measure_489cfd42.html)), inwieweit künstliche Intelligenz Aufgaben innerhalb eines bestimmten Berufsbereichs unterstützen oder automatisieren kann. (Glauben Sie aber nicht, dass Informatiker durch GenAI überflüssig werden!)
+  * Artverwandt zur Informatik: [AI Exposure auf Mathematik](https://teorth.github.io/tao-web/slides/math-2-0-caltech-2026.pdf) (= Terence Tao in his own words)
 
 * [Doomer/Gloomer/Bloomer/Zoomer](https://www.daveduarte.net/blog/doomers-gloomers-bloomers-and-zoomers)
   * Begriffsherkunft: [Reid Hoffman](https://www.amazon.com/Superagency-Could-Possibly-Right-Future-ebook/dp/B0D886ZQHY)
@@ -215,7 +216,7 @@ Vibe Coding Referenzprojekt für Einsteiger mit kleinen Projekten (ca. 1-wöchig
 Gutes Preis/Leistungsverhältnis:
 
 * Kostenlos?
-	- Für Wissenschaftler mit Zugriff auf nationale Forschungsinfrastruktur: [FAU](https://hpc.fau.de/request-llm-api-key/#models) oder [GDWG](https://docs.hpc.gwdg.de/services/ai-services/chat-ai/models/index.html)
+	- Für Wissenschaftler mit Zugriff auf nationale Forschungsinfrastruktur: [FAU](https://hpc.fau.de/request-llm-api-key/#models) (= BayernKI) oder [GDWG](https://docs.hpc.gwdg.de/services/ai-services/chat-ai/models/index.html)
 		- Allerdings i.d.R. nur Mid-Tier-Modelle, keine Frontier-Modelle
 * Preisgünstig?
 	- [Open Code Go](https://opencode.ai/de/go) Subscription (~€10/m)
