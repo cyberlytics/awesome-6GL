@@ -650,7 +650,82 @@ Selbst wenn de Verwendung von generativer KI zur Text-Erstellung Ihrer Abschluss
 	- (€:) [Hive Detect](https://hivedetect.ai/), [Detect Video AI](https://detectvideo.ai/), …
 	- Forschung/Hochschulen: [InVID](https://www.invid-project.eu/), [TrueMedia.org](https://www.truemedia.org/)
 
-## Schwesterseiten
+
+## Slash-Commands und Skills
+
+Jede Coding Harness hat eigene built-in slash commands.
+Wir führen aus zwei Sichten nennenswerte Slash-Commands auf.
+Diese sind nicht überall als built-in vorhanden!
+
+Legende: ✅ Eingebaut · 🔹 Funktionales Äquivalent · 🛠️ Skill oder Eigenbau
+
+### Vorreiter Claude CLI: `/code-review`, `/security-review`, `/verify`
+
+Erklärung:
+- `/code-review` – Prüft Code auf Bugs, Regressionen und Qualitätsprobleme
+- `/security-review` – Prüft Code auf Sicherheitslücken und Schwachstellen
+- `/verify` – Verifiziert die Implementierung durch Tests, Builds und Checks
+
+| Coding Harness | Code Review | Security Review | Verify |
+|---|---|---|---|
+| **Claude Code** ⭐                  | ✅ [`/code-review`](https://claude.com/plugins/code-review)                                                                 | ✅ [`/security-review`](https://support.claude.com/en/articles/11932705-automated-security-reviews-in-claude-code) | ✅ [`/verify`](https://code.claude.com/docs/en/skills)                                       |
+| **OpenAI Codex CLI** | 🔹 [`code-review`](https://www.skills.sh/openai/codex/code-review) | 🛠️ Skill | 🛠️ Skill |
+| **Google Antigravity CLI (`agy`)** | 🔹 [`code-review-and-quality`](https://codelabs.developers.google.com/agy-cli-sdk-code-review) | 🛠️ Skill | 🛠️ Skill |
+| **Kiro CLI** | 🛠️ Skill/Prompt | 🛠️ Skill | 🛠️ Skill |
+| **GitHub Copilot CLI** | 🔹 Review-Agent | 🔹 Security-Review-Agent | 🔹 Task-Agent |
+| **GitHub Copilot App** ⭐ | ✅ [`/review`](https://docs.github.com/en/copilot/reference/github-copilot-app-reference/slash-commands) | ✅ [`/security-review`](https://docs.github.com/en/copilot/reference/github-copilot-app-reference/slash-commands) | 🛠️ Eigenbau |
+| **Cursor** ⭐ | 🔹 [`/review`](https://cursor.com/docs/skills#built-in-cursor-skills) | 🔹 [`/review-security`](https://cursor.com/docs/skills#built-in-cursor-skills) | 🛠️ Eigenbau |
+| **OpenCode** | 🛠️ Custom Command/Skill | 🛠️ Custom Command/Skill | 🛠️ Custom Command/Skill |
+| **Aider** | 🔹 Chat-/Git-Workflow | 🛠️ Prompt/Workflow | 🔹 [`/test`](https://aider.chat/docs/usage/commands.html) |
+
+Stand Oktober 2026
+
+### Google Antigravity CLI: `/usage`, `/context`, `/goal`, `/grill-me`
+
+Erklärung:
+- `/usage` – Quotas und Limits
+- `/context` – Tokenverbrauch und Kontext
+- `/goal` – Autonom bis zum Ziel
+- `/grill-me` – Anforderungen klären
+
+| Coding Harness | Quotas und Limits | Tokenverbrauch und Kontextübersicht | Autonom bis zum Ziel | Anforderungen klären |
+|---|---|---|---|---|
+| **Google Antigravity CLI (`agy`)** ⭐ | ✅ `/usage` | ✅ `/context` | ✅ `/goal` | ✅ `/grill-me` |
+| **Claude Code** | 🔹 `/usage` | 🔹 `/context` | 🛠️ Skill/Prompt | 🛠️ Skill/Prompt |
+| **OpenAI Codex CLI** | 🔹 `/status` | 🔹 `/status` | ✅ `/goal` | 🛠️ Prompt/Workflow |
+| **Kiro CLI** ⭐ | ✅ `/usage` | ✅ `/context` | ✅ `/goal` | 🔹 `/plan` / `/spec analyze_requirements` |
+| **GitHub Copilot CLI** | ✅ `/usage` | ✅ `/context` | 🛠️ Prompt/Agent | 🛠️ Prompt/Workflow |
+| **GitHub Copilot App** | — | — | 🛠️ Prompt/Agent | 🛠️ Prompt/Workflow |
+| **Cursor** | 🔹 Nutzungsstatistik | 🔹 Kontextanzeige im UI | 🛠️ Skill/Prompt | 🛠️ Skill/Prompt |
+| **OpenCode** | 🔹 `opencode stats` | 🔹 Kontext-/Tokenanzeige | 🛠️ Custom Command/Skill | 🛠️ Custom Command/Skill |
+| **Aider** | 🔹 `/tokens` (kein Quota) | 🔹 `/tokens` | 🛠️ Prompt/Workflow | 🛠️ Prompt/Workflow |
+
+Stand Oktober 2026
+
+### Offizielle Dokumentationsseiten zur Referenz
+
+| Coding Harness | Slash-Commands | Skills |
+|---|---|---|
+| **Claude Code** | https://code.claude.com/docs/en/commands | https://code.claude.com/docs/en/skills |
+| **OpenAI Codex CLI** | https://learn.chatgpt.com/docs/developer-commands?surface=cli#cli-built-in-slash-commands | https://developers.openai.com/codex/skills |
+| **Google Antigravity CLI (`agy`)** | https://www.agy.dev/docs/cli/reference/ | https://antigravity.google/docs/skills/ |
+| **Kiro CLI** | https://kiro.dev/docs/reference/slash-commands/ | https://kiro.dev/docs/skills/ |
+| **GitHub Copilot CLI** | https://docs.github.com/en/copilot/reference/copilot-cli-reference/cli-command-reference#slash-commands-in-the-interactive-interface | https://docs.github.com/en/copilot/concepts/customizations/agent-skills |
+| **GitHub Copilot App** | https://docs.github.com/en/copilot/reference/github-copilot-app-reference/slash-commands | https://docs.github.com/en/copilot/concepts/customizations/agent-skills |
+| **Cursor** | https://cursor.com/docs/skills#built-in-cursor-skills | https://cursor.com/docs/skills |
+| **OpenCode** | https://opencode.ai/docs/tui#commands | https://opencode.ai/docs/skills/ |
+| **Aider** | https://aider.chat/docs/usage/commands.html | -- |
+
+## Vergleichbare Review- und Verify-Workflows
+
+- Claude Code: `/code-review` – https://code.claude.com/docs/en/commands
+- GitHub Copilot CLI: `/review`, `/security-review` – https://docs.github.com/en/copilot/reference/copilot-cli-reference/cli-command-reference
+- Codex CLI: `/review` – https://developers.openai.com/codex/cli/slash-commands
+- Andere Harnesses: Skills oder Custom Commands verwenden, sofern kein entsprechender eingebauter Befehl existiert.
+
+**Hinweis:** Slash-Commands und Dokumentationspfade ändern sich mit den Versionen. In der jeweiligen CLI zeigt `/` oder `/help` häufig die tatsächlich verfügbaren Befehle an. Nicht jeder Eintrag in der Tabelle bezeichnet eine vollständige Slash-Command-Liste.
+
+## Anhang: Schwesterseiten
 
 Es gibt von mir weitere Schwesterseiten im Kontext Informatik/KI: [Digitaler Ressourcen-Pool](https://github.com/cyberlytics/awesome-basics), [Werkzeuge » Abschlussarbeiten](https://github.com/cyberlytics/awesome-thesis-tools), [Werkzeuge » Software-Engineering](https://github.com/cyberlytics/awesome-software-engineering-tools) und [Werkzeuge » Big Data und Cloud Computing für AI](https://github.com/cyberlytics/awesome-bdccai-tools).
 
