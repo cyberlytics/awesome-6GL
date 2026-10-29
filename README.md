@@ -175,6 +175,7 @@ Dies ist sowohl eine Tool-Sammlung als auch ein digitaler Ressourcen-Pool mit ko
 		- Lightweight/Agile: **[td](https://github.com/marcus/td/)** ⭐ (= Task management for AI-assisted development)
 		- Lean: Amazon **[AWS AI-DLC](https://github.com/awslabs/aidlc-workflows)** ⭐
 		- Heavyweight: [spec-kit](https://github.com/github/spec-kit), [SpecDD](https://specdd.ai/)
+		- Requirement-centric: **[AI Unified Process](https://unifiedprocess.ai/)** ⭐
 	- Harness: bspw [kiro](https://kiro.dev/) oder [tessl](https://tessl.io/)
 
 Vibe Coding Referenzprojekt für Einsteiger mit kleinen Projekten (ca. 1-wöchige SW-Prototypen)?
