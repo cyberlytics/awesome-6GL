@@ -217,7 +217,7 @@ Vibe Coding Referenzprojekt für Einsteiger mit kleinen Projekten (ca. 1-wöchig
 Gutes Preis/Leistungsverhältnis:
 
 * Kostenlos?
-	- Für Wissenschaftler mit Zugriff auf nationale Forschungsinfrastruktur: [FAU](https://hpc.fau.de/request-llm-api-key/#models) (= BayernKI) oder [GDWG](https://docs.hpc.gwdg.de/services/ai-services/chat-ai/models/index.html)
+	- Für Wissenschaftler mit Zugriff auf nationale Forschungsinfrastruktur: [FAU](https://hpc.fau.de/request-llm-api-key/#models) (= BayernKI) oder [GDWG](https://docs.hpc.gwdg.de/services/ai-services/chat-ai/models/index.html) und Jülich [Blablador](https://blablador.fz-juelich.de/)
 		- Allerdings i.d.R. nur Mid-Tier-Modelle, keine Frontier-Modelle
 * Preisgünstig?
 	- [Open Code Go](https://opencode.ai/de/go) Subscription (~€10/m)
