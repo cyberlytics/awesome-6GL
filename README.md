@@ -53,11 +53,12 @@ Dies ist sowohl eine Tool-Sammlung als auch ein digitaler Ressourcen-Pool mit ko
 
   Die [aktuelle Zerrissenheit](https://writer.com/blog/enterprise-ai-adoption-survey-results-press-release/) erinnert an frühere Paradigmenwechsel:
 
+  * Der Fortran Compiler von John Backus et al. wurde von vielen 50er-Jahre-Programmierer vehement abgelehnt, die manuelle Verwaltung von CPU-Registern, Speicheradressen und Mechanismen auf Bit-Ebene wurde auf eine Weise verteidigt, die uns heute unvorstellbar ist. Fortrans Hochsprachen-Compiler wurde als Demokratisierung der Computertechnik angefeindet bzw. gefeiert.
   * Dijkstra wurde nicht nur für „[GOTO considered harmful](https://www.perplexity.ai/search/new?q=Wurde+Dijkstra+nicht+nur+gefeiert+für+%22Goto+considered+harmful%22+sondern+auch+angefeindet%3F+Wie+kontrovers+war+die+Modernisierung+zu+seiner+Zeit%3F)“ gefeiert, sondern auch kontrovers diskutiert.
   * GOTO war nicht „falsch“, sondern Teil des 2GL-Programmierstils. Structured Programming und 3GL haben es lediglich im Mainstream verdrängt.
   * Ähnlich dürfte es mit 6GL-Techniken laufen.
 
-  Nebenbemerkung: GOTO wird beispielsweise im Linux-Kernel weiterhin intensiv für Cleanup- und Error-Handling-Muster verwendet; ein Grund könnte allerdings sein, dass sich bessere Alternativen wie ein [defer-Konstrukt](https://www.open-std.org/JTC1/SC22/WG14/www/docs/n3734.pdf) noch im C-Standardisierungsprozess befinden.
+  Nebenbemerkung: GOTO wird beispielsweise im Linux-Kernel weiterhin intensiv für Cleanup- und Error-Handling-Muster verwendet; ein Grund könnte allerdings sein, dass sich bessere Alternativen wie ein [defer-Konstrukt](https://www.open-std.org/JTC1/SC22/WG14/www/docs/n3734.pdf) noch 2025 im C-Standardisierungsprozess befinden.
 
 * **Vibe Coding als 6GL**
 
@@ -171,7 +172,7 @@ Dies ist sowohl eine Tool-Sammlung als auch ein digitaler Ressourcen-Pool mit ko
 * Dann 6GL aka [Natural Language Programming](https://www.cs.utexas.edu/~EWD/transcriptions/EWD06xx/EWD667.html) (Programmier-Ebene)
 	- Andrej Karpathy betonte „agentic programming as a tool“, bei der Vibe-Coding-Begriffsbildung
 * Dann Spec-Driven Development (SDD) aka Agentic Engineering (SW-Technik-Ebene)
-	- Frameworks:
+	- SDD-Frameworks:
 		- Lightweight/Agile: **[td](https://github.com/marcus/td/)** ⭐ (= Task management for AI-assisted development)
 		- Lean: Amazon **[AWS AI-DLC](https://github.com/awslabs/aidlc-workflows)** ⭐
 		- Heavyweight: [spec-kit](https://github.com/github/spec-kit), [SpecDD](https://specdd.ai/)
@@ -196,11 +197,11 @@ Vibe Coding Referenzprojekt für Einsteiger mit kleinen Projekten (ca. 1-wöchig
 
   NVIDIA DGX Spark bzw. Ryzen AI 395-Systemen könnte man entsprechend auch als **Premium-AI-Edge** bezeichnen.
 
-  [GPT-3](https://arxiv.org/pdf/2005.14165.pdf) war (beschrieben 2020, kommerzieller Durchbruch November 2022) ein **175B-Modell** (deutsche 175 Milliarden). **DeepSeek R1** (Release Januar 2025) war ein **671B-Modell** mit **37B aktiven Parametern durch Mixture-of-Experts (MoE)**. Das große 671B(37B)-DeepSeek R1 ist zwar FOSS Open Weight, läuft aber nicht auf gewöhnlicher Consumer-Hardware. Kleinere Varianten von DeepSeek sind "distilled versions" und basieren faktisch auf Qwen- oder Llama-Architekturen - hinsichtlich Edge-Hardware hier wird es hier also technisch kompliziert. Das französische **Mistral Large 3** (ab Dezember 2025) ist ein FOSS Open Weight 675B-Modell (41B aktiv durch MoE) und ist u.a. auch als 8B oder 14B Edge-Modell verfügbar.
+  [GPT-3](https://arxiv.org/pdf/2005.14165.pdf) war (beschrieben 2020, kommerzieller Durchbruch November 2022) ein **175B-Modell** (deutsche 175 Milliarden). **DeepSeek R1** (Release Januar 2025) war ein **671B-Modell** mit **37B aktiven Parametern pro Token durch Mixture-of-Experts (MoE)**. Das große 671B(37B)-DeepSeek R1 ist zwar FOSS Open Weight, läuft aber nicht auf gewöhnlicher Consumer-Hardware. Kleinere Varianten von DeepSeek sind "distilled versions" und basieren faktisch auf Qwen- oder Llama-Architekturen - hinsichtlich Edge-Hardware wird es hier also technisch kompliziert. Das französische **Mistral Large 3** (ab Dezember 2025) ist ein FOSS Open Weight 675B-Modell (41B aktiv per Token durch MoE) und ist u.a. auch als 8B oder 14B Edge-Modell verfügbar.
   
-  Ein von OpenAI ab Sommer 2025 (zweieinhalb Jahre nach Beginn des ChatGPT-Zeitalters) verfügbares FOSS Open Weight Mid-Tier-Modell für die Premium-AI-Edge (damals 80GB NVIDIA H100) ist **gpt-oss-120b**, ein 117B-Modell mit 5B aktiven Parametern durch MoE, welches im Vergleich zum urpsrünglichen GPT-3 (zur Erinnerung: 175B) und auch zum legacy GPT-3.5-Turbo deutliche Überlegenheit und damit Massentauglichkeit für Local-AI demonstrierte.
+  Ein von OpenAI ab Sommer 2025 (zweieinhalb Jahre nach Beginn des ChatGPT-Zeitalters) verfügbares FOSS Open Weight Mid-Tier-Modell für die Premium-AI-Edge (damals 80GB NVIDIA H100) ist **gpt-oss-120b**, ein 117B-Modell mit 5B aktiven Parametern per Token durch MoE, welches im Vergleich zum urpsrünglichen GPT-3 (zur Erinnerung: 175B) und auch zum legacy GPT-3.5-Turbo deutliche Überlegenheit und damit Massentauglichkeit für Local-AI demonstrierte.
   
-  Weitere nennenswerte FOSS Open Weight Frontier-Modelle sind **[DeepSeek V4 pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro)** mit 1.6T und **[Kimi K3](https://platform.kimi.ai/docs/guide/kimi-k3-quickstart)** mit 2.8T (also deutsche Billionen). Kimi K3 belegt im nativen MXFP4-Format ca. 1½ TB an Speicherplatz und benötigt ein GPU-Cluster mit mindestens 1680GB VRAM. (Ab OpenAI GPT-3.5 sowie für alle Anthropic Claude-Modelle wurden keine offiziellen Anzahlen an Parametern mehr für die Cloud-Modelle der amerikanischen Big-Tech-Anbieter veröffentlicht.)
+  Weitere nennenswerte FOSS Open Weight Frontier-Modelle sind **[DeepSeek V4 pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro)** mit 1.6T (Non-Vision/rein Text) und **[Kimi K3](https://platform.kimi.ai/docs/guide/kimi-k3-quickstart)** mit 2.8T (Vision-fähig) sowie auch das etwas kleinere Z.ai [GLM](https://huggingface.co/zai-org) bspw. GLM 5.3 mit 753B (Non-Vision/rein Text) und das besagte [Mistral](https://huggingface.co/mistralai) bzpw. Le Chonk mit 1T (Vision-fähig). Mit "T" für deutsche Billionen. Kimi K3 belegt im nativen MXFP4-Format ca. 1½ TB an Speicherplatz und benötigt ein GPU-Cluster mit mindestens 1680GB VRAM. (Ab OpenAI GPT-3.5 sowie für alle Anthropic Claude-Modelle wurden keine offiziellen Anzahlen an Parametern mehr für die Cloud-Modelle der amerikanischen Big-Tech-Anbieter veröffentlicht.)
 
 * **Modelmaxxing als Kostenoptimierung**
 
@@ -217,8 +218,10 @@ Vibe Coding Referenzprojekt für Einsteiger mit kleinen Projekten (ca. 1-wöchig
 Gutes Preis/Leistungsverhältnis:
 
 * Kostenlos?
-	- Für Wissenschaftler mit Zugriff auf nationale Forschungsinfrastruktur: [FAU](https://hpc.fau.de/request-llm-api-key/#models) (= BayernKI) oder [GDWG](https://docs.hpc.gwdg.de/services/ai-services/chat-ai/models/index.html) und Jülich [Blablador](https://blablador.fz-juelich.de/)
-		- Allerdings i.d.R. nur Mid-Tier-Modelle, keine Frontier-Modelle
+	- Für Wissenschaftler mit Zugriff auf nationale Forschungsinfrastruktur:
+		- BY: [FAU](https://hpc.fau.de/request-llm-api-key/#models) (Teil der BayernKI)
+		- DE: [GDWG](https://docs.hpc.gwdg.de/services/ai-services/chat-ai/models/index.html) oder Jülich [Blablador](https://blablador.fz-juelich.de/)
+		- OBACHT: Allerdings i.d.R. nur Mid-Tier-Modelle, keine Frontier-Modelle!
 * Preisgünstig?
 	- [Open Code Go](https://opencode.ai/de/go) Subscription (~€10/m)
 	- Internationale Subscriptions (bspw. indischen Ursprungs)
@@ -374,15 +377,26 @@ agy models |
 		- OpenAI [Codex CLI](https://openai.com/codex/) \[**npm i -g @openai/codex**\]
 		- Google [Gemini CLI](https://github.com/google-gemini/gemini-cli) \[**npm install -g @google/gemini-cli**\]
 		- GitHub [Copilot CLI](https://github.com/github/copilot-cli) \[**npm install -g @github/copilot**\]
-	- Open Source CLIs:
+	- BYOK Coding Harness, bspw. für Bring-Your-Own-Key via [BayernKI/FAU](https://hpc.fau.de/request-llm-api-key/), [GDWG](https://docs.hpc.gwdg.de/services/ai-services/chat-ai/models/index.html) oder Jülich [Blablador](https://blablador.fz-juelich.de/):
+		- Coding Harness:
+			- GUI: [**VS Code** with Copilot Harness BYOK](https://code.visualstudio.com/blogs/2026/06/18/byok-vscode) ⭐, [**Hermes** Desktop](https://hermes-agent.nousresearch.com/) ⭐ (Nous Research), **[PiCove](https://github.com/Skitre/PiCove)** ⭐ (formerlly PiDeck), [Cline for Desktop](https://cline.bot/desktop), [AiderDesk](https://github.com/magiksoft/aider-desk), [OpenCode](https://opencode.ai/), [Factory Desktop](https://factory.com/product/desktop), [TRAE](https://www.trae.ai/)
+				- (Empfehlung der Noris Network: [Hermes Desktop](https://hermes-agent.nousresearch.com/) (Nous Research) und [OpenCode](https://opencode.ai/))
+			- TUI/CLI: [Claude CLI](https://docs.anthropic.com/en/docs/agents-and-tools/claude-cli), [aider](https://aider.chat/) \[**pip install aider-install && aider-install**\], [Cline CLI](https://github.com/cline/cline), [droid](https://factory.com/product/cli) (Factory), [Hermes Agent CLI](https://github.com/nousresearch/hermes-agent) (Nous Research)
+			- Special Interest #1: WebApps (Alternative zu Lovable/v0/Bolt): [Dyad](https://github.com/dyad-sh/dyad) ⭐
+			- Special Interest #2: Android APKs: [**Cline** for Desktop](https://cline.bot/desktop) ⭐, **[droid](https://factory.com/product/cli)** ⭐ (Factory)
+		- Spec-driven Dev: [tessl](https://tessl.io/) ⭐
+		- RAG-system: [Msty](https://msty.app/) ⭐, [Witsy](https://witsyai.com/) ⭐, [Cherry Studio](https://cherry-ai.com/) ⭐ 
+		- Chat-only: die obigen RAG-Systeme (Msty, Witsy, Cherry Studio) sowie [Chatbox CE](https://chatboxai.app/)
+	- Weitere nennenswerten Open Source CLIs / Coding Harness (zusätzlich zu BYOK, oben, jetzt nennenswertes Delta zu Local-AI):
 		- [cline](https://cline.bot/) ([github](https://github.com/cline/cline)) \[**npm install -g cline**\]
 			- [Roo Code](https://github.com/RooCodeInc/Roo-Code) as fork from cline
-			- [Kilo Code](https://kilocode.ai/) ([github](https://github.com/Kilo-Org/kilocode)) = merged features from Roo Code and Cline plus own features
-		- ollama-based CLIs:
+			- [Kilo Code](https://kilocode.ai/) ([github](https://github.com/Kilo-Org/kilocode)) = merged features from Roo Code and cline plus own features
+		- Ollama-based CLIs:
 			- [ollama code cli](https://github.com/vigyatgoel/ollama-code-cli) \[pip install ollama-code-cli\]
 			- [tlm CLI](https://github.com/yusufcanb/tlm) \[irm https://raw.githubusercontent.com/yusufcanb/tlm/1.2/install.ps1 | iex\]
+			- uvm.
 		- [LocalAGI](https://github.com/mudler/LocalAGI)
-		- [aider](https://aider.chat/): AI pair programming \[**pip install aider-install && aider-install\]
+		- [aider](https://aider.chat/): AI pair programming 
 		- [tgpt](https://github.com/aandrew-me/tgpt) (= Terminal GPT) \[**choco install tgpt**\]
 	- Desktop (u.a. VS Code Extensions):
 		- **[Cursor](https://www.cursor.com/)** \[**choco install cursoride**\]
@@ -557,10 +571,10 @@ Selbst wenn de Verwendung von generativer KI zur Text-Erstellung Ihrer Abschluss
 			- Text-Extraktion aus PDF: **pdftotext** aus den [xpdf-utils](http://www.xpdfreader.com) \[**choco install xpdf-utils**\]
 		- YouTube Summarizer (mittels GPT): **[Glasp](https://glasp.co/youtube-summary)**
 - Text-to-…: ([Auswahlhilfe](https://llmselector.vercel.app/))
-	- Text-to-Code:
+	- Text-to-Code Prompting Werkzeuge (OBACHT: Coding Harnesses für Vibe Coding bzw. Agentic AI? siehe OBEN!)
 		- Dev/FOSS-Models: Facebook [Llama](https://www.llama.com/llama-downloads/), OpenAI [gpt-oss](https://openai.com/index/introducing-gpt-oss/), Google [gemma](https://huggingface.co/google), [DeepSeek](https://huggingface.co/deepseek-ai), xAI [grok](https://huggingface.co/xai-org), [Qwen](https://huggingface.co/Qwen), [Mistral](https://huggingface.co/mistralai) (Mistral [Commercial vs. OSS](https://docs.mistral.ai/getting-started/models)), TII [Falcon](https://huggingface.co/tiiuae), BigScience [BLOOM](https://huggingface.co/bigscience/bloom)
 			- AI-Coder Model-Benchmark: [Eval Plus](https://evalplus.github.io/leaderboard.html)
-		- Desktop/Local/Offline: **[Msty](https://msty.app/)** ⭐, **[LM Studio](https://lmstudio.ai/)** ⭐
+		- Desktop/Local/Offline: [Msty](https://msty.app/), [LM Studio](https://lmstudio.ai/)
 		- WebUI/Local/Offline: [bolt.diy](https://github.com/stackblitz-labs/bolt.diy), [autogpt](https://agpt.co/)
 		- Cloud/freemium: [DeepSeek Chat](https://chat.deepseek.com/), Online [Eden AI](https://www.edenai.co/), [uvm.](https://codesubmit.io/blog/ai-code-tools/)
 		- Nennenswerte andere Dev-Tools: [dir-assistant](https://github.com/curvedinf/dir-assistant)
