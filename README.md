@@ -574,8 +574,8 @@ Selbst wenn de Verwendung von generativer KI zur Text-Erstellung Ihrer Abschluss
 				- Witsy hat eine python-Integration (in Plugins aktivierbar)
 				- Witsy unterstützt Text-to-Image und Text-to-Video per API-Anbindung
 		- Chat-only (relativ simpel): [Chatbox CE](https://chatboxai.app/)
-		- Office-Files-Generation: **[Conduit](https://github.com/runningpixels/conduit)** ⭐, **[AnythingLLM](https://anythingllm.com/download)** ⭐, **[GenOffice](https://genoffice.ai/)** ([github](https://github.com/genspark-ai/genoffice)) ⭐
-			- OBACHT: vorhandene DOCX/PPTX generieren/überarbeiten/kürzen? Marktführer: Per Claude CLI oder GitHub Copilot. BYOK: Claude CLI, ...?
+		- Office-Files-Generation: **[Conduit](https://github.com/runningpixels/conduit)** ⭐, **[GenOffice](https://genoffice.ai/)** ([github](https://github.com/genspark-ai/genoffice)) ⭐
+			- OBACHT: vorhandene DOCX/PPTX generieren/überarbeiten/kürzen? Per **Coding Harness**!! (Marktführer: Claude CLI oder GitHub Copilot. BYOK/GUI: [VS Code](https://code.visualstudio.com/blogs/2026/06/18/byok-vscode), [Hermes Desktop](https://hermes-agent.nousresearch.com/), [PiCove](https://github.com/Skitre/PiCove) , [Cline Desktop](https://cline.bot/desktop), [AiderDesk](https://github.com/magiksoft/aider-desk), [OpenCode](https://opencode.ai/), [Factory Desktop](https://factory.com/product/desktop), [TRAE](https://www.trae.ai/), [Void](https://voideditor.com/). BYOK/TUI: [Claude CLI](https://docs.anthropic.com/en/docs/agents-and-tools/claude-cli), [aider](https://aider.chat/), [Cline CLI](https://github.com/cline/cline), [droid](https://factory.com/product/cli), [Hermes Agent CLI](https://github.com/nousresearch/hermes-agent), [Pi](https://github.com/earendil-works/pi)/[omp](https://omp.sh/)/[Oh-my-Pi](https://github.com/can1357/oh-my-pi))
 			- Conduit hat die beste strukturierte Dokumenterstellung (docx/md)
 			- Conduit hat die beste strukturierte Folienerstellung (html) inkl. integriertem Folieneditor
 			- Conduit kann im Kontext eines lokalen Verzeichnis arbeiten ⭐ (bspw. pptx generieren, durch explizites Prompting)
