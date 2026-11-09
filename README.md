@@ -372,39 +372,48 @@ agy models |
 - Low Code: vgl. Schwesterseite [awesome-bdccai-tools » Low-Code / No-Code](https://github.com/cyberlytics/awesome-bdccai-tools#low-code--no-code)
 - Übersicht/Einstieg: indiehackers [Vibe Coding Tools](https://www.indiehackers.com/vibe-coding-tools) ([free ones](https://www.indiehackers.com/vibe-coding-tools?tags=Free))
 - Vibe Coding via Agentic AI (Full-Stack-Engineering Assistants)
-	- Marktführer CLIs: 
-		- Anthropic **[Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code/overview)** \[**npm install -g @anthropic-ai/claude-code**\]
-		- OpenAI [Codex CLI](https://openai.com/codex/) \[**npm i -g @openai/codex**\]
-		- Google [Gemini CLI](https://github.com/google-gemini/gemini-cli) \[**npm install -g @google/gemini-cli**\]
-		- GitHub [Copilot CLI](https://github.com/github/copilot-cli) \[**npm install -g @github/copilot**\]
-	- BYOK Coding Harness, bspw. für Bring-Your-Own-Key via [BayernKI/FAU](https://hpc.fau.de/request-llm-api-key/), [GDWG](https://docs.hpc.gwdg.de/services/ai-services/chat-ai/models/index.html) oder Jülich [Blablador](https://blablador.fz-juelich.de/):
-		- Coding Harness:
-			- GUI: [**VS Code** with Copilot Harness BYOK](https://code.visualstudio.com/blogs/2026/06/18/byok-vscode) ⭐, [**Hermes** Desktop](https://hermes-agent.nousresearch.com/) ⭐ (Nous Research), **[PiCove](https://github.com/Skitre/PiCove)** ⭐ (formerlly PiDeck), [Cline for Desktop](https://cline.bot/desktop), [AiderDesk](https://github.com/magiksoft/aider-desk), [OpenCode](https://opencode.ai/), [Factory Desktop](https://factory.com/product/desktop), [TRAE](https://www.trae.ai/)
-				- (Empfehlung der Noris Network: [Hermes Desktop](https://hermes-agent.nousresearch.com/) (Nous Research) und [OpenCode](https://opencode.ai/))
-			- TUI/CLI: [Claude CLI](https://docs.anthropic.com/en/docs/agents-and-tools/claude-cli), [aider](https://aider.chat/) \[**pip install aider-install && aider-install**\], [Cline CLI](https://github.com/cline/cline), [droid](https://factory.com/product/cli) (Factory), [Hermes Agent CLI](https://github.com/nousresearch/hermes-agent) (Nous Research)
-			- Special Interest #1: WebApps (Alternative zu Lovable/v0/Bolt): [Dyad](https://github.com/dyad-sh/dyad) ⭐
-			- Special Interest #2: Android APKs: [**Cline** for Desktop](https://cline.bot/desktop) ⭐, **[droid](https://factory.com/product/cli)** ⭐ (Factory)
-		- Spec-driven Dev: [tessl](https://tessl.io/) ⭐
-		- RAG-system: [Msty](https://msty.app/) ⭐, [Witsy](https://witsyai.com/) ⭐, [Cherry Studio](https://cherry-ai.com/) ⭐ 
-		- Chat-only: die obigen RAG-Systeme (Msty, Witsy, Cherry Studio) sowie [Chatbox CE](https://chatboxai.app/)
-	- Weitere nennenswerten Open Source CLIs / Coding Harness (zusätzlich zu BYOK, oben, jetzt nennenswertes Delta zu Local-AI):
-		- [cline](https://cline.bot/) ([github](https://github.com/cline/cline)) \[**npm install -g cline**\]
-			- [Roo Code](https://github.com/RooCodeInc/Roo-Code) as fork from cline
-			- [Kilo Code](https://kilocode.ai/) ([github](https://github.com/Kilo-Org/kilocode)) = merged features from Roo Code and cline plus own features
+	- Marktführer Coding Harness:
+		- TUI/CLI:
+			- Anthropic **[Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code/overview)** \[**npm install -g @anthropic-ai/claude-code**\]
+			- OpenAI [Codex CLI](https://openai.com/codex/) \[**npm i -g @openai/codex**\]
+			- Google [Gemini CLI](https://github.com/google-gemini/gemini-cli) \[**npm install -g @google/gemini-cli**\]
+			- GitHub [Copilot CLI](https://github.com/github/copilot-cli) \[**npm install -g @github/copilot**\]
+		- GUI:
+			- **[Cursor](https://www.cursor.com/)** \[**choco install cursoride**\]
+			- **[Windsurf](https://windsurf.com/)** (formerly Codeium) \[**choco install windsurf**\]
+	- BYOK Coding Harness:
+		- (bspw. für Bring-Your-Own-Key via [BayernKI/FAU](https://hpc.fau.de/request-llm-api-key/), [GDWG](https://docs.hpc.gwdg.de/services/ai-services/chat-ai/models/index.html) oder Jülich [Blablador](https://blablador.fz-juelich.de/))
+		- GUI: [**VS Code** with GitHub Copilot Harness BYOK](https://code.visualstudio.com/blogs/2026/06/18/byok-vscode) ⭐, [**Hermes** Desktop](https://hermes-agent.nousresearch.com/) ⭐ (Nous Research), **[PiCove](https://github.com/Skitre/PiCove)** ⭐ (formerlly PiDeck), [Cline for Desktop](https://cline.bot/desktop), [AiderDesk](https://github.com/magiksoft/aider-desk), [OpenCode](https://opencode.ai/), [Factory Desktop](https://factory.com/product/desktop), [TRAE](https://www.trae.ai/), [Void](https://voideditor.com/)
+		- TUI/CLI: [Claude CLI](https://docs.anthropic.com/en/docs/agents-and-tools/claude-cli), [aider](https://aider.chat/), [Cline CLI](https://github.com/cline/cline), [droid](https://factory.com/product/cli) (Factory), [Hermes Agent CLI](https://github.com/nousresearch/hermes-agent) (Nous Research), [Pi](https://github.com/earendil-works/pi) and [omp](https://omp.sh/)/[Oh-my-Pi](https://github.com/can1357/oh-my-pi)
+			- (Claude CLI Klone, aber NICHT empfohlen: [claurst](https://github.com/Kuberwastaken/claurst), [Claw Code](https://github.com/ultraworkers/claw-code), [claux](https://github.com/ducks/claux))
+		- Special Interest #1 = WebApps (Alternative zu Lovable/v0/Bolt): [Dyad](https://github.com/dyad-sh/dyad) ⭐
+			- Mac-only: [Onlook](https://onlook.com/)
+		- Special Interest #3 = Spec-driven Dev: [tessl](https://tessl.io/) ⭐
+		- Nennenswerte Spezialkompetenz:  ⭐
+			- Android APKs:
+				- GUI: [Cline for Desktop](https://cline.bot/desktop)
+				- TUI/CLI: [droid](https://factory.com/product/cli) (Factory)
+			- Word (docx) anpassen/kürzen:
+				- GUI: tbd (ich nehme an alle)
+				- TUI/CLI: [Claude CLI](https://docs.anthropic.com/en/docs/agents-and-tools/claude-cli), [Cline CLI](https://github.com/cline/cline), [omp](https://omp.sh/)/[Oh-my-Pi](https://github.com/can1357/oh-my-pi), [droid](https://factory.com/product/cli) (Factory), [Hermes Agent CLI](https://github.com/nousresearch/hermes-agent) (Nous Research)
+	- BYOK Cowork
+		- (wie Open Claw: Omnichannel-Anbindung und Autonome Trigger bzw. Allround-Assistenz und System-Automatisierung):
+		- GUI: **[Eigent](https://www.eigent.ai/)** ⭐, **[EasyClaw](https://easyclaw.com/)** ⭐, [OpenClaw](https://openclaw.ai/), [PicoClaw](https://picoclaw.io/download/) (teilweise auch [Conduit](https://github.com/runningpixels/conduit) oder [AnythingLLM](https://anythingllm.com/download))
+			- Alle haben umfangreiche Connectoren auf Cloud-Dienste
+			- Eigent hat gute Flow/Automation Integration (Scheduled Jobs und Event-triggered Jobs)
+			- EasyClaw hat die beste Sammlung von Assistenten-Profilen
+			- Conduit hat exzellente Flow/Automation Integration (Scheduled Jobs und Event-triggered Jobs)
+			- AnythingLLM hat einen Meeting Assistant und Desktop Assistant
+			- AnythingLLM hat gute Flow/Automation Integration sowie Scheduled Jobs
+		- TUI/CLI: [ZeroClaw](https://www.zeroclaw.com/)
+	- Web-based/Self-Hosted:
+		- [LocalAGI](https://github.com/mudler/LocalAGI) + [LocalRecall](https://github.com/mudler/LocalRecall) + [LocalAI](https://github.com/mudler/LocalAI)
+		- [Tabby](https://www.tabbyml.com/)
+	- Local-AI-only
 		- Ollama-based CLIs:
 			- [ollama code cli](https://github.com/vigyatgoel/ollama-code-cli) \[pip install ollama-code-cli\]
 			- [tlm CLI](https://github.com/yusufcanb/tlm) \[irm https://raw.githubusercontent.com/yusufcanb/tlm/1.2/install.ps1 | iex\]
 			- uvm.
-		- [LocalAGI](https://github.com/mudler/LocalAGI)
-		- [aider](https://aider.chat/): AI pair programming 
-		- [tgpt](https://github.com/aandrew-me/tgpt) (= Terminal GPT) \[**choco install tgpt**\]
-	- Desktop (u.a. VS Code Extensions):
-		- **[Cursor](https://www.cursor.com/)** \[**choco install cursoride**\]
-		- **[Windsurf](https://windsurf.com/)** (formerly Codeium) \[**choco install windsurf**\]
-		- **[TRAE IDE](https://www.trae.ai/)** (zzgl. [TRAE Solo](https://www.trae.ai/solo))
-		- More: **[Void](https://voideditor.com/)**, [Tabby](https://www.tabbyml.com/), [Qodo Command](https://www.qodo.ai/products/qodo-command/)/[Qodo Gen](https://www.qodo.ai/products/qodo-gen/)
-		- ReactJS/UI-centric: [Onlook](https://onlook.com/)
-		- UI-Design: [SuperDesign.Dev](https://www.superdesign.dev/)
 	- VS Code Extensions:
 		- **[TabNine](https://www.tabnine.com/install/vs-code/)** (kostenlos ist nur die Short-Code-Completion)
 		- GitHub [Copilot VS Code Extension](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
@@ -416,6 +425,7 @@ agy models |
 		- ReactJS: [loveable](https://lovable.dev/), [Tempo](https://www.tempo.new)
 		- Next.js: [v0](https://v0.dev/chat) (UI-centric)
 		- GitHub **[Copilot](https://github.com/copilot/)**
+		- UI-Design: [SuperDesign.Dev](https://www.superdesign.dev/)
 		- Weiterführende Liste: [AI Tools Club](https://aitoolsclub.com/top-50-ai-vibe-coding-tools-for-everyone-in-2025/)
 	- Game Engineering:
 		- Unity ⭐ (C#): mit In-Editor AI Assistant, MCP Server, Agent Plugin, Skills
@@ -485,6 +495,7 @@ agy models |
 	- [Superpowers](https://github.com/obra/superpowers)
 	- Repos: [Open Agent Skills Ecosystem](https://www.skills.sh/), [SkillsLLM](https://skillsllm.com/), [Awesome Skills](https://awesome-skills.com/)
 	- Further Reading: [Awesome Claude Skills #1](https://github.com/travisvn/awesome-claude-skills), [Awesome Claude Skills #2](https://github.com/ComposioHQ/awesome-claude-skills), [Awesome Claude Code Subagents](https://github.com/VoltAgent/awesome-claude-code-subagents), [Official Claude Plugins Marketplace](https://claude.com/plugins)
+- UI-Design: [SuperDesign.Dev](https://www.superdesign.dev/)
 - MS Office
 	- Anthropic: [pdf](https://www.skills.sh/anthropics/skills/pdf), [pptx](https://www.skills.sh/anthropics/skills/pptx), [docx](https://www.skills.sh/anthropics/skills/docx), [xslx](https://www.skills.sh/anthropics/skills/xlsx)
 	- [ppt-master](https://www.skills.sh/hugohe3/ppt-master/ppt-master)
@@ -550,15 +561,35 @@ Selbst wenn de Verwendung von generativer KI zur Text-Erstellung Ihrer Abschluss
 		- Long-Term Context LLM / Personalized AI: [MemGPT](https://memgpt.ai/)
 		- Agent AI: **[Letta](https://github.com/letta-ai/letta)**
 	- Closed LLM Model-Benchmark: [BenchLM](https://benchlm.ai/), [Artificial Analysis](https://artificialanalysis.ai/leaderboards/models), …
-	- Desktop/Hybrid-Local/BYOK: **[GenOffice](https://genoffice.ai/)** ([github](https://github.com/genspark-ai/genoffice)) ⭐
-	- Desktop/Local/Offline: **[Msty](https://msty.app/)** ⭐, **[LM Studio](https://lmstudio.ai/)** ⭐ \[**choco install lm-studio**\], **[Witsy](https://witsyai.com/)** ⭐ \[**choco install witsy**\], [AnythingLLM](https://anythingllm.com/), Nomic [gpt4all](https://github.com/nomic-ai/gpt4all) \[**choco install gpt4all**\], [Jan AI](https://jan.ai) \[**choco install jan**\] und andere
-		- Local [OpenAI-compatible API](https://platform.openai.com/docs/api-reference/chat) Server: [LM Studio OpenAI-compatible API server](https://lmstudio.ai/docs/api/openai-api), [vLLM OpenAI-compatible API Server](https://docs.vllm.ai/en/latest/serving/openai_compatible_server.html), [Msty Local AI Service](https://docs.msty.app/how-to-guides/make-local-ai-service-available-on-the-network), [gpt4all API Server](https://docs.gpt4all.io/gpt4all_api_server/home.html), [Jan.ai Cortex Local API Server](https://cortex.so/docs/quickstart/) ([API](https://cortex.so/api-reference/))
-			- Docker: [LocalAI](https://localai.io/): Local family AI, full-stack = All-in-One: LLMs, Text to Speech, Speech to Text, Function calling, Image generation, Embedding server
-		- Let LLMs run code locally: [Open Interpreter](https://github.com/OpenInterpreter/open-interpreter)
-	- WebUI/Local/Offline:
-		- **[Open WebUI](https://openwebui.com/)** ⭐
-		- [Text Generation WebUI](https://github.com/hermannklie/text-generation-webui)
-	- Embedded/Local/Offline: [vLLM](https://github.com/vllm-project/vllm)
+	- BYOK Chat-/RAG-Systeme, bspw. für Bring-Your-Own-Key via [BayernKI/FAU](https://hpc.fau.de/request-llm-api-key/), [GDWG](https://docs.hpc.gwdg.de/services/ai-services/chat-ai/models/index.html) oder Jülich [Blablador](https://blablador.fz-juelich.de/):
+		- Chat-/RAG-Systeme: **[Conduit](https://github.com/runningpixels/conduit)** ⭐, **[Cherry Studio](https://cherry-ai.com/)** ⭐, [Witsy](https://witsyai.com/), [AnythingLLM](https://anythingllm.com/download), [Msty](https://msty.app/), Nomic [gpt4all](https://github.com/nomic-ai/gpt4all)
+			- Alle können RAG-artig Dokumente als Knowledge Base integrieren (ähnlich NotebookLM)
+			- Conduit kann im Kontext eines lokalen Verzeichis arbeiten ⭐ (derzeit nur [ausgewählte Dateiformate](https://conduitllm.com/use-cases/chat-with-documents.html))
+			- Conduit hat die beste Flow/Automation Integration (Scheduled Jobs und Event-triggered Jobs)
+			- Cherry Studio hat die beste automatische Ableitung von verfügbaren Modellen, mit Icons über deren Capabilities
+			- Cherry Studio und AnythingLLM haben bie beste Voice Integration mit Windows Bordmitteln oder mit integrierten lokallen Modellen
+			- Cherry Studio, Witsy und AnythingLLM haben exzellente Skill und MCP Integration (OBACHT: Conduit noch OHNE Skills)
+			- Witsy ist leider NICHT brauchbar für größere Generierungsaufgaben
+				- Witsy hat einen Deep Research Modus (konfigurierbar per Witsy-driven oder LLM-Driven Vorgehen)
+				- Witsy hat eine python-Integration (in Plugins aktivierbar)
+				- Witsy unterstützt Text-to-Image und Text-to-Video per API-Anbindung
+		- Chat-only (relativ simpel): [Chatbox CE](https://chatboxai.app/)
+		- Office-Files-Generation: **[Conduit](https://github.com/runningpixels/conduit)** ⭐, **[AnythingLLM](https://anythingllm.com/download)** ⭐, **[GenOffice](https://genoffice.ai/)** ([github](https://github.com/genspark-ai/genoffice)) ⭐
+			- OBACHT: vorhandene DOCX/PPTX generieren/überarbeiten/kürzen? Marktführer: Per Claude CLI oder GitHub Copilot. BYOK: Claude CLI, ...?
+			- Conduit hat die beste strukturierte Dokumenterstellung (docx/md)
+			- Conduit hat die beste strukturierte Folienerstellung (html) inkl. integriertem Folieneditor
+			- Conduit kann im Kontext eines lokalen Verzeichnis arbeiten ⭐ (bspw. pptx generieren, durch explizites Prompting)
+			- GenOffice hat den besten integrierten Editor ⭐
+	- Local-AI Chat-/RAG-Systeme:
+		- (Obige BYOK-Systeme haben i.d.R. auch Local-AI Support...!)
+		- Desktop/Local/Offline: **[LM Studio](https://lmstudio.ai/)** ⭐ \[**choco install lm-studio**\], [Jan AI](https://jan.ai) \[**choco install jan**\] und andere
+			- Local [OpenAI-compatible API](https://platform.openai.com/docs/api-reference/chat) Server: [LM Studio OpenAI-compatible API server](https://lmstudio.ai/docs/api/openai-api), [vLLM OpenAI-compatible API Server](https://docs.vllm.ai/en/latest/serving/openai_compatible_server.html), [Msty Local AI Service](https://docs.msty.app/how-to-guides/make-local-ai-service-available-on-the-network), [gpt4all API Server](https://docs.gpt4all.io/gpt4all_api_server/home.html), [Jan.ai Cortex Local API Server](https://cortex.so/docs/quickstart/) ([API](https://cortex.so/api-reference/))
+				- Docker: [LocalAI](https://localai.io/): Local family AI, full-stack = All-in-One: LLMs, Text to Speech, Speech to Text, Function calling, Image generation, Embedding server
+			- Let LLMs run code locally: [Open Interpreter](https://github.com/OpenInterpreter/open-interpreter)
+		- WebUI/Local/Offline:
+			- **[Open WebUI](https://openwebui.com/)** ⭐
+			- [Text Generation WebUI](https://github.com/hermannklie/text-generation-webui)
+		- Embedded/Local/Offline: [vLLM](https://github.com/vllm-project/vllm)
 	- Desktop/Cloud-only/Online: **[Noi](https://github.com/lencx/Noi)**
 	  - Single Vendor: Unofficial **[ChatGPT Desktop](https://github.com/lencx/ChatGPT)** \[**choco install chatgpt**\], Official **[Claude Desktop](https://claude.ai/download)** \[**choco install claude**\], Official **[Perplexity Windows App](https://apps.microsoft.com/detail/xp8jnqfbqh6pvf)** (sowie Unofficial Inulute [Perplexity AI Desktop](https://pplx.inulute.com/download/))
 	- more: [basran](https://github.com/hyperonym/basaran), [LocalAI](https://github.com/mudler/LocalAI), [Xorbits Inference](https://github.com/xorbitsai/inference) 
@@ -585,7 +616,7 @@ Selbst wenn de Verwendung von generativer KI zur Text-Erstellung Ihrer Abschluss
 	- Text-to-Image:
 		- AI-Image-Generator Model-Benchmark: Artificial Analysis [Image AI Model & Provider Leaderboard](https://artificialanalysis.ai/text-to-image) | [Benchmarking-Awesome-Diffusion-Models](https://github.com/Schuture/Benchmarking-Awesome-Diffusion-Models)
 		- Dev/FOSS Models: **[Stable Diffusion](https://github.com/CompVis/stable-diffusion)**, **[FLUX.1](https://github.com/black-forest-labs/flux)**
-		- Desktop/Hybrid-Local/BYOK: **[GenOffice](https://genoffice.ai/)** ⭐ ([github](https://github.com/genspark-ai/genoffice))sowie **[ArtCraft IDE for Artists](https://getartcraft.com/)** ⭐ ([github](https://github.com/storytold/artcraft))
+		- Desktop/Hybrid-Local/BYOK: **[GenOffice](https://genoffice.ai/)** ⭐ ([github](https://github.com/genspark-ai/genoffice))sowie **[ArtCraft IDE for Artists](https://getartcraft.com/)** ⭐ ([github](https://github.com/storytold/artcraft)), (€:) [CSuite](https://csuite.so/)
 		- Desktop/Local/Offline: Lykos **[Stability Matrix](https://lykos.ai/downloads)** ⭐ (Tutorial: [Using FLUX.1 locally](https://www.kdnuggets.com/using-flux-1-locally))
 			- Stability Matrix ist ein 1-Stop-Shop für alle anderen Werkzeuge wie bspw.: Stable Diffusion WebUI [Forge](https://github.com/lllyasviel/stable-diffusion-webui-forge) bzw. [reForge](https://github.com/Panchovix/stable-diffusion-webui-reForge), [ComfyUI](https://github.com/comfyanonymous/ComfyUI)
 			- Disclaimer: Manche Text-to-Image Werkzeuge benötigen (Stand 2025) eine NVidia RTX als Hardware-Voraussetzung
@@ -597,7 +628,7 @@ Selbst wenn de Verwendung von generativer KI zur Text-Erstellung Ihrer Abschluss
 		- Cloud/freemium: [Deep Dream Generator](https://deepdreamgenerator.com/) ([old version](https://deepdreamgenerator.com/generator?old-tools=1)), [Dezgo](https://dezgo.com/text2image/sdxl), [Stable Diffusion Online](https://stablediffusionweb.com/) (10img/d; mit Wasserzeichen), [NightCafe](https://creator.nightcafe.studio/), [WPimages](https://www.wpimagines.com/), [AI Image Generator](https://www.aiimagegenerator.org/), [uvm.](https://easywithai.com/best-free-ai-image-generators/)
 		- Cloud/€€€/Subscriptions: **[OpenArt](https://openart.ai/create)** ⭐, [fal](https://fal.ai/), [dreamina](https://dreamina.capcut.com/ai-tool/home/?type=image), OpenAI [**DALL·E** 2](https://labs.openai.com/waitlist), **[Midjourney](https://www.midjourney.com/)**, [craiyon](https://www.craiyon.com/) (früher: „DALL·E mini“), Google [Imagen](https://imagen.research.google/), Adobe [Firefly](https://www.adobe.com/products/firefly.html) …
 	- Text-to-Video: [synthesia](https://www.synthesia.io), [dreamina](https://dreamina.capcut.com/ai-tool/home/?type=video), [kaiber.ai](https://kaiber.ai), … , China: [Kling](https://kling.kuaishou.com/en)
-		- Desktop/Hybrid-Local/Multi-Cloud: **[ArtCraft IDE for Artists](https://getartcraft.com/)** ([github](https://github.com/storytold/artcraft))
+		- Desktop/Hybrid-Local/Multi-Cloud: **[ArtCraft IDE for Artists](https://getartcraft.com/)** ([github](https://github.com/storytold/artcraft)), (€:) [CSuite](https://csuite.so/)
 		- WebUI/Local/Offline: [CogStudio](https://github.com/pinokiofactory/cogstudio), [FramePack](https://github.com/lllyasviel/framepack), [FP-Studio](https://docs.framepackstudio.com/), [Wan](https://wan.video/)
 	- Text-to-Slides:
 		- Desktop/Hybrid-Local/BYOK: **[GenOffice](https://genoffice.ai/)** ([github](https://github.com/genspark-ai/genoffice)) ⭐
