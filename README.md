@@ -48,6 +48,7 @@ Dies ist sowohl eine Tool-Sammlung als auch ein digitaler Ressourcen-Pool mit ko
   * 4GL (deklarativ) und 5GL (logikbasiert) wurden nie ein Massenphänomen und haben 3GL-Hochsprachen nicht verdrängt.
   * Uncle Bobs Vortrag **„[The Future of Programming](https://www.youtube.com/watch?v=ecIWPzGEbFc)“** ⭐ ist hierzu weiterhin relevant!
   * Interessanterweise hatte bereits [Dijkstra über Natural Language Programming](https://www.cs.utexas.edu/~EWD/transcriptions/EWD06xx/EWD667.html) ⭐ nachgedacht, aber ausnahmsweise irrte er sich hierzu. Allerdings hatte die breite Öffentlichkeit die Fähigkeiten von großen Sprachmodellen vor November 2022 nicht für möglich gehalten.
+  * Weitere Disruptionen in der Informmatik-Historie: [O'Reilly Artikel](https://www.oreilly.com/radar/where-are-the-killer-apps-of-ai/)
 
 * **Vibe-Coding-Anpassungsstörungen?**
 
@@ -364,6 +365,44 @@ agy models |
 	- vgl. Schwesterseite [awesome-basics](https://github.com/cyberlytics/awesome-basics) zu Machine Learning und Generative AI / LLMs
 	- Weiterführende Quellen: roadmap.sh [AI Agents](https://roadmap.sh/ai-agents) sowie [AI Engineering](https://roadmap.sh/ai-engineer)
 
+## KI-Modelle
+
+- Text/Coding (with Reasoning and Vision support, for modern coding harnesses)
+	- Int'l:
+		- Entry-Tier/Lightweight: Alibaba [Qwen](https://huggingface.co/Qwen), Google [gemma](https://huggingface.co/google)
+		- Mid-Tier: [DeepSeek](https://huggingface.co/deepseek-ai) (BEWARE: [Z.ai GLM](https://huggingface.co/zai-org) not recommended, because flagship model GLM 5.3 is Text-only/No-Vision!)
+		- Frontier: Kimi [K3](https://platform.kimi.ai/docs/guide/kimi-k3-quickstart), Mistral [Le Chonk](https://huggingface.co/mistralai)
+	- DE:
+		- Entry-Tier/Lightweight: [Soofi S](https://huggingface.co/Soofi-Project) (DE/EN-primary; Text-only/No-Vision)
+		- Mid-Tier: Aleph Alpha [Kolibri 1](https://huggingface.co/Aleph-Alpha/Kolibri-1) (DE/EN-primary; Text-only/No-Vision)
+		- Frontier: «none«
+- Text-to-Speech (TTS) / Audio Synthesis:
+	- Entry-Tier/Lightweight: Hexgrad [Kokoro](https://huggingface.co/hexgrad/) (EN-primary), NVidia [Magpie-Multilingual](https://huggingface.co/nvidia/magpie_tts_multilingual_357m) (multi-lang.)
+	- Mid-Tier: Alibaba [CosyVoice](https://github.com/QwenAudio/CosyVoice) (multi-lang.)
+	- Frontier: Fish Audio [S2-Pro](https://huggingface.co/fishaudio) (multi-lang.)
+- Speech-to-Text (STT) / ASR / Dictation:
+	- Entry-Tier/Lightweight: NVidia [Parakeet](https://huggingface.co/collections/nvidia/parakeet-asr) (both multi-lang variant and EN-primary variant)
+	- Mid-Tier: Qwen [Qwen3-ASR](https://huggingface.co/collections/Qwen/qwen3-asr) (multi-lang.), OpenAI [Whisper large-v3-turbo](https://huggingface.co/openai/whisper-large-v3-turbo) (multi-lang.)
+	- Frontier: Mistral [Voxtral Small](https://huggingface.co/collections/mistralai/voxtral) (multi-lang, strong European)
+- Image Generation:
+	- Entry-Tier/Lightweight: Black Forest Labs [FLUX.3 Image Klein](https://huggingface.co/black-forest-labs)
+	- Mid-Tier: Alibaba [Qwen Image 2.1](https://huggingface.co/Qwen)
+	- Frontier: Black Forest Labs [FLUX.3 dev](https://huggingface.co/black-forest-labs)
+- **Open Weight Models**, notable labs and models:
+	- US: Meta [Llama](https://www.llama.com/llama-downloads/), OpenAI [gpt-oss](https://openai.com/index/introducing-gpt-oss/), Google [gemma](https://huggingface.co/google), xAI [grok](https://huggingface.co/xai-org), NVidia [Nemotron](https://huggingface.co/nvidia), Microsoft [Phi](https://huggingface.co/microsoft)
+	- CN: [DeepSeek](https://huggingface.co/deepseek-ai), Alibaba [Qwen](https://huggingface.co/Qwen), Moonshot AI [Kimi](https://huggingface.co/moonshotai), Z.ai [GLM](https://huggingface.co/zai-org), [MiniMax](https://huggingface.co/MiniMaxAI), Tencent [Hunyuan](https://huggingface.co/tencent)
+	- FR/EU: [Mistral](https://huggingface.co/mistralai) (Mistral [Commercial vs. OSS](https://docs.mistral.ai/getting-started/models)), BigScience [BLOOM](https://huggingface.co/bigscience/bloom)
+	- DE: Black Forest Labs (BFL) [FLUX](https://bfl.ai/), Aleph Alpha [Kolibri](https://aleph-alpha.com/), [Soofi Consortium](https://www.soofi.info/)
+	- CH: Swiss AI Initiative [Apertus](https://huggingface.co/swiss-ai)
+	- United Arab Emirates: Technology Innovation Institute (TII) [Falcon](https://huggingface.co/tiiuae)
+	- Israel: AI21 Labs [Jamba](https://huggingface.co/ai21labs)
+	- India: Sarvam AI [Sarvam](https://huggingface.co/sarvamai), Ola Krutrim [Krutrim](https://huggingface.co/krutrim-ai-labs), AI4Bharat [Airavata / IndicTrans](https://huggingface.co/ai4bharat)
+- Model Benchmarks:
+	- Open LLM Model-Benchmark: [Open LLM Leaderboard](https://huggingface.co/spaces/open-llm-leaderboard/blog) sowie [MTEB Leaderboard](https://huggingface.co/spaces/mteb/leaderboard)
+	- Closed LLM Model-Benchmark: [BenchLM](https://benchlm.ai/), [Artificial Analysis](https://artificialanalysis.ai/leaderboards/models), …
+	- AI-Coder Model-Benchmark: [Eval Plus](https://evalplus.github.io/leaderboard.html)
+	- Text-to-Image: Artificial Analysis [Image AI Model & Provider Leaderboard](https://artificialanalysis.ai/text-to-image) | [Benchmarking-Awesome-Diffusion-Models](https://github.com/Schuture/Benchmarking-Awesome-Diffusion-Models)
+
 ## Vibe Coding Werkzeuge
 
 \[ OBACHT: Gilt für eine akademische Abschlussarbeit ggf. als Unterschleif i.S.v. High-Tech-Plagiarism. Hochschulrecht ist anders als reines Urheberrecht. \]
@@ -396,16 +435,6 @@ agy models |
 			- Word (docx) anpassen/kürzen:
 				- GUI: tbd (ich nehme an alle)
 				- TUI/CLI: [Claude CLI](https://docs.anthropic.com/en/docs/agents-and-tools/claude-cli), [Cline CLI](https://github.com/cline/cline), [omp](https://omp.sh/)/[Oh-my-Pi](https://github.com/can1357/oh-my-pi), [droid](https://factory.com/product/cli) (Factory), [Hermes Agent CLI](https://github.com/nousresearch/hermes-agent) (Nous Research)
-	- BYOK Cowork
-		- (wie Open Claw: Omnichannel-Anbindung und Autonome Trigger bzw. Allround-Assistenz und System-Automatisierung):
-		- GUI: **[Eigent](https://www.eigent.ai/)** ⭐, **[EasyClaw](https://easyclaw.com/)** ⭐, [OpenClaw](https://openclaw.ai/), [PicoClaw](https://picoclaw.io/download/) (teilweise auch [Conduit](https://github.com/runningpixels/conduit) oder [AnythingLLM](https://anythingllm.com/download))
-			- Alle haben umfangreiche Connectoren auf Cloud-Dienste
-			- Eigent hat gute Flow/Automation Integration (Scheduled Jobs und Event-triggered Jobs)
-			- EasyClaw hat die beste Sammlung von Assistenten-Profilen
-			- Conduit hat exzellente Flow/Automation Integration (Scheduled Jobs und Event-triggered Jobs)
-			- AnythingLLM hat einen Meeting Assistant und Desktop Assistant
-			- AnythingLLM hat gute Flow/Automation Integration sowie Scheduled Jobs
-		- TUI/CLI: [ZeroClaw](https://www.zeroclaw.com/)
 	- Web-based/Self-Hosted:
 		- [LocalAGI](https://github.com/mudler/LocalAGI) + [LocalRecall](https://github.com/mudler/LocalRecall) + [LocalAI](https://github.com/mudler/LocalAI)
 		- [Tabby](https://www.tabbyml.com/)
@@ -427,6 +456,19 @@ agy models |
 		- GitHub **[Copilot](https://github.com/copilot/)**
 		- UI-Design: [SuperDesign.Dev](https://www.superdesign.dev/)
 		- Weiterführende Liste: [AI Tools Club](https://aitoolsclub.com/top-50-ai-vibe-coding-tools-for-everyone-in-2025/)
+	- BYOK Cowork
+		- (wie Open Claw: Omnichannel-Anbindung und Autonome Trigger bzw. Allround-Assistenz und System-Automatisierung):
+		- GUI: **[Eigent](https://www.eigent.ai/)** ⭐, **[EasyClaw](https://easyclaw.com/)** ⭐, [OpenClaw](https://openclaw.ai/), [PicoClaw](https://picoclaw.io/download/) (teilweise auch [Conduit](https://github.com/runningpixels/conduit) oder [AnythingLLM](https://anythingllm.com/download))
+			- Alle haben umfangreiche Connectoren auf Cloud-Dienste
+			- Eigent hat gute Flow/Automation Integration (Scheduled Jobs und Event-triggered Jobs)
+			- EasyClaw hat die beste Sammlung von Assistenten-Profilen
+			- Conduit hat exzellente Flow/Automation Integration (Scheduled Jobs und Event-triggered Jobs)
+			- AnythingLLM hat einen Meeting Assistant und Desktop Assistant
+			- AnythingLLM hat gute Flow/Automation Integration sowie Scheduled Jobs
+		- TUI/CLI: [ZeroClaw](https://www.zeroclaw.com/)
+	- Long-Term Memory / Agents that learn and improve over time
+		- Long-Term Context LLM / Personalized AI: [MemGPT](https://memgpt.ai/)
+		- Agent AI: **[Letta](https://github.com/letta-ai/letta)**
 	- Game Engineering:
 		- Unity ⭐ (C#): mit In-Editor AI Assistant, MCP Server, Agent Plugin, Skills
 		- Unreal Engine 😲 (C/C++): erst experimentell / eher nur MCP-basiert
@@ -556,11 +598,6 @@ Selbst wenn de Verwendung von generativer KI zur Text-Erstellung Ihrer Abschluss
 - Desktop-Apps / AI Tool Installer:
 	- Universell: **[pinokio](https://pinokio.computer/)** ⭐, [SEAIT](https://github.com/diStyApps/seait/)
 - Text-to-Text:
-	- Open LLM Model-Benchmark: [Open LLM Leaderboard](https://huggingface.co/spaces/open-llm-leaderboard/blog) sowie [MTEB Leaderboard](https://huggingface.co/spaces/mteb/leaderboard)
-		- LLM Modelle mit DE-Unterstützung: [Webartikel](https://medium.com/@oledawidzinski/deutschsprachige-open-source-llms-als-alternative-zu-chatgpt-und-co-8ecbcf6ab96d) (u.a. Mistral-Nemo-Instruct-2407, DiscoLM_German_7b_v1, SauerkrautLM, …, Qwen2-7B-Instruct, Llama3-DiscoLeo-Instruct-8B, …)
-		- Long-Term Context LLM / Personalized AI: [MemGPT](https://memgpt.ai/)
-		- Agent AI: **[Letta](https://github.com/letta-ai/letta)**
-	- Closed LLM Model-Benchmark: [BenchLM](https://benchlm.ai/), [Artificial Analysis](https://artificialanalysis.ai/leaderboards/models), …
 	- BYOK Chat-/RAG-Systeme, bspw. für Bring-Your-Own-Key via [BayernKI/FAU](https://hpc.fau.de/request-llm-api-key/), [GDWG](https://docs.hpc.gwdg.de/services/ai-services/chat-ai/models/index.html) oder Jülich [Blablador](https://blablador.fz-juelich.de/):
 		- Chat-/RAG-Systeme: **[Conduit](https://github.com/runningpixels/conduit)** ⭐, **[Cherry Studio](https://cherry-ai.com/)** ⭐, [Witsy](https://witsyai.com/), [AnythingLLM](https://anythingllm.com/download), [Msty](https://msty.app/), Nomic [gpt4all](https://github.com/nomic-ai/gpt4all)
 			- Alle können RAG-artig Dokumente als Knowledge Base integrieren (ähnlich NotebookLM)
@@ -603,8 +640,6 @@ Selbst wenn de Verwendung von generativer KI zur Text-Erstellung Ihrer Abschluss
 		- YouTube Summarizer (mittels GPT): **[Glasp](https://glasp.co/youtube-summary)**
 - Text-to-…: ([Auswahlhilfe](https://llmselector.vercel.app/))
 	- Text-to-Code Prompting Werkzeuge (OBACHT: Coding Harnesses für Vibe Coding bzw. Agentic AI? siehe OBEN!)
-		- Dev/FOSS-Models: Facebook [Llama](https://www.llama.com/llama-downloads/), OpenAI [gpt-oss](https://openai.com/index/introducing-gpt-oss/), Google [gemma](https://huggingface.co/google), [DeepSeek](https://huggingface.co/deepseek-ai), xAI [grok](https://huggingface.co/xai-org), [Qwen](https://huggingface.co/Qwen), [Mistral](https://huggingface.co/mistralai) (Mistral [Commercial vs. OSS](https://docs.mistral.ai/getting-started/models)), TII [Falcon](https://huggingface.co/tiiuae), BigScience [BLOOM](https://huggingface.co/bigscience/bloom)
-			- AI-Coder Model-Benchmark: [Eval Plus](https://evalplus.github.io/leaderboard.html)
 		- Desktop/Local/Offline: [Msty](https://msty.app/), [LM Studio](https://lmstudio.ai/)
 		- WebUI/Local/Offline: [bolt.diy](https://github.com/stackblitz-labs/bolt.diy), [autogpt](https://agpt.co/)
 		- Cloud/freemium: [DeepSeek Chat](https://chat.deepseek.com/), Online [Eden AI](https://www.edenai.co/), [uvm.](https://codesubmit.io/blog/ai-code-tools/)
@@ -614,8 +649,6 @@ Selbst wenn de Verwendung von generativer KI zur Text-Erstellung Ihrer Abschluss
 		- Foundational Models: [DuckDB NSQL](https://github.com/NumbersStationAI/DuckDB-NSQL)
 		- Tutorials: AWS Machine Learning [Build a robust text-to-SQL solution ](https://aws.amazon.com/de/blogs/machine-learning/build-a-robust-text-to-sql-solution-generating-complex-queries-self-correcting-and-querying-diverse-data-sources/), LlamaIndex [Text-to-SQL Guide with Jupyter](https://docs.llamaindex.ai/en/stable/examples/index_structs/struct_indices/SQLIndexDemo/), IBM Watson [Generating SQL from text with LLMs](https://developer.ibm.com/tutorials/awb-text-to-sql-using-llms/)
 	- Text-to-Image:
-		- AI-Image-Generator Model-Benchmark: Artificial Analysis [Image AI Model & Provider Leaderboard](https://artificialanalysis.ai/text-to-image) | [Benchmarking-Awesome-Diffusion-Models](https://github.com/Schuture/Benchmarking-Awesome-Diffusion-Models)
-		- Dev/FOSS Models: **[Stable Diffusion](https://github.com/CompVis/stable-diffusion)**, **[FLUX.1](https://github.com/black-forest-labs/flux)**
 		- Desktop/Hybrid-Local/BYOK: **[GenOffice](https://genoffice.ai/)** ⭐ ([github](https://github.com/genspark-ai/genoffice))sowie **[ArtCraft IDE for Artists](https://getartcraft.com/)** ⭐ ([github](https://github.com/storytold/artcraft)), (€:) [CSuite](https://csuite.so/)
 		- Desktop/Local/Offline: Lykos **[Stability Matrix](https://lykos.ai/downloads)** ⭐ (Tutorial: [Using FLUX.1 locally](https://www.kdnuggets.com/using-flux-1-locally))
 			- Stability Matrix ist ein 1-Stop-Shop für alle anderen Werkzeuge wie bspw.: Stable Diffusion WebUI [Forge](https://github.com/lllyasviel/stable-diffusion-webui-forge) bzw. [reForge](https://github.com/Panchovix/stable-diffusion-webui-reForge), [ComfyUI](https://github.com/comfyanonymous/ComfyUI)
