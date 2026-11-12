@@ -19,6 +19,7 @@ Dies ist sowohl eine Tool-Sammlung als auch ein digitaler Ressourcen-Pool mit ko
 - [Agentic Engineering Manifest](#agentic-engineering-manifest)
 - [Agentic Education Manifest](#agentic-education-manifest)
 - [Lernmaterialien](#lernmaterialien)
+- [KI-Modelle](#ki-modelle)
 - [Vibe Coding Werkzeuge](#vibe-coding-werkzeuge)
 - [Prompting Recipies](#prompting-recipies)
 - [Agent Context File](#agent-context-file)
@@ -27,9 +28,12 @@ Dies ist sowohl eine Tool-Sammlung als auch ein digitaler Ressourcen-Pool mit ko
 - [Vibe Testing Werkzeuge](#vibe-testing-werkzeuge)
 - [Vibe Hacking Werkzeuge](#vibe-hacking-werkzeuge)
 - [Vibe Science Werkzeuge](#vibe-science-werkzeuge)
-- [Generative KI Werkzeuge](#generative-ki-werkzeuge)
+- [Prompting Werkzeuge](#prompting-werkzeuge)
 - [Bildmaterialien Werkzeuge](#bildmaterialien-werkzeuge)
-- [Schwesterseiten](#schwesterseiten)
+- [AI Detectors / High-Tech Plagiarism](#ai-detectors--high-tech-plagiarism)
+- [Slash-Commands und Skills](#slash-commands-und-skills)
+- [Vergleichbare Review- und Verify-Workflows](#vergleichbare-review--und-verify-workflows)
+- [Anhang: Schwesterseiten](#anhang-schwesterseiten)
 - [Footer](#footer)
 
 <!-- tocstop -->
