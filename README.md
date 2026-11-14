@@ -372,26 +372,57 @@ agy models |
 ## KI-Modelle
 
 - Text/Coding (with Reasoning and Vision support, for modern coding harnesses)
-	- Int'l:
+	- Int'l (Multilingual):
 		- Entry-Tier/Lightweight: Alibaba [Qwen](https://huggingface.co/Qwen), Google [gemma](https://huggingface.co/google)
 		- Mid-Tier: [DeepSeek](https://huggingface.co/deepseek-ai) (BEWARE: [Z.ai GLM](https://huggingface.co/zai-org) not recommended, because flagship model GLM 5.3 is Text-only/No-Vision!)
 		- Frontier: Kimi [K3](https://platform.kimi.ai/docs/guide/kimi-k3-quickstart), Mistral [Le Chonk](https://huggingface.co/mistralai)
-	- DE:
+	- DE (German-optimized / Bilingual DE-EN):
 		- Entry-Tier/Lightweight: [Soofi S](https://huggingface.co/Soofi-Project) (DE/EN-primary; Text-only/No-Vision)
 		- Mid-Tier: Aleph Alpha [Kolibri 1](https://huggingface.co/Aleph-Alpha/Kolibri-1) (DE/EN-primary; Text-only/No-Vision)
 		- Frontier: «none«
+- Embeddings / Vector Search (for RAG, Semantic Search & Hybrid Retrieval):
+	- Int'l (Multilingual):
+		- Entry-Tier/Lightweight: Google [EmbeddingGemma 2](https://huggingface.co/google/embeddinggemma-2) (native multimodal text/code/image/audio/video), Jina AI [jina-embeddings-v5-text-small](https://huggingface.co/jinaai/jina-embeddings-v5-text-small) (32k context, beware: non-commercial)
+		- Mid-Tier: BAAI [BGE-M3](https://huggingface.co/BAAI/bge-m3) (100+ langs, dense + sparse + ColBERT multi-vector in one model), NVidia [Nemotron-3-Embed-1B](https://huggingface.co/nvidia/Nemotron-3-Embed-1B-BF16) (strong enterprise/agentic retrieval)
+		- Frontier: Alibaba [Qwen3-Embedding](https://huggingface.co/collections/Qwen/qwen3-embedding) (119 langs, 32k context, beware: requires English query `Instruct:` prefix), NVidia [Nemotron-3-Embed-8B](https://huggingface.co/collections/nvidia/nemotron-3-embed) (top-tier RTEB retrieval)
+	- DE (German-optimized / Bilingual DE-EN):
+		- Entry-Tier/Lightweight: Jina AI [jina-embeddings-v2-base-de](https://huggingface.co/jinaai/jina-embeddings-v2-base-de) (bilingual DE/EN, 8k context), T-Systems [cross-en-de-roberta-sentence-transformer](https://huggingface.co/T-Systems-onsite/cross-en-de-roberta-sentence-transformer) (classic lightweight DE/EN cross-lingual baseline)
+		- Mid-Tier: malteos [most-embed-de](https://huggingface.co/malteos/most-embed-de) (fine-tune of Nemotron-3-Embed-1B, #1 in 1B class on MTEB/RTEB German Retrieval, 32k context; beware: non-commercial)
+		- Frontier: «none« (dedicated DE-only frontier models don't exist; use multilingual Qwen3-Embedding or Nemotron, which lead German RTEB/MTEB benchmarks)
 - Text-to-Speech (TTS) / Audio Synthesis:
-	- Entry-Tier/Lightweight: Hexgrad [Kokoro](https://huggingface.co/hexgrad/) (EN-primary), NVidia [Magpie-Multilingual](https://huggingface.co/nvidia/magpie_tts_multilingual_357m) (multi-lang.)
-	- Mid-Tier: Alibaba [CosyVoice](https://github.com/QwenAudio/CosyVoice) (multi-lang.)
-	- Frontier: Fish Audio [S2-Pro](https://huggingface.co/fishaudio) (multi-lang.)
-- Speech-to-Text (STT) / ASR / Dictation:
-	- Entry-Tier/Lightweight: NVidia [Parakeet](https://huggingface.co/collections/nvidia/parakeet-asr) (both multi-lang variant and EN-primary variant)
-	- Mid-Tier: Qwen [Qwen3-ASR](https://huggingface.co/collections/Qwen/qwen3-asr) (multi-lang.), OpenAI [Whisper large-v3-turbo](https://huggingface.co/openai/whisper-large-v3-turbo) (multi-lang.)
-	- Frontier: Mistral [Voxtral Small](https://huggingface.co/collections/mistralai/voxtral) (multi-lang, strong European)
+	- Int'l:
+		- Entry-Tier/Lightweight: Hexgrad [Kokoro](https://huggingface.co/hexgrad/) (EN-primary), NVidia [Magpie-Multilingual](https://huggingface.co/nvidia/magpie_tts_multilingual_357m) (multi-lang.)
+		- Mid-Tier: Xiaomi k2-fsa [OmniVoice](https://github.com/k2-fsa/OmniVoice) (multi-lang.), Alibaba [CosyVoice](https://github.com/QwenAudio/CosyVoice) / [Qwen3-TTS](https://huggingface.co/collections/Qwen/qwen3-tts) (multi-lang., strong DE)
+		- Frontier: Fish Audio [S2-Pro](https://huggingface.co/fishaudio) (multi-lang.), Mistral [Voxtral-4B-TTS](https://huggingface.co/mistralai/Voxtral-4B-TTS-2603) (multi-lang., strong European)
+	- DE:
+		- Entry-Tier/Lightweight: [Thorsten-Voice](https://github.com/thorstenMueller/Thorsten-Voice) / [Piper DE](https://huggingface.co/rhasspy/piper-voices) (ultra-fast CPU/edge VITS voices, Neutral/Emotional/Hessisch, MIT/CC0 — sounds older, best for Home Assistant/embedded)
+		- Mid-Tier: HPI [F5-TTS-German](https://huggingface.co/aihpi/F5-TTS-German) (German zero-shot voice cloning trained on Emilia_DE + Common Voice; beware: non-commercial)
+		- Frontier: «none« (no dedicated DE-only frontier model; multilingual Qwen3-TTS, OmniVoice, and Voxtral outperform older DE fine-tunes in naturalness and prosody)
+- Speech-to-Text (STT) / ASR / Dictation / Speech Recognition:
+	- Int'l:
+		- Entry-Tier/Lightweight: NVidia [Parakeet](https://huggingface.co/collections/nvidia/parakeet-asr) (both: multi-lang. OR EN-primary), Alibaba [FunASR](https://github.com/modelscope/FunASR) (strong CJK/EN)
+		- Mid-Tier: Qwen [Qwen3-ASR](https://huggingface.co/collections/Qwen/qwen3-asr) (multi-lang.), OpenAI [Whisper large-v3-turbo](https://huggingface.co/openai/whisper-large-v3-turbo) (multi-lang.)
+		- Frontier: Mistral [Voxtral Small](https://huggingface.co/collections/mistralai/voxtral) (multi-lang, strong European)
+	- DE:
+		- Entry-Tier/Lightweight: primeLine [whisper-tiny-german-1224](https://huggingface.co/primeline/whisper-tiny-german-1224) (38M, trained on ~6,000h German audio for edge/CPU)
+		- Mid-Tier: primeLine [whisper-large-v3-turbo-german](https://huggingface.co/primeline/whisper-large-v3-turbo-german) (809M, fast DE-tuned Turbo) / [whisper-large-v3-german](https://huggingface.co/primeline/whisper-large-v3-german) (1.54B, ~3.0% WER on Common Voice DE), [BuzzASR/german](https://huggingface.co/BuzzASR/german) (monolingual DE Whisper large-v3 fine-tune)
+		- Frontier: «none« (multilingual Voxtral and Qwen3-ASR lead general German benchmarks; DE fine-tunes are mainly worthwhile for low-resource edge hardware or regional dialects like Swiss German)
+- Simultaneous Speech-to-Speech Translation (S2ST):
+	- Entry-Tier/Lightweight: Meta [SeamlessM4T v2](https://huggingface.co/facebook/seamless-m4t-v2-large) (multi-lang., ~100 langs, non-streaming/chunked)
+	- Mid-Tier: Xiaomi [MiMo-Audio-7B](https://huggingface.co/collections/XiaomiMiMo/mimo-audio) (multi-lang., native streaming + voice preservation), Kyutai [Hibiki-Zero](https://github.com/kyutai-labs/hibiki-zero) (FR/ES/PT/DE → EN, ultra-low-latency RL streaming)
+	- Frontier: Alibaba [Qwen3-Omni](https://huggingface.co/collections/Qwen/qwen3-omni) (multi-lang., native audio-to-audio streaming + full reasoning)
 - Image Generation:
 	- Entry-Tier/Lightweight: Black Forest Labs [FLUX.3 Image Klein](https://huggingface.co/black-forest-labs)
 	- Mid-Tier: Alibaba [Qwen Image 2.1](https://huggingface.co/Qwen)
 	- Frontier: Black Forest Labs [FLUX.3 dev](https://huggingface.co/black-forest-labs)
+- Music Generation / Song Synthesis (Vocals & Instrumentals):
+	- Entry-Tier/Lightweight: Meta [MusicGen](https://huggingface.co/collections/facebook/musicgen) (classic 30s instrumentals, CC BY-NC), Stability AI [Stable Audio Open](https://huggingface.co/stabilityai/stable-audio-open-1.0) (lightweight stereo loops up to 47s)
+	- Mid-Tier: ACE-Step [ACE-Step 1.5](https://huggingface.co/ACE-Step) (10 min), ASLP-lab [DiffRhythm 2](https://huggingface.co/collections/ASLP-lab/diffrhythm) (ultra-fast full songs), Stability AI [Stable Audio 3](https://huggingface.co/stabilityai) (long instrumentals up to 6+ min)
+	- Frontier: HKUST/MAP [YuE / YuE2](https://huggingface.co/m-a-p), Tencent [LeVo 2](https://huggingface.co/tencent) (beware: non-commercial)
+- Sound Effects (SFX) / Foley:
+	- Entry-Tier/Lightweight: Stability AI [Stable Audio 3 Small SFX](https://huggingface.co/stabilityai) (fast text-to-SFX), Meta [AudioGen](https://huggingface.co/facebook/audiogen-medium) / [AudioLDM 2](https://huggingface.co/cvssp/audioldm2) (classic environmental & discrete SFX, mostly CC BY-NC)
+	- Mid-Tier: Declare-Lab [TangoFlux](https://huggingface.co/declare-lab/TangoFlux) (high temporal prompt precision), hkchengrex [MMAudio](https://huggingface.co/hkchengrex/MMAudio) (frame-accurate Video-to-Audio & Text-to-Audio foley sync)
+	- Frontier: nur Cloud APIs
 - **Open Weight Models**, notable labs and models:
 	- US: Meta [Llama](https://www.llama.com/llama-downloads/), OpenAI [gpt-oss](https://openai.com/index/introducing-gpt-oss/), Google [gemma](https://huggingface.co/google), xAI [grok](https://huggingface.co/xai-org), NVidia [Nemotron](https://huggingface.co/nvidia), Microsoft [Phi](https://huggingface.co/microsoft)
 	- CN: [DeepSeek](https://huggingface.co/deepseek-ai), Alibaba [Qwen](https://huggingface.co/Qwen), Moonshot AI [Kimi](https://huggingface.co/moonshotai), Z.ai [GLM](https://huggingface.co/zai-org), [MiniMax](https://huggingface.co/MiniMaxAI), Tencent [Hunyuan](https://huggingface.co/tencent)
@@ -406,6 +437,12 @@ agy models |
 	- Closed LLM Model-Benchmark: [BenchLM](https://benchlm.ai/), [Artificial Analysis](https://artificialanalysis.ai/leaderboards/models), …
 	- AI-Coder Model-Benchmark: [Eval Plus](https://evalplus.github.io/leaderboard.html)
 	- Text-to-Image: Artificial Analysis [Image AI Model & Provider Leaderboard](https://artificialanalysis.ai/text-to-image) | [Benchmarking-Awesome-Diffusion-Models](https://github.com/Schuture/Benchmarking-Awesome-Diffusion-Models)
+
+## Office Automation
+
+- Voice (clone, design, dub, dictate, transcribe, and narrate) sowie Simultanübersetzung:
+	- [VoiceStudio](https://voicestudio.sh/) ([github](https://github.com/debpalash/VoiceStudio); früher: OmniVoice Studio) \[choco install voicestudio\], basierend auf dem Modell Xiaomi [OmniVoice](https://github.com/k2-fsa/OmniVoice)
+
 
 ## Vibe Coding Werkzeuge
 
@@ -426,9 +463,25 @@ agy models |
 			- **[Windsurf](https://windsurf.com/)** (formerly Codeium) \[**choco install windsurf**\]
 	- BYOK Coding Harness:
 		- (bspw. für Bring-Your-Own-Key via [BayernKI/FAU](https://hpc.fau.de/request-llm-api-key/), [GDWG](https://docs.hpc.gwdg.de/services/ai-services/chat-ai/models/index.html) oder Jülich [Blablador](https://blablador.fz-juelich.de/))
-		- GUI: [**VS Code** with GitHub Copilot Harness BYOK](https://code.visualstudio.com/blogs/2026/06/18/byok-vscode) ⭐, [**Hermes** Desktop](https://hermes-agent.nousresearch.com/) ⭐ (Nous Research), **[PiCove](https://github.com/Skitre/PiCove)** ⭐ (formerlly PiDeck), [Cline for Desktop](https://cline.bot/desktop), [AiderDesk](https://github.com/magiksoft/aider-desk), [OpenCode](https://opencode.ai/), [Factory Desktop](https://factory.com/product/desktop), [TRAE](https://www.trae.ai/), [Void](https://voideditor.com/)
+		- GUI: [**VS Code** with GitHub Copilot Harness BYOK](https://code.visualstudio.com/blogs/2026/06/18/byok-vscode) ⭐, [**Hermes** Desktop](https://hermes-agent.nousresearch.com/) ⭐ (Nous Research), **[PiCove](https://github.com/Skitre/PiCove)** ⭐ (formerlly PiDeck), **[OpenCode](https://opencode.ai/)** ⭐, [Cline for Desktop](https://cline.bot/desktop), [AiderDesk](https://github.com/magiksoft/aider-desk), [Factory Desktop](https://factory.com/product/desktop), [TRAE](https://www.trae.ai/), [Void](https://voideditor.com/)
+			- **VS Code (Copilot Harness BYOK)** is best when you want zero-friction daily editor integration—combining mature visual debugging, inline diff review, tight control over Windows file encodings, and full extension ecosystem support while bringing your own API keys/local endpoints without subscription lock-in.
+			- **PiCove** has the best dedicated agentic GUI workspace—great for orchestrating multi-pane terminal/agent sessions, visual context management, and running Pi/agent workflows side-by-side without the bloat of a full IDE.
+			- **OpenCode** is best for Rust and systems projects (native LSP integration, fast terminal-first/client-server architecture, and tight compiler/diagnostic feedback loops).
+			- **Hermes Desktop** is best as an autonomous background/personal engineering assistant with persistent cross-session memory, scheduled/async tasks, and multi-channel access, though heavier and less focused on tight IDE/LSP compiler loops than OpenCode or PiCove.
+			- **Cline for Desktop** is best for transparent, step-by-step human-in-the-loop approvals; ideal when you want granular permission gating on every file edit, shell command, and browser/MCP action in a standalone app.
+			- **AiderDesk** is best if you already love Aider's git-centric diff/commit workflow and repo-map efficiency, but want a visual GUI wrapper for managing sessions, context files, and multi-model routing.
+			- **Factory Desktop** is best for enterprise/team-scale autonomous "Droids" handling end-to-end engineering lifecycles (ticket-to-PR, migrations, incident triage, and deep codebase indexing across large monorepos).
+			- **TRAE** is best as an all-in-one AI-native IDE fork (Builder mode + inline chat) when you want a polished, out-of-the-box Cursor-like experience with strong multi-file scaffolding and generous built-in model routing.
+			- **Void** is best as a clean, open-source, privacy-first VS Code fork when you want direct BYOK/local-model control with zero telemetry or proprietary middleware sitting between your editor and the LLM.
 		- TUI/CLI: [Claude CLI](https://docs.anthropic.com/en/docs/agents-and-tools/claude-cli), [aider](https://aider.chat/), [Cline CLI](https://github.com/cline/cline), [droid](https://factory.com/product/cli) (Factory), [Hermes Agent CLI](https://github.com/nousresearch/hermes-agent) (Nous Research), [Pi](https://github.com/earendil-works/pi) and [omp](https://omp.sh/)/[Oh-my-Pi](https://github.com/can1357/oh-my-pi)
 			- (Claude CLI Klone, aber NICHT empfohlen: [claurst](https://github.com/Kuberwastaken/claurst), [Claw Code](https://github.com/ultraworkers/claw-code), [claux](https://github.com/ducks/claux))
+			- **Claude CLI** is best for deep, high-autonomy agentic reasoning across complex multi-file refactors, native subagent delegation, and seamless integration with Anthropic's prompt caching, extended thinking, and MCP ecosystem.
+			- **aider** is best for disciplined, surgical git workflows; excels at AST-powered repo-maps, low token overhead, clean automatic git commits per change, and fast pair-programming loops on well-scoped tasks.
+			- **Cline CLI** is best for headless/terminal-native automation using Cline's battle-tested tool-use loop and MCP support—great for CI pipelines, SSH sessions, or scripting autonomous tasks with strict approval policies.
+			- **Hermes Agent CLI** is best for long-running, stateful terminal sessions and remote/SSH workflows where persistent cross-session memory, self-improving skills, and background cron/task execution matter more than pure one-shot code diffs.
+			- **Pi** is best as a minimalist, ultra-hackable, bare-metal coding agent harness; strips away hidden system-prompt bloat so you have full transparency and deterministic control over context, tools, and custom extensions.
+			- **omp / Oh-my-Pi** is best when you want Pi plus ergonomics (LSP tools, subagents, curated slash commands, and power-user TUI polish).
+			- **droid** (Factory) is best for headless terminal execution of Factory's specialized engineering agents; ideal for scripted repo migrations, automated PR generation, and background CI/CD code maintenance.
 		- Special Interest #1 = WebApps (Alternative zu Lovable/v0/Bolt): [Dyad](https://github.com/dyad-sh/dyad) ⭐
 			- Mac-only: [Onlook](https://onlook.com/)
 		- Special Interest #3 = Spec-driven Dev: [tessl](https://tessl.io/) ⭐
@@ -440,8 +493,10 @@ agy models |
 				- GUI: tbd (ich nehme an alle)
 				- TUI/CLI: [Claude CLI](https://docs.anthropic.com/en/docs/agents-and-tools/claude-cli), [Cline CLI](https://github.com/cline/cline), [omp](https://omp.sh/)/[Oh-my-Pi](https://github.com/can1357/oh-my-pi), [droid](https://factory.com/product/cli) (Factory), [Hermes Agent CLI](https://github.com/nousresearch/hermes-agent) (Nous Research)
 	- Web-based/Self-Hosted:
-		- [LocalAGI](https://github.com/mudler/LocalAGI) + [LocalRecall](https://github.com/mudler/LocalRecall) + [LocalAI](https://github.com/mudler/LocalAI)
-		- [Tabby](https://www.tabbyml.com/)
+		- WebApps (Alternative zu Lovable/v0/Bolt): [Bolt.DIY](https://github.com/stackblitz-labs/bolt.diy)
+		- Nennenswert:
+			- [LocalAGI](https://github.com/mudler/LocalAGI) + [LocalRecall](https://github.com/mudler/LocalRecall) + [LocalAI](https://github.com/mudler/LocalAI)
+			- [Tabby](https://www.tabbyml.com/)
 	- Local-AI-only
 		- Ollama-based CLIs:
 			- [ollama code cli](https://github.com/vigyatgoel/ollama-code-cli) \[pip install ollama-code-cli\]
@@ -603,11 +658,12 @@ Selbst wenn de Verwendung von generativer KI zur Text-Erstellung Ihrer Abschluss
 	- Universell: **[pinokio](https://pinokio.computer/)** ⭐, [SEAIT](https://github.com/diStyApps/seait/)
 - Text-to-Text:
 	- BYOK Chat-/RAG-Systeme, bspw. für Bring-Your-Own-Key via [BayernKI/FAU](https://hpc.fau.de/request-llm-api-key/), [GDWG](https://docs.hpc.gwdg.de/services/ai-services/chat-ai/models/index.html) oder Jülich [Blablador](https://blablador.fz-juelich.de/):
-		- Chat-/RAG-Systeme: **[Conduit](https://github.com/runningpixels/conduit)** ⭐, **[Cherry Studio](https://cherry-ai.com/)** ⭐, [Witsy](https://witsyai.com/), [AnythingLLM](https://anythingllm.com/download), [Msty](https://msty.app/), Nomic [gpt4all](https://github.com/nomic-ai/gpt4all)
+		- Chat-/RAG-Systeme: **[Conduit](https://github.com/runningpixels/conduit)** ⭐, **[Cherry Studio](https://cherry-ai.com/)** ⭐, [Witsy](https://witsyai.com/), [AnythingLLM](https://anythingllm.com/download), [Msty](https://msty.app/), Nomic [gpt4all](https://github.com/nomic-ai/gpt4all), [Jan AI](https://jan.ai)
 			- Alle können RAG-artig Dokumente als Knowledge Base integrieren (ähnlich NotebookLM)
 			- Conduit kann im Kontext eines lokalen Verzeichis arbeiten ⭐ (derzeit nur [ausgewählte Dateiformate](https://conduitllm.com/use-cases/chat-with-documents.html))
 			- Conduit hat die beste Flow/Automation Integration (Scheduled Jobs und Event-triggered Jobs)
 			- Cherry Studio hat die beste automatische Ableitung von verfügbaren Modellen, mit Icons über deren Capabilities
+			- Cherry Studio hat als einzigstes einen Text-to-Image Tab für Bildgeneration (BYOK mit OpenAI-API-kompatiblen Endpoints)
 			- Cherry Studio und AnythingLLM haben bie beste Voice Integration mit Windows Bordmitteln oder mit integrierten lokallen Modellen
 			- Cherry Studio, Witsy und AnythingLLM haben exzellente Skill und MCP Integration (OBACHT: Conduit noch OHNE Skills)
 			- Witsy ist leider NICHT brauchbar für größere Generierungsaufgaben
@@ -627,9 +683,8 @@ Selbst wenn de Verwendung von generativer KI zur Text-Erstellung Ihrer Abschluss
 			- Local [OpenAI-compatible API](https://platform.openai.com/docs/api-reference/chat) Server: [LM Studio OpenAI-compatible API server](https://lmstudio.ai/docs/api/openai-api), [vLLM OpenAI-compatible API Server](https://docs.vllm.ai/en/latest/serving/openai_compatible_server.html), [Msty Local AI Service](https://docs.msty.app/how-to-guides/make-local-ai-service-available-on-the-network), [gpt4all API Server](https://docs.gpt4all.io/gpt4all_api_server/home.html), [Jan.ai Cortex Local API Server](https://cortex.so/docs/quickstart/) ([API](https://cortex.so/api-reference/))
 				- Docker: [LocalAI](https://localai.io/): Local family AI, full-stack = All-in-One: LLMs, Text to Speech, Speech to Text, Function calling, Image generation, Embedding server
 			- Let LLMs run code locally: [Open Interpreter](https://github.com/OpenInterpreter/open-interpreter)
-		- WebUI/Local/Offline:
-			- **[Open WebUI](https://openwebui.com/)** ⭐
-			- [Text Generation WebUI](https://github.com/hermannklie/text-generation-webui)
+		- WebUI/Local/Offline: **[Open WebUI](https://openwebui.com/)** ⭐, [LibreChat](https://github.com/danny-avila/LibreChat), [LobeChat](https://github.com/lobehub/lobe-chat), [SillyTavern](https://github.com/SillyTavern/SillyTavern)
+			- Special Interest #1 Coding: [Text Generation WebUI](https://github.com/hermannklie/text-generation-webui)
 		- Embedded/Local/Offline: [vLLM](https://github.com/vllm-project/vllm)
 	- Desktop/Cloud-only/Online: **[Noi](https://github.com/lencx/Noi)**
 	  - Single Vendor: Unofficial **[ChatGPT Desktop](https://github.com/lencx/ChatGPT)** \[**choco install chatgpt**\], Official **[Claude Desktop](https://claude.ai/download)** \[**choco install claude**\], Official **[Perplexity Windows App](https://apps.microsoft.com/detail/xp8jnqfbqh6pvf)** (sowie Unofficial Inulute [Perplexity AI Desktop](https://pplx.inulute.com/download/))
@@ -653,7 +708,10 @@ Selbst wenn de Verwendung von generativer KI zur Text-Erstellung Ihrer Abschluss
 		- Foundational Models: [DuckDB NSQL](https://github.com/NumbersStationAI/DuckDB-NSQL)
 		- Tutorials: AWS Machine Learning [Build a robust text-to-SQL solution ](https://aws.amazon.com/de/blogs/machine-learning/build-a-robust-text-to-sql-solution-generating-complex-queries-self-correcting-and-querying-diverse-data-sources/), LlamaIndex [Text-to-SQL Guide with Jupyter](https://docs.llamaindex.ai/en/stable/examples/index_structs/struct_indices/SQLIndexDemo/), IBM Watson [Generating SQL from text with LLMs](https://developer.ibm.com/tutorials/awb-text-to-sql-using-llms/)
 	- Text-to-Image:
-		- Desktop/Hybrid-Local/BYOK: **[GenOffice](https://genoffice.ai/)** ⭐ ([github](https://github.com/genspark-ai/genoffice))sowie **[ArtCraft IDE for Artists](https://getartcraft.com/)** ⭐ ([github](https://github.com/storytold/artcraft)), (€:) [CSuite](https://csuite.so/)
+		- Desktop/Hybrid-Local/BYOK:
+			- **[GenOffice](https://genoffice.ai/)** ⭐ ([github](https://github.com/genspark-ai/genoffice))sowie
+			- **[ArtCraft IDE for Artists](https://getartcraft.com/studio)** ⭐ ([github](https://github.com/storytold/artcraft))
+			- **[Witsy](https://witsyai.com/)** ⭐: its Paint / Image Generation tab is one of the few native Windows desktop interfaces built specifically to handle non-DALL-E OpenAI-compatible image models (like Qwen-Image, Flux, and Kolors)
 		- Desktop/Local/Offline: Lykos **[Stability Matrix](https://lykos.ai/downloads)** ⭐ (Tutorial: [Using FLUX.1 locally](https://www.kdnuggets.com/using-flux-1-locally))
 			- Stability Matrix ist ein 1-Stop-Shop für alle anderen Werkzeuge wie bspw.: Stable Diffusion WebUI [Forge](https://github.com/lllyasviel/stable-diffusion-webui-forge) bzw. [reForge](https://github.com/Panchovix/stable-diffusion-webui-reForge), [ComfyUI](https://github.com/comfyanonymous/ComfyUI)
 			- Disclaimer: Manche Text-to-Image Werkzeuge benötigen (Stand 2025) eine NVidia RTX als Hardware-Voraussetzung
@@ -665,7 +723,7 @@ Selbst wenn de Verwendung von generativer KI zur Text-Erstellung Ihrer Abschluss
 		- Cloud/freemium: [Deep Dream Generator](https://deepdreamgenerator.com/) ([old version](https://deepdreamgenerator.com/generator?old-tools=1)), [Dezgo](https://dezgo.com/text2image/sdxl), [Stable Diffusion Online](https://stablediffusionweb.com/) (10img/d; mit Wasserzeichen), [NightCafe](https://creator.nightcafe.studio/), [WPimages](https://www.wpimagines.com/), [AI Image Generator](https://www.aiimagegenerator.org/), [uvm.](https://easywithai.com/best-free-ai-image-generators/)
 		- Cloud/€€€/Subscriptions: **[OpenArt](https://openart.ai/create)** ⭐, [fal](https://fal.ai/), [dreamina](https://dreamina.capcut.com/ai-tool/home/?type=image), OpenAI [**DALL·E** 2](https://labs.openai.com/waitlist), **[Midjourney](https://www.midjourney.com/)**, [craiyon](https://www.craiyon.com/) (früher: „DALL·E mini“), Google [Imagen](https://imagen.research.google/), Adobe [Firefly](https://www.adobe.com/products/firefly.html) …
 	- Text-to-Video: [synthesia](https://www.synthesia.io), [dreamina](https://dreamina.capcut.com/ai-tool/home/?type=video), [kaiber.ai](https://kaiber.ai), … , China: [Kling](https://kling.kuaishou.com/en)
-		- Desktop/Hybrid-Local/Multi-Cloud: **[ArtCraft IDE for Artists](https://getartcraft.com/)** ([github](https://github.com/storytold/artcraft)), (€:) [CSuite](https://csuite.so/)
+		- Desktop/Hybrid-Local/Multi-Cloud: **[ArtCraft IDE for Artists](https://getartcraft.com/studio)** ([github](https://github.com/storytold/artcraft)), (€:) [CSuite](https://csuite.so/)
 		- WebUI/Local/Offline: [CogStudio](https://github.com/pinokiofactory/cogstudio), [FramePack](https://github.com/lllyasviel/framepack), [FP-Studio](https://docs.framepackstudio.com/), [Wan](https://wan.video/)
 	- Text-to-Slides:
 		- Desktop/Hybrid-Local/BYOK: **[GenOffice](https://genoffice.ai/)** ([github](https://github.com/genspark-ai/genoffice)) ⭐
@@ -807,6 +865,34 @@ Stand Oktober 2026
 - Andere Harnesses: Skills oder Custom Commands verwenden, sofern kein entsprechender eingebauter Befehl existiert.
 
 **Hinweis:** Slash-Commands und Dokumentationspfade ändern sich mit den Versionen. In der jeweiligen CLI zeigt `/` oder `/help` häufig die tatsächlich verfügbaren Befehle an. Nicht jeder Eintrag in der Tabelle bezeichnet eine vollständige Slash-Command-Liste.
+
+## Bonus: Live-Übersetzung Hörsäle unds Konferenzen
+
+- Schlüsselfertige Hochschul- & Event-Lösungen
+	- [Wordly](https://www.wordly.ai/) - Marktführer im Event- und Hochschulbereich für KI-gestütztes Live-Audio und Untertitel in über 60 Sprachen per QR-Code/Browser (inkl. Fachglossaren und Nachbereitungs-Transkripten).
+	- [KUDO](https://kudoway.com/) - Hybride Plattform für KI-Simultanübersetzung und menschliche Konferenzdolmetscher mit QR-Code-Ausspielung, Terminologie-Datenbanken und Anbindung an Konferenztechnik (Dante/Shure).
+	- [Interprefy](https://www.interprefy.com/) - Event- und Konferenzlösung mit nahtlosem Wechsel zwischen KI-Simultanübersetzung und professionellen Remote-Dolmetschern sowie Hardware-Integration für große Säle.
+	- [DeepL Voice](https://www.deepl.com/en/products/voice) - Echtzeit-Transkription und -Übersetzung (primär Untertitel/Text) mit extrem hoher Qualität für Deutsch ↔ Englisch und starkem EU-Datenschutzfokus.
+	- [KIT Lecture Translator](https://www.kit.edu/) - Am Karlsruher Institut für Technologie (KIT) entwickeltes Live-Übersetzungssystem speziell für Universitätsvorlesungen, geeignet für On-Premise-Betrieb mit voller Datenhoheit.
+	- [Boostlingo Events](https://boostlingo.com/) - Browserbasierte KI-Simultanübersetzung und Untertitelung per QR-Code für Konferenzen und mittelgroße Veranstaltungen.
+	- [Akkadu](https://www.akkadu.com/) - Cloud-basierte Plattform für Remote-Simultanübersetzung (KI & menschliche Dolmetscher) mit direkter Audio-Ausspielung auf Teilnehmer-Smartphones.
+	- [Sennheiser MobileConnect](https://www.sennheiser.com/mobileconnect) - WLAN-basiertes Low-Latency-Audiosystem für Hörsäle (BYOD), das als lokale Verteiler-Infrastruktur mit KI-Übersetzungs-Engines gekoppelt werden kann.
+- Entwickler-Plattformen & APIs (Custom Stacks)
+	- WebRTC & Real-Time Transport
+		- [LiveKit Cloud](https://livekit.io/) - Managed WebRTC-Infrastruktur für globale Audio-/Video-Verteilung mit extrem niedriger Latenz als Basis für eigene Echtzeit-Übersetzungspipelines.
+		- [Daily / Pipecat Cloud](https://www.daily.co/) - Managed-Cloud-Infrastruktur für Echtzeit-Voice-AI-Pipelines und WebRTC-Routing im großen Maßstab.
+	- Streaming ASR (Speech-to-Text)
+		- [Speechmatics](https://www.speechmatics.com/) - Einer der genauesten europäischen Echtzeit-Spracherkenner für Deutsch, Dialekte und benutzerdefiniertes Fachvokabular.
+		- [Deepgram](https://deepgram.com/) - Ultralow-Latency Streaming-ASR-API mit schneller Verarbeitung und Unterstützung für individuelle Schlüsselwörter.
+	- Echtzeit-Übersetzung (NMT / LLMs)
+		- [DeepL API](https://www.deepl.com/pro-api) - Spezialisierte Übersetzungs-API mit Glossar-Unterstützung und EU-DSGVO-Konformität für den Einsatz zwischen ASR und TTS.
+	- Ultralow-Latency TTS (Text-to-Speech)
+		- [Cartesia](https://cartesia.ai/) - Extrem schnelle Streaming-Sprachsynthese (*Sonic*) mit minimaler Time-to-First-Audio für flüssige Simultanübersetzung.
+		- [ElevenLabs](https://elevenlabs.io/) - Natürliche, mehrsprachige Echtzeit-Sprachsynthese (*Flash*-Modelle) mit geringer Latenz und Voice-Cloning-Optionen.
+	- End-to-End Speech-to-Speech & Enterprise SDKs
+		- [Azure AI Speech](https://azure.microsoft.com/en-us/products/ai-services/speech-to-text) - Integriertes Speech-Translation-SDK mit EU-Rechenzentren, Custom-Speech-Training für Fachtermini und bestehenden Hochschul-Rahmenverträgen.
+		- [Gemini Multimodal Live API](https://ai.google.dev/) - Direkte Audio-zu-Audio-Schnittstelle ohne getrennte ASR/TTS-Pipeline für minimale Ende-zu-Ende-Latenz.
+		- [OpenAI Realtime API](https://platform.openai.com/) - WebRTC-/WebSocket-basierte Speech-to-Speech-API für direkte Echtzeit-Audioübersetzung.
 
 ## Anhang: Schwesterseiten
 
