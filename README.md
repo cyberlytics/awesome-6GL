@@ -464,6 +464,7 @@ agy models |
 	- BYOK Coding Harness:
 		- (bspw. für Bring-Your-Own-Key via [BayernKI/FAU](https://hpc.fau.de/request-llm-api-key/), [GDWG](https://docs.hpc.gwdg.de/services/ai-services/chat-ai/models/index.html) oder Jülich [Blablador](https://blablador.fz-juelich.de/))
 		- GUI: [**VS Code** with GitHub Copilot Harness BYOK](https://code.visualstudio.com/blogs/2026/06/18/byok-vscode) ⭐, [**Hermes** Desktop](https://hermes-agent.nousresearch.com/) ⭐ (Nous Research), **[PiCove](https://github.com/Skitre/PiCove)** ⭐ (formerlly PiDeck), **[OpenCode](https://opencode.ai/)** ⭐, [Cline for Desktop](https://cline.bot/desktop), [AiderDesk](https://github.com/magiksoft/aider-desk), [Factory Desktop](https://factory.com/product/desktop), [TRAE](https://www.trae.ai/), [Void](https://voideditor.com/)
+			- Special Interest: WebApps (Alternative zu Lovable/v0/Bolt)? [Dyad](https://github.com/dyad-sh/dyad) ⭐, Mac-only [Onlook](https://onlook.com/)
 			- **VS Code (Copilot Harness BYOK)** is best when you want zero-friction daily editor integration—combining mature visual debugging, inline diff review, tight control over Windows file encodings, and full extension ecosystem support while bringing your own API keys/local endpoints without subscription lock-in.
 			- **PiCove** has the best dedicated agentic GUI workspace—great for orchestrating multi-pane terminal/agent sessions, visual context management, and running Pi/agent workflows side-by-side without the bloat of a full IDE.
 			- **OpenCode** is best for Rust and systems projects (native LSP integration, fast terminal-first/client-server architecture, and tight compiler/diagnostic feedback loops).
@@ -475,6 +476,7 @@ agy models |
 			- **Void** is best as a clean, open-source, privacy-first VS Code fork when you want direct BYOK/local-model control with zero telemetry or proprietary middleware sitting between your editor and the LLM.
 		- TUI/CLI: [Claude CLI](https://docs.anthropic.com/en/docs/agents-and-tools/claude-cli), [aider](https://aider.chat/), [Cline CLI](https://github.com/cline/cline), [droid](https://factory.com/product/cli) (Factory), [Hermes Agent CLI](https://github.com/nousresearch/hermes-agent) (Nous Research), [Pi](https://github.com/earendil-works/pi) and [omp](https://omp.sh/)/[Oh-my-Pi](https://github.com/can1357/oh-my-pi)
 			- (Claude CLI Klone, aber NICHT empfohlen: [claurst](https://github.com/Kuberwastaken/claurst), [Claw Code](https://github.com/ultraworkers/claw-code), [claux](https://github.com/ducks/claux))
+			- (IMPORTANT: Oh-my-Pi (omp) and PiCove are built on different layers of the Pi ecosystem: PiCove is a desktop GUI wrapper around the standard, minimalist Pi SDK (pi-mono), whereas Oh-my-Pi (omp) is a heavily extended fork of the Pi agent harness itself that wires IDE-grade tooling directly into the agent loop.)
 			- **Claude CLI** is best for deep, high-autonomy agentic reasoning across complex multi-file refactors, native subagent delegation, and seamless integration with Anthropic's prompt caching, extended thinking, and MCP ecosystem.
 			- **aider** is best for disciplined, surgical git workflows; excels at AST-powered repo-maps, low token overhead, clean automatic git commits per change, and fast pair-programming loops on well-scoped tasks.
 			- **Cline CLI** is best for headless/terminal-native automation using Cline's battle-tested tool-use loop and MCP support—great for CI pipelines, SSH sessions, or scripting autonomous tasks with strict approval policies.
@@ -482,16 +484,28 @@ agy models |
 			- **Pi** is best as a minimalist, ultra-hackable, bare-metal coding agent harness; strips away hidden system-prompt bloat so you have full transparency and deterministic control over context, tools, and custom extensions.
 			- **omp / Oh-my-Pi** is best when you want Pi plus ergonomics (LSP tools, subagents, curated slash commands, and power-user TUI polish).
 			- **droid** (Factory) is best for headless terminal execution of Factory's specialized engineering agents; ideal for scripted repo migrations, automated PR generation, and background CI/CD code maintenance.
-		- Special Interest #1 = WebApps (Alternative zu Lovable/v0/Bolt): [Dyad](https://github.com/dyad-sh/dyad) ⭐
-			- Mac-only: [Onlook](https://onlook.com/)
-		- Special Interest #3 = Spec-driven Dev: [tessl](https://tessl.io/) ⭐
-		- Nennenswerte Spezialkompetenz:  ⭐
-			- Android APKs:
+		- By Language Group / Task: ⭐
+			- **Systems & Compiled (`Rust`, `C/C++`, `Go`, `Java`, `C#`):**
+				- GUI: **[OpenCode](https://opencode.ai/)** ⭐, so the agent receives live diagnostics directly from `rust-analyzer`, `clangd`, `gopls`, `jdtls`, or `OmniSharp`/`csharp-ls`.
+				- TUI/CLI: [Oh-my-Pi (`omp`)](https://omp.sh/) (but NOT Pi/PiCove! Because Pi/PiCove have no built-in LSP/DAP, by Pi's philosophy of omitting exactly that)
+			- **Web & Scripting (`JS/TS`, `Python`, `Perl`):**
+				- GUI: **[Dyad](https://dyad.sh/)** ⭐ for local-first, visual full-stack **React/Next.js/TypeScript** building with live preview and zero vendor lock-in; **VS Code (BYOK)** or [Cline for Desktop](https://cline.bot/desktop) for a general-purpose browser/test feedback loop.
+				- TUI/CLI: **Claude CLI** for full-stack workflows; **aider** for surgical **Python** and **Perl** edits via Tree-sitter repo-maps.
+			- **Spec-driven Dev**:
+				- TUI/CLI: **[tessl](https://tessl.io/)** ⭐
+			- **Functional (`Haskell`, `Erlang`, `Scheme`):**
+				- GUI: VS Code (BYOK) or [OpenCode](https://opencode.ai/) and [**Zed** with Agent Panel](https://zed.dev/docs/ai/agent-panel) 
+				- TUI/CLI: [Oh-my-Pi (`omp`)](https://omp.sh/) is the only harness with *both* `hls` (Haskell) and `erlang_ls` (Erlang) pre-configured out of the box.
+			- **Android APKs:**
 				- GUI: [Cline for Desktop](https://cline.bot/desktop)
 				- TUI/CLI: [droid](https://factory.com/product/cli) (Factory)
-			- Word (docx) anpassen/kürzen:
-				- GUI: tbd (ich nehme an alle)
-				- TUI/CLI: [Claude CLI](https://docs.anthropic.com/en/docs/agents-and-tools/claude-cli), [Cline CLI](https://github.com/cline/cline), [omp](https://omp.sh/)/[Oh-my-Pi](https://github.com/can1357/oh-my-pi), [droid](https://factory.com/product/cli) (Factory), [Hermes Agent CLI](https://github.com/nousresearch/hermes-agent) (Nous Research)
+			- **Word (`.docx`) Reading, Condensing & Editing:**
+				- *Key distinction:* Most harnesses treat `.docx` as an opaque binary unless they ship a built-in document parser; **reading/condensing** works natively in several tools, while **surgical in-place editing** (preserving styles, tables, headers/footers, and tracked changes) still relies on `python-docx` / OOXML scripts or `pandoc` under the hood.
+				- Commercial/Vendor-lock-in: **[GitHub Copilot](https://github.com/features/copilot)** ⭐ (free for students via educator pack) or Claude Desktop / Cowork
+					- NOT recommended: Google Antigravity and OpenAI Codex
+				- GUI: **[Hermes Desktop](https://hermes-agent.nousresearch.com/)** ⭐ (built-in `document` / file-inspection tooling + persistent memory across multi-doc condensing workflows), **[Claude Desktop](https://claude.ai/download)** ⭐ (native binary `.docx` upload/reading out of the box + built-in DOCX generation/editing skills; pair with Filesystem MCP for direct local folder access), **[VS Code](https://code.visualstudio.com/)** (pair Copilot BYOK/agent mode with `python-docx` / `pandoc` scripts + Office Viewer / Word diff workflows for full control over encodings, XML diffs, and batch condensing)
+					- (More notable ones? [PiCove](https://github.com/Skitre/PiCove) works well if you install a global `docx` `SKILL.md`, but lacks a native `.docx` binary reader out of the box.)
+				- TUI/CLI: **[Oh-my-Pi (`omp`)](https://github.com/can1357/oh-my-pi)** ⭐ (best overall: ships a **native `.docx` binary reader** out of the box alongside PDF/XLSX readers, plus subagents to condense large document sets without polluting the main context window), **[Claude CLI](https://docs.anthropic.com/en/docs/agents-and-tools/claude-cli)** ⭐ (strongest autonomous multi-step OOXML/`python-docx` editing and tracked-changes/redline scripting, though relies on shell/skills rather than a built-in binary reader), **[Hermes Agent CLI](https://github.com/nousresearch/hermes-agent)** (native document extraction + persistent cross-session memory for recurring report condensing), [Cline CLI](https://github.com/cline/cline) / [droid](https://factory.com/product/cli) (good for scripted batch `pandoc`/`python-docx` pipelines, no native `.docx` reader)
 	- Web-based/Self-Hosted:
 		- WebApps (Alternative zu Lovable/v0/Bolt): [Bolt.DIY](https://github.com/stackblitz-labs/bolt.diy)
 		- Nennenswert:
