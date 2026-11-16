@@ -41,9 +41,18 @@ Dies ist sowohl eine Tool-Sammlung als auch ein digitaler Ressourcen-Pool mit ko
 ## Prelude
 
 * Eingangsqualifikation: Was ist Vibe Coding?
+
   * Einstieg für Nicht-Informatiker: Webartikel [Vibe Coding: Der größte Durchbruch für nicht-technische Gründer](https://blink.new/de/blog/vibe-coding-for-non-technical-founders) von Blink (Disclosure: Blink verkauft einen GenAI-App-Builder)
   * Einstieg für Informatiker: Video [Software Is Changing (Again)](https://www.youtube.com/watch?v=LCEmiRjPEtQ) (Juni 2025) von Andrey Karpathy
   * [Begriffsbildung](https://x.com/karpathy/status/1886192184808149383) durch Andrey Karpathy im Februar 2025
+
+* Agentic Engineering vs. Vibe Coding?
+
+  * Beides zu 80 bis 96% derselbe Werkzeug-Baukasten und Methodenkoffer: Thoughtworks [What is an AI agent harness? A practical guide](https://www.thoughtworks.com/en-de/insights/blog/machine-learning-and-ai/ai-agent-harness)
+    * AI Agent = LLM + Harness = **Brain** + Tool that gives it the environment and ability to **act**
+    * Agent Loop = the model proposes, the harness disposes
+  * Vibe Coding: Ein technischer Kontrollverlust ist ggf. kalkuliertes Risiko. Qualität ist abgeschwächtes Ziel.
+  * Agentic Engineering: Technischer Kontrollverlust sollte ausgeschlossen sein. Qualität ist dediziertes Ziel.
 
 * **Programmiersprachengenerationen**
 
@@ -85,27 +94,26 @@ Dies ist sowohl eine Tool-Sammlung als auch ein digitaler Ressourcen-Pool mit ko
 
 0. **„KI macht nicht deine Arbeit, sie multipliziert deine Denkqualität.“**
 	* (Ein Grundprinzip, daher als 0. Eintrag vorangestellt. Informatikerhumor: Beginne den Index bei 0 und bringe „heimlich“ ein 11. Gebot unter.)
-	* KI verstärkt Klarheit, Struktur und Qualität deiner Vorgaben.
-	* Human Slop → AI Slop: „Müll rein, Müll raus, nur schneller.“
+	* Im Positiven: KI verstärkt Klarheit, Struktur und Qualität deiner Vorgaben.
+	* Im Negativen: Human Slop → AI Slop (dt. „Müll rein, Müll raus, nur schneller.“ sowie Engineering-Variante: „Vibe Coding: Where 2 engineers can now create the tech debt of at least 50 engineers.“)
 	* **Nebengesetz:** „KI skaliert nicht nur Produktivität, sie skaliert auch schlechte Entscheidungen.“
-	* **Variante:** „Vibe Coding: Where 2 engineers can now create the tech debt of at least 50 engineers.“
 
 1. **„Es liegt stets am Prompt.“**
 	* (Als provokantes 1. Gebot notwendig, insbesondere für Einsteiger.)
 	* Disclaimer: Obwohl Modellgrenzen existieren, Tooling existiert, Kontext existiert, Retrieval existiert, System Prompts existieren.
 	* **Prompt Engineering** ist ein kontinuierlicher Optimierungsprozess aus Hypothese, Test und Verbesserung.
 	* Wichtig: Der **Mensch** verantwortet schlechte Fragen/Aufgaben und schlechte Ergebnisse, nicht das Modell.
-	* **Nebengesetz:** „Stille Annahmen des Menschen sind keine Instruktionen.“
+	* **Nebengesetz:** „‚eh klar‘ Annahmen des Menschen sind für das Modell weder automatisch bekannt noch Teil des Auftrags.“
 
 2. **„Context is King.“**
 	* Hintergrund: Schlechte Ergebnisse entstehen meist durch fehlenden, falschen oder unstrukturierten Kontext.
-	* **Context Engineering** umfasst neben dem Prompt zusätzlich die System Instructions, Beispiele, Daten, Tools und Regeln sowie den Gesprächsverlauf aus Prompt-Verlauf und Ergebnis-Verlauf.
+	* **[Context Engineering](https://www.covasant.com/glossary-of-agentic-ai/context-engineering)** umfasst neben dem Prompt zusätzlich die System Instructions, Beispiele, Daten, Tools und Regeln sowie den Gesprächsverlauf aus Prompt-Verlauf und Ergebnis-Verlauf.
 	* Nochmal: Der **Mensch** verantwortet schlechten Kontext und schlechte Ergebnisse, nicht das Modell.
 	* **Nebengesetz**: „Hochwertiger Kontext ist teuer: Daten müssen erzeugt, kuratiert und gepflegt werden.“
 
 3. **„System Prompt vor Modellwahl.“**
 	* In derselben Modellklasse und -generation dominiert häufig der [System Prompt](https://github.com/asgeirtj/system_prompts_leaks) die Ergebnisqualität.
-	* Ein Modell ohne System Design ist nur Rohintelligenz: Das System definiert (auch „orchestriert“) das Verhalten, nicht das Modell allein.
+	* Ein Modell ohne System Design ist nur Rohintelligenz: Das System definiert (ggf. „orchestriert“) das Verhalten, nicht das Modell allein.
 	* Abgrenzung: Nur Foundation Model Provider konkurrieren primär über Modellqualität und Benchmarks, das allerdings lautstark.
 	* Wichtig: Ein durchschnittliches Modell mit gutem System Design kann ein besseres Modell mit schlechtem Kontext schlagen. (vgl. „Modelmaxxing“, u.a. als Gegenkonzept zu „Tokenmaxxing“)
 	* **Nebengesetz:** „Modellqualität ≠ Systemqualität“
@@ -130,7 +138,7 @@ Dies ist sowohl eine Tool-Sammlung als auch ein digitaler Ressourcen-Pool mit ko
 	* Hintergrund: Agent Skills sind als [SKILL.md technisch normiert](https://agentskills.io/specification) und bilden ein eigenes Ökosystem.
 	* Der Wettbewerb verschiebt sich von der Implementierung einzelner Funktionen zur Gestaltung wiederverwendbarer Fähigkeiten.
 	* Im Agentic Programming kapseln **Skills** wiederholbare Entscheidungslogik, Engineering-Prinzipien und technische Umsetzungsmuster.
-	* **Nebengesetz:** „Modelle denken, Werkzeuge handeln.“
+	* **Nebengesetz:** „Modelle denken, Werkzeuge handeln.“ (Skills erweitern die [Agent Harness](https://www.thoughtworks.com/en-de/insights/blog/machine-learning-and-ai/ai-agent-harness))
 
 8.	**„Spezifikation ist die neue Implementierung.“**
 	* In der Agenten-Ära wird fachliche und technische Expertise per GenAI zu Software.
@@ -149,8 +157,8 @@ Dies ist sowohl eine Tool-Sammlung als auch ein digitaler Ressourcen-Pool mit ko
 10.	**„Agentic Engineering ist anspruchsvolle Informatik.“**
 	* Benötigt werden methodische und technische Full-Stack-Kompetenzen.
 	* Disclaimer: Der Definition nach handelt es sich bei einem **Informationssystem** schon immer um ein **Mensch-/Aufgabe-/Technik-System**.
-	* Dies widerspricht der häufigen Fehlannahme „Jetzt kann jeder Software bauen.“ (Was allerdings jetzt jeder kann ist „Prompt-and-Pray“)
-	* Für einfache Anwendungen genügen Low-Code-Ansätze, komplexe Software-Anwendungen bleiben eine Engineering-Disziplin.
+	* Dies widerspricht der häufigen Fehlannahme „Jetzt kann jeder Software bauen.“ (Was allerdings jetzt jeder kann ist „[Prompt-and-Pray](https://www.forbes.com/councils/forbestechcouncil/2025/05/06/beyond-prompt-and-pray-why-structured-automation-is-the-future-of-enterprise-ai/)“)
+	* Für einfache Anwendungen genügen Low-Code-Ansätze, aber komplexe Software-Anwendungen bleiben eine Engineering-Disziplin.
 
 ### Prompt-and-Pray Disclaimer
 
@@ -158,7 +166,11 @@ Dies ist sowohl eine Tool-Sammlung als auch ein digitaler Ressourcen-Pool mit ko
   1) Ursprünglich: Einsatz von LLMs zur KI-gestützten Programmierung durch gelernte Informatiker
   2) Meme-Verselbstständigung: AI-Code-Generierung durch Personen ohne technischen Hintergrund, also Informatik-Laien
 
-* „Prompt-and-Pray“ meint (leicht überspitzt) das naive Vibe Coding (entweder durch Laien oder durch naive Programmierer ohne Agentic-Engineering-Kompetenz)
+* **Im engeren Sinn** basiert die Begriffsbildung von „Prompt-and-Pray“ auf Alan Nichol, CTO of Rasa
+  * Die Bedeutung wird im Forbes-Artikel [Beyond Prompt-And-Pray: Why Structured Automation Is The Future Of Enterprise AI](https://www.forbes.com/councils/forbestechcouncil/2025/05/06/beyond-prompt-and-pray-why-structured-automation-is-the-future-of-enterprise-ai/) zusammengefasst
+  * TL;DR: „Business logic is embedded entirely in LLM prompts, with developers hoping the model will consistently follow instructions. This approach creates fundamentally **unreliable** systems.“
+
+* **Im weitesten Sinn** meint „Prompt-and-Pray“ (leicht überspitzt) mittlerweile ein naives Vibe Coding, entweder durch Laien oder durch naive Programmierer ohne Agentic-Engineering-Kompetenz
   * Das metaphorische Gebet wird i.d.R. problemlos „erhöhrt“ bei SW-Prototypen mit (1) geringem fachlichen Umfang, (2) wenigen externen Abhängigkeiten und (3) konventioneller und homogener Technik
   * Viele Vibe Coding Live-Demos bewegen sich in einem solchen Sweet-Spot und erhaschen mit erfolgreichem Prompt-and-Pray bei unkritischem Publikum leicht einen Wow-Effekt
   * Viele Live-Demos sind hochgradig orchestriert und technisches Marketing
@@ -167,15 +179,21 @@ Dies ist sowohl eine Tool-Sammlung als auch ein digitaler Ressourcen-Pool mit ko
     * Glaube keiner Live-Demo, die du nicht selbst nachstellen konntest, mit leichter Derivation.
 
 
-### Lernpfad
+### Lernpfad Agentic Engineering
 
-* Erst eine Subscription oder ein [lokales Ollama](https://martinfowler.com/articles/exploring-gen-ai/local-models-for-coding-factors.html).
-* Dann [CLAUDE.md](https://github.com/multica-ai/andrej-karpathy-skills/blob/main/CLAUDE.md).
-* Dann [ECC](https://github.com/affaan-m/ecc)-analoge Skills.
-* Dann All-In. (Mindset!)
+* (Davor: Prompt Engineering Methoden)
+* Erst: eine Subscription oder ein [lokales Ollama](https://martinfowler.com/articles/exploring-gen-ai/local-models-for-coding-factors.html).
+* Dann [CLAUDE.md/AGENTS.md](https://github.com/multica-ai/andrej-karpathy-skills/blob/main/CLAUDE.md).
+* Dann Skills, bpsw. [ECC](https://github.com/affaan-m/ecc)- oder [AAS](https://aaskills.tech/)-analog.
+* Dann All-In. (Mindset! AI-first.)
 * Dann die richtige Echokammer. (bspw. [Simon Willison](https://simonwillison.net/)!)
 * Dann 6GL aka [Natural Language Programming](https://www.cs.utexas.edu/~EWD/transcriptions/EWD06xx/EWD667.html) (Programmier-Ebene)
 	- Andrej Karpathy betonte „agentic programming as a tool“, bei der Vibe-Coding-Begriffsbildung
+* Dann [Context Engineering](https://www.covasant.com/glossary-of-agentic-ai/context-engineering)) bzw. [Harness Engineering](https://martinfowler.com/articles/harness-engineering.html)
+	- Weitere Infos: Siehe unten bei Lernmaterialien
+	- OBACHT: Wer operationalisiert Context Engineering: Der Mensch oder die Harness? Größtenteils die **Harness** per **runtime curation of context** (auch **operational context engineering**: Tools, Skills, Retrieval, Memory, Compression, Isolation, Feedback) und der Mensch sollte dem v.a. nicht im Weg stehen (**architectural context engineering**: Intent, Policies, Quality Criteria, Accountability)!
+](https://www.anthropic.com/research/equipping-agents-for-the-real-world-with-agent-skills) und [Skill Authoring Best Practices](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices)
+Isolate subtasks
 * Dann Spec-Driven Development (SDD) aka Agentic Engineering (SW-Technik-Ebene)
 	- SDD-Frameworks:
 		- Lightweight/Agile: **[td](https://github.com/marcus/td/)** ⭐ (= Task management for AI-assisted development)
@@ -356,6 +374,16 @@ agy models |
 			- Levels of authority: Root » System Prompt » Developer Prompt » User Prompt » Guideline Prompt » Message Prompt
 			- AI Agent Levels of Authority: Instruction Prompt » Message Prompt (however: agent instructions are also known as agent system prompt!)
 	- Weiterführende Quellen: roadmap.sh [Prompt Engineering](https://roadmap.sh/prompt-engineering), [Awesome Prompt Engineering](https://github.com/promptslab/Awesome-Prompt-Engineering) | reddit-Liste [Useful Prompt Engineering tools and resources](https://www.reddit.com/r/StableDiffusion/comments/xcrm4d/useful_prompt_engineering_tools_and_resources/) | lablab [AI Tutorials](https://lablab.ai/t) | [Awesome Text-to-Image](https://github.com/Yutong-Zhou-cv/Awesome-Text-to-Image)
+- Context Engineering bzw. Harness Engineering:
+	- Context Engineering: [Glossar](https://www.covasant.com/glossary-of-agentic-ai/context-engineering))
+	- Harness Engineering: [Ursprung OpenAI](https://openai.com/index/harness-engineering/), [Begriffsbildung](https://martinfowler.com/articles/harness-engineering.html), [Bild](https://miro.medium.com/v2/1*HwXogc5iVUSLXXuVuitMFQ.png)
+	- Context Management Core Operations: (1) **write** context out to storage, (2) **select** the slice each step needs, (3) **compress** what remains, and (4) **isolate** work into separate windows
+	- Methodenkoffer: @2: Favor agentic SKILLs over AGENTS.md (wegen [progressive disclosure](https://agentskills.io/home#how-do-agent-skills-work)). @3: Compress tool output. @3: Compact the history. @4: Isolate subtasks.
+	- Context Fallacies or Traps: Instruction Confusion (ambiguous instructions). Context Contamination (bleed-over). Context Poisoning (false facts). Attention Dilution (competing signals). Context Rot (degrading relevance/coherence).
+	- Praktische Design-Prinzipien für SKILLs?
+		- [Luis Chavez-Mattos](https://www.mindstudio.ai/blog/progressive-disclosure-ai-agent-skill-design): (a) Design Skills Around Outputs, Not Inputs. (b) Treat System Prompts as Code, Not Documentation. (c) Version and Test Skills Independently. (d) Use Structured Outputs to Control What Passes Forward.
+		- Anthropic: [Equipping agents for the real world with Agent Skills
+](https://www.anthropic.com/research/equipping-agents-for-the-real-world-with-agent-skills) und [Skill Authoring Best Practices](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices)
 - Vibe Coding:
 	- Wegbereiter:
 		- Begriff: [Andrej Karpathy](https://x.com/karpathy/status/1886192184808149383) (Feb. 2025)
@@ -453,18 +481,27 @@ agy models |
 - Übersicht/Einstieg: indiehackers [Vibe Coding Tools](https://www.indiehackers.com/vibe-coding-tools) ([free ones](https://www.indiehackers.com/vibe-coding-tools?tags=Free))
 - Vibe Coding via Agentic AI (Full-Stack-Engineering Assistants)
 	- Marktführer Coding Harness:
+		- OBACHT: **Commercial/Vendor-lock-in** bei allen, also **KEINE** BYOK Option (Ausnahmen mit BYOK-Option: Claude Code CLI und Codex CLI, bei beiden nur die TUIs) → Studentenfreundlich? Google (Antigravity und AI Studio) sowie GitHub Copilot
 		- TUI/CLI:
-			- Anthropic **[Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code/overview)** \[**npm install -g @anthropic-ai/claude-code**\]
+			- Anthropic **[Claude Code CLI](https://www.npmjs.com/package/@anthropic-ai/claude-code)** \[**npm install -g @anthropic-ai/claude-code**\]
 			- OpenAI [Codex CLI](https://openai.com/codex/) \[**npm i -g @openai/codex**\]
-			- Google [Gemini CLI](https://github.com/google-gemini/gemini-cli) \[**npm install -g @google/gemini-cli**\]
+			- Google [Antigravity CLI (agy)](https://antigravity.google/product/antigravity-cli/) \[**choco install antigravity-cli**\]
 			- GitHub [Copilot CLI](https://github.com/github/copilot-cli) \[**npm install -g @github/copilot**\]
 		- GUI:
-			- **[Cursor](https://www.cursor.com/)** \[**choco install cursoride**\]
-			- **[Windsurf](https://windsurf.com/)** (formerly Codeium) \[**choco install windsurf**\]
+			- Anthropic **[Claude Desktop](https://claude.com/download)** \[**choco install claude**\]
+			- OpenAI [Codex App](https://openai.com/codex/) sowie [ChatGPT Work](https://openai.com/chatgpt-work/)
+			- Google [Antigravity App](https://antigravity.google/download/) \[**choco install antigravity**\]
+			- GitHub [Copilot Desktop](https://github.com/features/copilot) \[**choco install github-copilot-app**\]
+		- Full IDE  (built for 1-to-N iteration, maintenance, and complex architecture):
+			- **[Cursor](https://www.cursor.com/)** \[**choco install cursoride**\] (a VS Code fork) and **[Devin Desktop](https://devin.ai/desktop)** (formerly Codeium, then Windsurf, then Devin) \[**winget install -e --id CognitionAI.DevinDesktop**\]
+		- 0-to-1 generation (turning a prompt into a deployed app with managed hosting and databases):
+			- WebApps: Vercel [v0](https://v0.dev/chat), StackBlitz [bolt](https://bolt.new/), [loveable](https://lovable.dev/)
+			- Mobile (Android APKs / iPhone): [Rork](https://rork.com), [Fastshot](https://fastshot.ai), [Newly](https://newly.app) (Android-only: [Google AI Studio (Build Mode: Android)](https://aistudio.google.com/docs/aistudio-android))
 	- BYOK Coding Harness:
 		- (bspw. für Bring-Your-Own-Key via [BayernKI/FAU](https://hpc.fau.de/request-llm-api-key/), [GDWG](https://docs.hpc.gwdg.de/services/ai-services/chat-ai/models/index.html) oder Jülich [Blablador](https://blablador.fz-juelich.de/))
-		- GUI: [**VS Code** with GitHub Copilot Harness BYOK](https://code.visualstudio.com/blogs/2026/06/18/byok-vscode) ⭐, [**Hermes** Desktop](https://hermes-agent.nousresearch.com/) ⭐ (Nous Research), **[PiCove](https://github.com/Skitre/PiCove)** ⭐ (formerlly PiDeck), **[OpenCode](https://opencode.ai/)** ⭐, [Cline for Desktop](https://cline.bot/desktop), [AiderDesk](https://github.com/magiksoft/aider-desk), [Factory Desktop](https://factory.com/product/desktop), [TRAE](https://www.trae.ai/), [Void](https://voideditor.com/)
-			- Special Interest: WebApps (Alternative zu Lovable/v0/Bolt)? [Dyad](https://github.com/dyad-sh/dyad) ⭐, Mac-only [Onlook](https://onlook.com/)
+		- GUI: [**VS Code** with GitHub Copilot Harness BYOK](https://code.visualstudio.com/blogs/2026/06/18/byok-vscode) ⭐, [**Hermes** Desktop](https://hermes-agent.nousresearch.com/) ⭐ (Nous Research), **[PiCove](https://github.com/Skitre/PiCove)** ⭐ (formerlly PiDeck), **[OpenCode](https://opencode.ai/)** ⭐, [Cline for Desktop](https://cline.bot/desktop), [AiderDesk](https://github.com/magiksoft/aider-desk), [Factory Desktop](https://factory.com/product/desktop), , 
+			- Special Interest: Cursor/Windsurf-like (Full-IDEs)? ByteDance [**VS Code** with GitHub Copilot Harness BYOK](https://code.visualstudio.com/blogs/2026/06/18/byok-vscode) ⭐, **[Zed](https://zed.dev/docs/ai/agent-panel)** ⭐, [TRAE](https://www.trae.ai/), [PearAI](https://github.com/trypear/pearai-app)
+			- Special Interest: v0/Bolt/Loveable-like (WebApps-0-to-1)? [Dyad](https://github.com/dyad-sh/dyad) ⭐ und [Bolt.DIY](https://github.com/stackblitz-labs/bolt.diy) (Mac-only: [Onlook](https://onlook.com/))
 			- **VS Code (Copilot Harness BYOK)** is best when you want zero-friction daily editor integration—combining mature visual debugging, inline diff review, tight control over Windows file encodings, and full extension ecosystem support while bringing your own API keys/local endpoints without subscription lock-in.
 			- **PiCove** has the best dedicated agentic GUI workspace—great for orchestrating multi-pane terminal/agent sessions, visual context management, and running Pi/agent workflows side-by-side without the bloat of a full IDE.
 			- **OpenCode** is best for Rust and systems projects (native LSP integration, fast terminal-first/client-server architecture, and tight compiler/diagnostic feedback loops).
@@ -472,8 +509,6 @@ agy models |
 			- **Cline for Desktop** is best for transparent, step-by-step human-in-the-loop approvals; ideal when you want granular permission gating on every file edit, shell command, and browser/MCP action in a standalone app.
 			- **AiderDesk** is best if you already love Aider's git-centric diff/commit workflow and repo-map efficiency, but want a visual GUI wrapper for managing sessions, context files, and multi-model routing.
 			- **Factory Desktop** is best for enterprise/team-scale autonomous "Droids" handling end-to-end engineering lifecycles (ticket-to-PR, migrations, incident triage, and deep codebase indexing across large monorepos).
-			- **TRAE** is best as an all-in-one AI-native IDE fork (Builder mode + inline chat) when you want a polished, out-of-the-box Cursor-like experience with strong multi-file scaffolding and generous built-in model routing.
-			- **Void** is best as a clean, open-source, privacy-first VS Code fork when you want direct BYOK/local-model control with zero telemetry or proprietary middleware sitting between your editor and the LLM.
 		- TUI/CLI: [Claude CLI](https://docs.anthropic.com/en/docs/agents-and-tools/claude-cli), [aider](https://aider.chat/), [Cline CLI](https://github.com/cline/cline), [droid](https://factory.com/product/cli) (Factory), [Hermes Agent CLI](https://github.com/nousresearch/hermes-agent) (Nous Research), [Pi](https://github.com/earendil-works/pi) and [omp](https://omp.sh/)/[Oh-my-Pi](https://github.com/can1357/oh-my-pi)
 			- (Claude CLI Klone, aber NICHT empfohlen: [claurst](https://github.com/Kuberwastaken/claurst), [Claw Code](https://github.com/ultraworkers/claw-code), [claux](https://github.com/ducks/claux))
 			- (IMPORTANT: Oh-my-Pi (omp) and PiCove are built on different layers of the Pi ecosystem: PiCove is a desktop GUI wrapper around the standard, minimalist Pi SDK (pi-mono), whereas Oh-my-Pi (omp) is a heavily extended fork of the Pi agent harness itself that wires IDE-grade tooling directly into the agent loop.)
@@ -484,30 +519,38 @@ agy models |
 			- **Pi** is best as a minimalist, ultra-hackable, bare-metal coding agent harness; strips away hidden system-prompt bloat so you have full transparency and deterministic control over context, tools, and custom extensions.
 			- **omp / Oh-my-Pi** is best when you want Pi plus ergonomics (LSP tools, subagents, curated slash commands, and power-user TUI polish).
 			- **droid** (Factory) is best for headless terminal execution of Factory's specialized engineering agents; ideal for scripted repo migrations, automated PR generation, and background CI/CD code maintenance.
-		- By Language Group / Task: ⭐
+		- By Language Group / Task:
 			- **Systems & Compiled (`Rust`, `C/C++`, `Go`, `Java`, `C#`):**
 				- GUI: **[OpenCode](https://opencode.ai/)** ⭐, so the agent receives live diagnostics directly from `rust-analyzer`, `clangd`, `gopls`, `jdtls`, or `OmniSharp`/`csharp-ls`.
 				- TUI/CLI: [Oh-my-Pi (`omp`)](https://omp.sh/) (but NOT Pi/PiCove! Because Pi/PiCove have no built-in LSP/DAP, by Pi's philosophy of omitting exactly that)
 			- **Web & Scripting (`JS/TS`, `Python`, `Perl`):**
-				- GUI: **[Dyad](https://dyad.sh/)** ⭐ for local-first, visual full-stack **React/Next.js/TypeScript** building with live preview and zero vendor lock-in; **VS Code (BYOK)** or [Cline for Desktop](https://cline.bot/desktop) for a general-purpose browser/test feedback loop.
-				- TUI/CLI: **Claude CLI** for full-stack workflows; **aider** for surgical **Python** and **Perl** edits via Tree-sitter repo-maps.
-			- **Spec-driven Dev**:
-				- TUI/CLI: **[tessl](https://tessl.io/)** ⭐
+				- GUI: **[Dyad](https://dyad.sh/)** ⭐ for local-first, visual full-stack **React/Next.js/TypeScript** building with live preview and zero vendor lock-in; [VS Code (BYOK)](https://code.visualstudio.com/) or [**Cline** for Desktop](https://cline.bot/desktop) ⭐ for a general-purpose browser/test feedback loop.
+				- TUI/CLI: [Claude CLI](https://docs.anthropic.com/en/docs/agents-and-tools/claude-cli) for full-stack workflows; [aider](https://aider.chat/) for surgical **Python** and **Perl** edits via Tree-sitter repo-maps.
 			- **Functional (`Haskell`, `Erlang`, `Scheme`):**
-				- GUI: VS Code (BYOK) or [OpenCode](https://opencode.ai/) and [**Zed** with Agent Panel](https://zed.dev/docs/ai/agent-panel) 
-				- TUI/CLI: [Oh-my-Pi (`omp`)](https://omp.sh/) is the only harness with *both* `hls` (Haskell) and `erlang_ls` (Erlang) pre-configured out of the box.
+				- GUI: [VS Code (BYOK)](https://code.visualstudio.com/) or [OpenCode](https://opencode.ai/); but also [Zed](https://zed.dev/docs/ai/agent-panel) (with Agent Panel)
+				- TUI/CLI: [**Oh-my-Pi** (`omp`)](https://omp.sh/) ⭐ is the only harness with *both* `hls` (Haskell) and `erlang_ls` (Erlang) pre-configured out of the box.
 			- **Android APKs:**
-				- GUI: [Cline for Desktop](https://cline.bot/desktop)
-				- TUI/CLI: [droid](https://factory.com/product/cli) (Factory)
+				- Commercial/Vendor-lock-in: [Gemini in **Android Studio**](https://developer.android.com/studio/gemini/overview) ⭐ for native Compose Preview, Gradle sync, and Crashlytics integration
+				- GUI: **[AiderDesk](https://github.com/magiksoft/aider-desk)** ⭐ (with [JetBrains/Android Studio connector plugin](https://github.com/hotovo/aider-desk-connector-intellij-plugin)) or **[OpenCode](https://opencode.ai/)** 
+				- TUI/CLI: **[Oh-my-Pi (`omp`)](https://github.com/can1357/oh-my-pi)** ⭐ (`kotlin-language-server`/`jdtls` LSP + subagents for noisy Gradle/Logcat output) or **Claude CLI** (paired with an `adb`/`mobile-mcp` server for emulator screenshot & UI loops)
 			- **Word (`.docx`) Reading, Condensing & Editing:**
-				- *Key distinction:* Most harnesses treat `.docx` as an opaque binary unless they ship a built-in document parser; **reading/condensing** works natively in several tools, while **surgical in-place editing** (preserving styles, tables, headers/footers, and tracked changes) still relies on `python-docx` / OOXML scripts or `pandoc` under the hood.
-				- Commercial/Vendor-lock-in: **[GitHub Copilot](https://github.com/features/copilot)** ⭐ (free for students via educator pack) or Claude Desktop / Cowork
-					- NOT recommended: Google Antigravity and OpenAI Codex
-				- GUI: **[Hermes Desktop](https://hermes-agent.nousresearch.com/)** ⭐ (built-in `document` / file-inspection tooling + persistent memory across multi-doc condensing workflows), **[Claude Desktop](https://claude.ai/download)** ⭐ (native binary `.docx` upload/reading out of the box + built-in DOCX generation/editing skills; pair with Filesystem MCP for direct local folder access), **[VS Code](https://code.visualstudio.com/)** (pair Copilot BYOK/agent mode with `python-docx` / `pandoc` scripts + Office Viewer / Word diff workflows for full control over encodings, XML diffs, and batch condensing)
+				- *Key distinction:* Most harnesses treat `.docx` as an opaque binary unless they ship a built-in document parser; reading/condensing works natively in several tools, while surgical in-place editing (preserving styles, tables, headers/footers, and tracked changes) still relies on `python-docx` / OOXML scripts or `pandoc` under the hood.
+				- Commercial/Vendor-lock-in: **[GitHub Copilot](https://github.com/features/copilot)** ⭐ (built-in DOCX generation/editing skills; free for students via educator pack!) or **[Claude Desktop](https://claude.ai/download)** ⭐ (native binary `.docx` upload/reading out of the box + built-in DOCX generation/editing skills; pair with Filesystem MCP for direct local folder access)
+					- NOT recommended: Google Antigravity ⚡ and OpenAI Codex ⚡
+				- GUI: **[Hermes Desktop](https://hermes-agent.nousresearch.com/)** ⭐ (built-in `document` / file-inspection tooling + persistent memory across multi-doc condensing workflows) or [VS Code (BYOK)](https://code.visualstudio.com/) (pair with `python-docx` / `pandoc` scripts + Office Viewer / Word diff workflows for full control over encodings, XML diffs, and batch condensing)
 					- (More notable ones? [PiCove](https://github.com/Skitre/PiCove) works well if you install a global `docx` `SKILL.md`, but lacks a native `.docx` binary reader out of the box.)
-				- TUI/CLI: **[Oh-my-Pi (`omp`)](https://github.com/can1357/oh-my-pi)** ⭐ (best overall: ships a **native `.docx` binary reader** out of the box alongside PDF/XLSX readers, plus subagents to condense large document sets without polluting the main context window), **[Claude CLI](https://docs.anthropic.com/en/docs/agents-and-tools/claude-cli)** ⭐ (strongest autonomous multi-step OOXML/`python-docx` editing and tracked-changes/redline scripting, though relies on shell/skills rather than a built-in binary reader), **[Hermes Agent CLI](https://github.com/nousresearch/hermes-agent)** (native document extraction + persistent cross-session memory for recurring report condensing), [Cline CLI](https://github.com/cline/cline) / [droid](https://factory.com/product/cli) (good for scripted batch `pandoc`/`python-docx` pipelines, no native `.docx` reader)
+				- TUI/CLI: **[Oh-my-Pi (`omp`)](https://github.com/can1357/oh-my-pi)** ⭐ (best overall: ships a native `.docx` binary reader out of the box alongside PDF/XLSX readers, plus subagents to condense large document sets without polluting the main context window), **[Claude CLI](https://docs.anthropic.com/en/docs/agents-and-tools/claude-cli)** ⭐ (strongest autonomous multi-step OOXML/`python-docx` editing and tracked-changes/redline scripting, though relies on shell/skills rather than a built-in binary reader), [Hermes Agent CLI](https://github.com/nousresearch/hermes-agent) (native document extraction + persistent cross-session memory for recurring report condensing), [Cline CLI](https://github.com/cline/cline) / [droid](https://factory.com/product/cli) (good for scripted batch `pandoc`/`python-docx` pipelines, no native `.docx` reader)
+	- BYOK **Spec-driven Dev:**
+		- **Spec-as-Source** *(treats specs as maintained, versioned artifacts synced bidirectionally with code)*:
+			- Commercial/Vendor-lock-in: AWS **[Kiro](https://kiro.dev/)** ⭐ tied to AWS Builder ID (GUI; native `requirements.md → design.md → tasks.md` spec pipeline with live task tracking and two-way code-to-spec sync)
+			- GUI: no BYOK available
+			- TUI/CLI: **[tessl](https://tessl.io/)** ⭐ (true spec-as-source CLI: generates & maintains code from `.spec.md`, syncs manual code edits back to specs, and injects version-pinned API/library tiles into Claude Code, Codex, and Gemini CLI)
+		- **Spec-Workflow** *(CLI meta-frameworks / slash-command scaffolds enforcing structured `requirements → design → tasks` gates inside existing harnesses — not `SKILL.md` packages; pick one per repo)*:
+			- Commercial/Vendor-lock-in: ByteDance **[TRAE](https://www.trae.ai/)** coupled to ByteDance's hosted model routing (Builder/SOLO mode generates structured technical specs and task plans before multi-file execution),
+			- GUI: **[VS Code (BYOK)](https://code.visualstudio.com/)** (pair with **OpenSpec** / **GitHub Spec Kit** slash commands)
+			- TUI/CLI: **[OpenSpec](https://github.com/Fission-AI/OpenSpec)** ⭐ (lightweight, vendor-neutral delta-spec CLI for brownfield repos across 20+ harnesses including OpenCode, `omp`, Claude CLI, and Cline), **[GitHub Spec Kit (`specify-cli`)](https://github.com/github/spec-kit)** (structured constitution → specify → plan → tasks CLI scaffold), **[GSD (`@opengsd/gsd-core`)](https://github.com/glittercowboy/get-shit-done)** (context-engineered phase/milestone & subagent runner for terminal harnesses)
 	- Web-based/Self-Hosted:
-		- WebApps (Alternative zu Lovable/v0/Bolt): [Bolt.DIY](https://github.com/stackblitz-labs/bolt.diy)
+		- WebApps (Alternative zu v0/Bolt/Loveable): [Bolt.DIY](https://github.com/stackblitz-labs/bolt.diy)
 		- Nennenswert:
 			- [LocalAGI](https://github.com/mudler/LocalAGI) + [LocalRecall](https://github.com/mudler/LocalRecall) + [LocalAI](https://github.com/mudler/LocalAI)
 			- [Tabby](https://www.tabbyml.com/)
@@ -587,7 +630,7 @@ agy models |
 
 ## Agent Context File
 
-\[ aka CLAUDE.md / AGENT.md / META.md / ... \]
+\[ aka CLAUDE.md / AGENTS.md / META.md / ... \]
 
 - [Karpathy-Inspired CLAUDE.md](https://github.com/multica-ai/andrej-karpathy-skills)
 - Further Reading: [Awesome Claude.md](https://github.com/josix/awesome-claude-md), 
@@ -686,7 +729,7 @@ Selbst wenn de Verwendung von generativer KI zur Text-Erstellung Ihrer Abschluss
 				- Witsy unterstützt Text-to-Image und Text-to-Video per API-Anbindung
 		- Chat-only (relativ simpel): [Chatbox CE](https://chatboxai.app/)
 		- Office-Files-Generation: **[Conduit](https://github.com/runningpixels/conduit)** ⭐, **[GenOffice](https://genoffice.ai/)** ([github](https://github.com/genspark-ai/genoffice)) ⭐
-			- OBACHT: vorhandene DOCX/PPTX generieren/überarbeiten/kürzen? Per **Coding Harness**!! (Marktführer: Claude CLI oder GitHub Copilot. BYOK/GUI: [VS Code](https://code.visualstudio.com/blogs/2026/06/18/byok-vscode), [Hermes Desktop](https://hermes-agent.nousresearch.com/), [PiCove](https://github.com/Skitre/PiCove) , [Cline Desktop](https://cline.bot/desktop), [AiderDesk](https://github.com/magiksoft/aider-desk), [OpenCode](https://opencode.ai/), [Factory Desktop](https://factory.com/product/desktop), [TRAE](https://www.trae.ai/), [Void](https://voideditor.com/). BYOK/TUI: [Claude CLI](https://docs.anthropic.com/en/docs/agents-and-tools/claude-cli), [aider](https://aider.chat/), [Cline CLI](https://github.com/cline/cline), [droid](https://factory.com/product/cli), [Hermes Agent CLI](https://github.com/nousresearch/hermes-agent), [Pi](https://github.com/earendil-works/pi)/[omp](https://omp.sh/)/[Oh-my-Pi](https://github.com/can1357/oh-my-pi))
+			- OBACHT: vorhandene DOCX/PPTX generieren/überarbeiten/kürzen? Per **Coding Harness**!! (Marktführer: Claude CLI oder GitHub Copilot. BYOK/GUI: [VS Code](https://code.visualstudio.com/blogs/2026/06/18/byok-vscode), [Hermes Desktop](https://hermes-agent.nousresearch.com/), [PiCove](https://github.com/Skitre/PiCove) , [Cline Desktop](https://cline.bot/desktop), [AiderDesk](https://github.com/magiksoft/aider-desk), [OpenCode](https://opencode.ai/), [Factory Desktop](https://factory.com/product/desktop), [TRAE](https://www.trae.ai/). BYOK/TUI: [Claude CLI](https://docs.anthropic.com/en/docs/agents-and-tools/claude-cli), [aider](https://aider.chat/), [Cline CLI](https://github.com/cline/cline), [droid](https://factory.com/product/cli), [Hermes Agent CLI](https://github.com/nousresearch/hermes-agent), [Pi](https://github.com/earendil-works/pi)/[omp](https://omp.sh/)/[Oh-my-Pi](https://github.com/can1357/oh-my-pi))
 			- Conduit hat die beste strukturierte Dokumenterstellung (docx/md)
 			- Conduit hat die beste strukturierte Folienerstellung (html) inkl. integriertem Folieneditor
 			- Conduit kann im Kontext eines lokalen Verzeichnis arbeiten ⭐ (bspw. pptx generieren, durch explizites Prompting)
