@@ -352,7 +352,6 @@ agy models |
 			- Methode "uncensoring": von [Eric Hartford](https://erichartford.com/uncensored-models) (on [ollama](https://ollama.com/search?q=Eric%20Hartford))
 			- Methode "abliteration": von [Arditi et al.](https://www.lesswrong.com/posts/jGuXSZgv6qfdhMCuJ/refusal-in-llms-is-mediated-by-a-single-direction), zzgl. [Uncensor any LLM with abliteration](https://huggingface.co/blog/mlabonne/abliteration), auch für Text-to-Image ([am Bsp. Flux.1](https://medium.com/@aloshdenny/uncensoring-flux-1-dev-abliteration-bdeb41c68dff))
 			- Models in HuggingFace: ["eric hartford"](https://huggingface.co/search/full-text?q=eric+hartford&type=model), ["abliterate"](https://huggingface.co/search/full-text?q=abliterate&type=model), ["unsensored"](https://huggingface.co/search/full-text?q=_uncensored&type=model)
-		- Zulässigkeit von Generative AI als Werkzeug zur Erstellung wiss. Publikationen? vgl. **[ACM Policy on Authorship](https://www.acm.org/publications/policies/new-acm-policy-on-authorship)**
 		- **LLM-Evaluation**: [LLM Evaluation Metrics: The Ultimate LLM Evaluation Guide](https://www.confident-ai.com/blog/llm-evaluation-metrics-everything-you-need-for-llm-evaluation)
 		- Text-to-Code: [Top Open Source (Free) Text to Code Generator models on the market](https://www.edenai.co/post/top-free-code-generation-tools-apis-and-open-source-models)
 		- Weiterführende Referenz: [Awesome OpenAI](https://github.com/Jaykef/awesome-openAI)
@@ -396,6 +395,43 @@ agy models |
 - AI Engineering
 	- vgl. Schwesterseite [awesome-basics](https://github.com/cyberlytics/awesome-basics) zu Machine Learning und Generative AI / LLMs
 	- Weiterführende Quellen: roadmap.sh [AI Agents](https://roadmap.sh/ai-agents) sowie [AI Engineering](https://roadmap.sh/ai-engineer)
+
+## Ethik
+
+- KI und Gesellschaft:
+	- Standardwerk (€:) [AI Ethics](https://mitpress.mit.edu/9780262538190/ai-ethics/) (2020) von Mark Coeckelbergh
+	- Deutsches Open Access Buch [Künstliche Intelligenz und Wir](https://link.springer.com/book/10.1007/978-3-662-71567-3) (2025)
+- Informatik und Gesellschaft:
+	- Historisches Standardwerk [Computer Power and Human Reason: From Judgment to Calculation](https://archive.org/details/computerpowerhum0000weiz_v0i3) (1976) von Joseph Weizenbaum
+	- Standardwerk (€:) [The Ethics of Information](https://academic.oup.com/book/35378) (2013) von Luciano Floridi
+	- Zeitungsbeitrag [Informatik und Verantwortung](https://www.sueddeutsche.de/politik/informatik-und-verantwortung-es-gibt-wichtigeres-als-apps-fuer-hundehaufen-1.4207887) (2018)
+- Richtlinien (Schwerpunkt: DE, BY, OTH-AW):
+	- DE: [GI Ethische Leitlinien](https://gi.de/ueber-uns/organisation/unsere-ethischen-leitlinien) (2018)
+	- Hochschullehre:
+		- DE: Schwartmann, Kurth und Köhler: [Der Einsatz von KI an Hochschulen – eine rechtliche Betrachtung, Ordnung der Wissenschaft (3) 2024](https://ordnungderwissenschaft.de/wp-content/uploads/2024/06/Gesamtausgabe.pdf). S. 161-168.
+		- BY: [KI-Leitlinie Hochschullehre](https://www.hochschule-bayern.de/fileadmin/daten/Positionspapiere/KI-Leitlinie_Hochschule-Bayern-19052025.pdf) (2025)
+		- OTH-AW: [KI-Richtlinie OTH Amberg-Weiden](https://www.oth-aw.de/files/oth-aw/Hochschule/KI-Richtlinie_Studium-Lehre-Forschung.pdf)
+	- Verwaltung:
+		- BY: [KI-Leitfaden für Behörden](https://www.stmfh.bayern.de/digitalisierung/ki/KI-Leitfaden_Behoerden_2025.pdf) (2025)
+- Zulässigkeit von Gen-AI zur Erstellung wiss. Publikationen?
+	- Informatik ⭐: [ACM Policy on Authorship](https://www.acm.org/publications/policies/new-acm-policy-on-authorship), [IEEE Journal Policies](https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/guidelines-and-policies/submission-and-peer-review-policies/#ai-generated-content), [CEUR-WS](https://ceur-ws.org/GenAI/Policy.html) ⭐, [IARIA](https://www.iaria.org/editorialrules.html), [ACL / ARR CfP](https://aclrollingreview.org/cfp), [AAAI Publication Policies](https://aaai.org/aaai-publications/aaai-publication-policies-guidelines/)
+	- Verlagsübergreifend & Ethik-Standards: [COPE Position Statement on Authorship and AI Tools](https://publicationethics.org/guidance/cope-position/authorship-and-ai-tools) ⭐, [Elsevier Generative AI Policies](https://www.elsevier.com/about/policies-and-standards/generative-ai-policies-for-journals), [Springer Nature AI Policies](https://www.springernature.com/de/policies/editorial-policies/ai-manuscript-preparation), [Wiley Ethics Guidelines](https://authors.wiley.com/ethics-guidelines/index.html), [Taylor & Francis AI Policy](https://taylorandfrancis.com/our-policies/ai-policy/), [Sage AI Policy](https://www.sagepub.com/journals/publication-ethics-policies/artificial-intelligence-policy)
+	- Deutsche Forschungsförderung: [DFG](https://www.dfg.de/resource/blob/289674/ff57cf46c5ca109cb18533b21fba49bd/230921-stellungnahme-praesidium-ki-ai-data.pdf) ⭐, [VolkswagenStiftung](https://www.volkswagenstiftung.de/de/umgang-mit-generativen-modellen-fuer-die-text-und-bilderstellung-der-forschung-und-im-foerderhandeln-der-volkswagenstiftung)
+	- Andere Fachgebiete:
+		- Medizin & Lebenswissenschaften: [ICMJE Recommendations (AI in Publishing)](https://www.icmje.org/recommendations/browse/artificial-intelligence/) ⭐
+		- Naturwissenschaften & Chemie: [Science Journals Editorial Policies (AAAS)](https://www.science.org/content/page/science-journals-editorial-policies), [ACS AI Policy](https://researcher-resources.acs.org/publish/aipolicy)
+		- Psychologie & Sozialwissenschaften: [APA Journals Policy on Generative AI](https://www.apa.org/pubs/journals/resources/publishing-tips/policy-generative-ai), [APA Style: Is AI "allowed"?](https://apastyle.apa.org/blog/cite-generative-ai-allowed)
+- Zulässigkeit von Gen-AI zur Erstellung von Peer-Reviews?
+	- **Praktisches** ⭐: [AI Cards – AI Disclosure in Peer Review](https://ai-cards.org/ai-disclosure-in-peer-review-what-reviewers-and-editors-should-report/) ⭐ (Konkrete Disclosure-Bausteine für Gutachter und Editoren)
+	- AI-forward Vorreiter (Informatik / KI): [ICML Policy for LLM Use in Reviewing](https://icml.cc/Conferences/2026/LLM-Policy) ⭐, [AAAI-27 AI-Assisted Peer-Review Process](https://aaai.org/conference/aaai/aaai-27/main-technical-track-call/) ⭐ (menschliche Reviews ergänzt durch ein nicht-entscheidendes KI-Review), [ACM Peer Review Policy FAQ](https://www.acm.org/publications/policies/peer-review-faq) (Erlaubt Enterprise-LLMs mit Vertraulichkeitsgarantie zum Entwerfen und Überarbeiten von Gutachten)
+	- Forschungsförderung:
+		- [DFG](https://www.dfg.de/de/grundlagen-themen/digitale-themen/ki/begutachtung) ([EN](https://www.dfg.de/en/basics-topics/digital-topics/ai/review), [Leitfaden PDF](https://www.dfg.de/resource/blob/390262/4-04-en.pdf)) ⭐ (Erlaubt unterstützenden KI-Einsatz bei lokaler Installation, Hochschul-Hosting oder Zero-Data-Retention-Lizenz plus Offenlegung)
+		- **Kontrastpunkt** ⚡: [NIH Notice NOT-OD-23-149](https://grants.nih.gov/grants/guide/notice-files/NOT-OD-23-149.html) = striktes Verbot jeglicher Gen-AI im Förder-Review!
+	- Verlage & Ethik-Gremien:
+		- [Springer Nature: AI Guidance for Researchers, Editors, Reviewers](https://group.springernature.com/gp/group/ai/ai-guidance-for-researchers-editors-reviewers) ⭐ ([Kurzfassung](https://www.springernature.com/de/policies/editorial-policies/using-ai-in-peer-review)), [Elsevier Generative AI Policies](https://www.elsevier.com/about/policies-and-standards/generative-ai-policies-for-journals), [Sage AI Policy](https://www.sagepub.com/journals/publication-ethics-policies/artificial-intelligence-policy), [Taylor & Francis AI Policy](https://taylorandfrancis.com/our-policies/ai-policy/)
+		-  **Kontrastpunkt** ⚡: [IEEE Reviewer Guidelines](https://journals.ieeeauthorcenter.ieee.org/submit-your-article-for-peer-review/become-an-ieee-reviewer/) = Untersagt KI-Generierung von Reviews und Manuskript-Uploads auf öffentlichen Plattformen.
+	- Weiterführende Quellen:
+		- [COPE Focus on Artificial Intelligence](https://publicationethics.org/cope-focus/artificial-intelligence), Kuratierte Linksammlung [OWID – Gute wissenschaftliche Praxis & KI](https://ombudsgremium.de/12365/gute-wissenschaftliche-praxis-und-kuenstliche-intelligenz/)
 
 ## KI-Modelle
 
@@ -542,7 +578,7 @@ agy models |
 				- TUI/CLI: **[Oh-my-Pi (`omp`)](https://github.com/can1357/oh-my-pi)** ⭐ (best overall: ships a native `.docx` binary reader out of the box alongside PDF/XLSX readers, plus subagents to condense large document sets without polluting the main context window), **[Claude CLI](https://docs.anthropic.com/en/docs/agents-and-tools/claude-cli)** ⭐ (strongest autonomous multi-step OOXML/`python-docx` editing and tracked-changes/redline scripting, though relies on shell/skills rather than a built-in binary reader), [Hermes Agent CLI](https://github.com/nousresearch/hermes-agent) (native document extraction + persistent cross-session memory for recurring report condensing), [Cline CLI](https://github.com/cline/cline) / [droid](https://factory.com/product/cli) (good for scripted batch `pandoc`/`python-docx` pipelines, no native `.docx` reader)
 			- **LaTeX (`.tex`, `.bib`, academic papers, theses): Scientific Writing:**
 				- **Key distinction:** LaTeX is fundamentally different from ordinary code editing: the critical feedback loop is `AI edit → LaTeX compile → PDF preview → inspect build log → fix`. A good setup therefore needs `latexmk` / TeX Live, `texlab` LSP diagnostics, PDF preview with SyncTeX, and ideally BibTeX/Biber + Zotero integration. The harness itself is largely interchangeable as long as it can edit the complete project, execute build commands, and inspect compiler output.
-				- GUI (Dedicated Writing IDE): [**SciPen Studio**](https://github.com/scipenai/scipen-studio) ⭐ (most promising dedicated AI-first academic writing IDE), [**Texpile**](https://texpile.com/) ⭐ (LaTeX/Typst editor and MCP integration; delegates AI work to existing agents).
+				- GUI (Dedicated Writing IDE): [**SciPen Studio**](https://github.com/scipenai/scipen-studio) ⭐ (most promising dedicated AI-first academic writing IDE), [**Texpile**](https://texpile.com/docs/ai-assistant) ⭐ (LaTeX/Typst editor and MCP integration; delegates AI work to existing agents).
 				- GUI (general-purpose): **[VS Code (BYOK)](https://code.visualstudio.com/)** ⭐ (best overall flexible setup), **[Zed](https://zed.dev/)** (lightweight alternative, `texlab` LSP)
 				- TUI/CLI: **[Claude CLI](https://docs.anthropic.com/en/docs/agents-and-tools/claude-cli)** ⭐ (autonomous multi-file thesis/paper revisions, bibliography maintenance, complex TikZ/PGFPlots work, and iterative compile-fix-review loops), **[OpenCode](https://opencode.ai/)** ⭐ (can be equipped with dedicated [LaTeX writing skills](https://opencodeskills.dev/skills/documentation/latex/) for structured academic documents, bibliography management, and compiler-driven validation)
 				- Nennenswerte Skills: 
@@ -671,7 +707,6 @@ agy models |
 	- [Awesome Science Skills](https://github.com/K-Dense-AI/scientific-agent-skills) (i.a., Research Methodology & Planning, Scientific Writing, Data Analysis & Visualization)
 	- [mattpocock teach](https://www.skills.sh/mattpocock/skills/teach)
 	- Further Reading: [Awesome Scientific Skills](https://github.com/InternScience/Awesome-Scientific-Skills)
-
 - Token Efficiency / Cost Optimization
 	- [Graphify](https://graphify.net/)
 
