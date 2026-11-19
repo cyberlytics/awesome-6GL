@@ -19,7 +19,9 @@ Dies ist sowohl eine Tool-Sammlung als auch ein digitaler Ressourcen-Pool mit ko
 - [Agentic Engineering Manifest](#agentic-engineering-manifest)
 - [Agentic Education Manifest](#agentic-education-manifest)
 - [Lernmaterialien](#lernmaterialien)
+- [Ethik](#ethik)
 - [KI-Modelle](#ki-modelle)
+- [Office Automation](#office-automation)
 - [Vibe Coding Werkzeuge](#vibe-coding-werkzeuge)
 - [Prompting Recipies](#prompting-recipies)
 - [Agent Context File](#agent-context-file)
@@ -33,6 +35,7 @@ Dies ist sowohl eine Tool-Sammlung als auch ein digitaler Ressourcen-Pool mit ko
 - [AI Detectors / High-Tech Plagiarism](#ai-detectors--high-tech-plagiarism)
 - [Slash-Commands und Skills](#slash-commands-und-skills)
 - [Vergleichbare Review- und Verify-Workflows](#vergleichbare-review--und-verify-workflows)
+- [Bonus: Live-Übersetzung Hörsäle unds Konferenzen](#bonus-live-ubersetzung-horsale-unds-konferenzen)
 - [Anhang: Schwesterseiten](#anhang-schwesterseiten)
 - [Footer](#footer)
 
@@ -45,14 +48,17 @@ Dies ist sowohl eine Tool-Sammlung als auch ein digitaler Ressourcen-Pool mit ko
   * Einstieg für Nicht-Informatiker: Webartikel [Vibe Coding: Der größte Durchbruch für nicht-technische Gründer](https://blink.new/de/blog/vibe-coding-for-non-technical-founders) von Blink (Disclosure: Blink verkauft einen GenAI-App-Builder)
   * Einstieg für Informatiker: Video [Software Is Changing (Again)](https://www.youtube.com/watch?v=LCEmiRjPEtQ) (Juni 2025) von Andrey Karpathy
   * [Begriffsbildung](https://x.com/karpathy/status/1886192184808149383) durch Andrey Karpathy im Februar 2025
+  * Gegenkonzept zum Vibe Coding: [Ape Coding](https://rsaksida.com/blog/ape-coding/)
 
 * Agentic Engineering vs. Vibe Coding?
 
   * Beides zu 80 bis 96% derselbe Werkzeug-Baukasten und Methodenkoffer: Thoughtworks [What is an AI agent harness? A practical guide](https://www.thoughtworks.com/en-de/insights/blog/machine-learning-and-ai/ai-agent-harness)
     * AI Agent = LLM + Harness = **Brain** + Tool that gives it the environment and ability to **act**
     * Agent Loop = the model proposes, the harness disposes
-  * Vibe Coding: Ein technischer Kontrollverlust ist ggf. kalkuliertes Risiko. Qualität ist abgeschwächtes Ziel.
-  * Agentic Engineering: Technischer Kontrollverlust sollte ausgeschlossen sein. Qualität ist dediziertes Ziel.
+    * KI-progressives Mindset ⭐: "We build a software factory that builds the product. We do not build the product."
+  * Unterschied (vereinfacht):
+    * Vibe Coding: Ein technischer Kontrollverlust ist ggf. kalkuliertes Risiko. Qualität ist abgeschwächtes Ziel.
+    * Agentic Engineering: Technischer Kontrollverlust sollte ausgeschlossen sein. Qualität ist dediziertes Ziel.
 
 * **Programmiersprachengenerationen**
 
@@ -155,7 +161,7 @@ Dies ist sowohl eine Tool-Sammlung als auch ein digitaler Ressourcen-Pool mit ko
 	* **Nebengesetz:** „Jede LLM-Antwort ist eine Hypothese. LLMs erzeugen Antworten auf Grundlage von Wahrscheinlichkeiten, nicht von Gewissheit.“
 
 10.	**„Agentic Engineering ist anspruchsvolle Informatik.“**
-	* Benötigt werden methodische und technische Full-Stack-Kompetenzen.
+	* Benötigt werden methodische und technische Full-Stack-Kompetenzen: "We build a software factory that builds the product. We do not build the product."
 	* Disclaimer: Der Definition nach handelt es sich bei einem **Informationssystem** schon immer um ein **Mensch-/Aufgabe-/Technik-System**.
 	* Dies widerspricht der häufigen Fehlannahme „Jetzt kann jeder Software bauen.“ (Was allerdings jetzt jeder kann ist „[Prompt-and-Pray](https://www.forbes.com/councils/forbestechcouncil/2025/05/06/beyond-prompt-and-pray-why-structured-automation-is-the-future-of-enterprise-ai/)“)
 	* Für einfache Anwendungen genügen Low-Code-Ansätze, aber komplexe Software-Anwendungen bleiben eine Engineering-Disziplin.
@@ -185,13 +191,13 @@ Dies ist sowohl eine Tool-Sammlung als auch ein digitaler Ressourcen-Pool mit ko
 * Erst: eine Subscription oder ein [lokales Ollama](https://martinfowler.com/articles/exploring-gen-ai/local-models-for-coding-factors.html).
 * Dann [CLAUDE.md/AGENTS.md](https://github.com/multica-ai/andrej-karpathy-skills/blob/main/CLAUDE.md).
 * Dann Skills, bpsw. [ECC](https://github.com/affaan-m/ecc)- oder [AAS](https://aaskills.tech/)-analog.
-* Dann All-In. (Mindset! AI-first.)
+* Dann All-In. (Mindset! AI-first. "We build a software factory that builds the product. We do not build the product.")
 * Dann die richtige Echokammer. (bspw. [Simon Willison](https://simonwillison.net/)!)
 * Dann 6GL aka [Natural Language Programming](https://www.cs.utexas.edu/~EWD/transcriptions/EWD06xx/EWD667.html) (Programmier-Ebene)
 	- Andrej Karpathy betonte „agentic programming as a tool“, bei der Vibe-Coding-Begriffsbildung
 * Dann [Context Engineering](https://www.covasant.com/glossary-of-agentic-ai/context-engineering)) bzw. [Harness Engineering](https://martinfowler.com/articles/harness-engineering.html)
 	- Weitere Infos: Siehe unten bei Lernmaterialien
-	- OBACHT: Wer operationalisiert Context Engineering: Der Mensch oder die Harness? Größtenteils die **Harness** per **runtime curation of context** (auch **operational context engineering**: Tools, Skills, Retrieval, Memory, Compression, Isolation, Feedback) und der Mensch sollte dem v.a. nicht im Weg stehen (**architectural context engineering**: Intent, Policies, Quality Criteria, Accountability)!
+	- OBACHT: Wer operationalisiert Context Engineering: Der Mensch oder die Harness? Größtenteils die **Harness** bzw. **Skills** per **runtime curation of context** (auch **operational context engineering**: Tools, Skills, Retrieval, Memory, Compression, Isolation, Feedback // Beispiel: OpenGSD [context engineering per gsd-core](https://github.com/open-gsd/gsd-core/blob/next/docs/explanation/context-engineering.md)) und der Mensch sollte dem v.a. nicht im Weg stehen (**architectural context engineering**: Intent, Policies, Quality Criteria, Accountability)!
 ](https://www.anthropic.com/research/equipping-agents-for-the-real-world-with-agent-skills) und [Skill Authoring Best Practices](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices)
 Isolate subtasks
 * Dann Spec-Driven Development (SDD) aka Agentic Engineering (SW-Technik-Ebene)
@@ -379,6 +385,7 @@ agy models |
 	- Context Management Core Operations: (1) **write** context out to storage, (2) **select** the slice each step needs, (3) **compress** what remains, and (4) **isolate** work into separate windows
 	- Methodenkoffer: @2: Favor agentic SKILLs over AGENTS.md (wegen [progressive disclosure](https://agentskills.io/home#how-do-agent-skills-work)). @3: Compress tool output. @3: Compact the history. @4: Isolate subtasks.
 	- Context Fallacies or Traps: Instruction Confusion (ambiguous instructions). Context Contamination (bleed-over). Context Poisoning (false facts). Attention Dilution (competing signals). Context Rot (degrading relevance/coherence).
+	- Praktisches Beispiel: Skill-Framework [OpenGSD](https://opengsd.net/) und dessen **[context engineering per gsd-core](https://github.com/open-gsd/gsd-core/blob/next/docs/explanation/context-engineering.md)** ⭐ (u.a. zur Vermeidung von context rot)
 	- Praktische Design-Prinzipien für SKILLs?
 		- [Luis Chavez-Mattos](https://www.mindstudio.ai/blog/progressive-disclosure-ai-agent-skill-design): (a) Design Skills Around Outputs, Not Inputs. (b) Treat System Prompts as Code, Not Documentation. (c) Version and Test Skills Independently. (d) Use Structured Outputs to Control What Passes Forward.
 		- Anthropic: [Equipping agents for the real world with Agent Skills
